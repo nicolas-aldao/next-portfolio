@@ -1,10 +1,10 @@
 .about__icon i {
-  color: #01d293;
+  color: var(--primary-color);
 }
 
 .about__img {
   padding: 10px;
-  background: #171f38;
+  background: var(--background-color);
   margin-bottom: 20px;
   border-radius: 5px;
 }

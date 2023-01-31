@@ -2,7 +2,7 @@
   padding-top: 60px !important;
 }
 .hero__content h5 {
-  color: #808dad;
+  color: var(--secondary-font-color);
   font-weight: 400;
 }
 
@@ -28,22 +28,22 @@
   left: 22%;
   transform: translateY(-50%);
   border-radius: 5px;
-  background: #808dad26;
+  background: var(--four-color);
   z-index: 10;
 }
 
 .hero__skills h6 {
-  background: transparent;
-  color: #fff;
+  background: var(--four-color);
+  color: var(--primary-font-color);
 }
 
 .hero__skills span i {
-  color: #01d293;
-  background: transparent;
+  color: var(--primary-color);
+  background: var(--four-color);
 }
 
 .hero__skills span {
-  background: transparent;
+  background: var(--four-color);
 }
 
 .hero__experience {
@@ -53,14 +53,15 @@
   right: -5%;
   padding: 10px 20px;
   border-radius: 5px;
-  background: #808dad26;
+  background: var(--four-color);
   z-index: 10;
+  border: solid 1px red;
 }
 
 .hero__experience span,
 .hero__experience h5,
 .hero__experience h6 {
-  background: transparent !important;
+  background: inherit !important;
 }
 
 .hero__experience h6 {
@@ -71,9 +72,10 @@
 
 .hero__experience span i {
   padding: 5px;
-  color: #01d293;
-  background: #808dad70;
+  color: inherit;
+  background: inherit;
   border-radius: 5px;
+  /* border: solid 1px blue; */
 }
 
 @media only screen and (max-width: 992px) {

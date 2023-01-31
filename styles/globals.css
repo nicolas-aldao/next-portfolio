@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
+:root {
+  --primary-color: #9a894f;
+  --secondary-color: #ffffff;
+  --background-color: #ffffff;
+  --primary-font-color: #000000;
+  --secondary-font-color: #a5a5a5;
+  --four-color: #c3cad868;
+}
+
 html,
 body {
   padding: 0;
@@ -15,11 +24,11 @@ a {
 
 * {
   box-sizing: border-box;
-  background: #0e1630;
+  background: var(--background-color);
 }
 
 p {
-  color: #808dad;
+  color: var(--secondary-font-color);
   line-height: 30px;
 }
 h1,
@@ -28,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: var(--primary-font-color);
 }
 
 h2 {
@@ -42,19 +51,19 @@ section {
 footer {
   padding-bottom: 10px;
   padding-top: 60px;
-  border-top: 1px solid #171f38;
+  border-top: 1px solid var(--secondary-color);
 }
 
 .primary__btn {
-  background: #171f38 !important;
+  background: var(--secondary-color) !important;
   padding: 7px 25px !important;
-  border: 1px solid #01d293 !important;
+  border: 1px solid var(--primary-color) !important;
   border-radius: 5px;
 }
 
 .primary__btn a {
   text-decoration: none;
-  color: #01d293;
+  color: var(--primary-color);
   background: transparent !important;
 }
 
@@ -66,21 +75,21 @@ footer {
 }
 
 .secondary__btn a {
-  color: #01d293 !important;
+  color: var(--primary-color) !important;
 }
 .primary__btn a:hover,
 .secondary__btn a:hover {
-  color: #01d293;
+  color: var(--primary-color);
 }
 
 ::-webkit-scrollbar {
   width: 10px;
-  background: #808dad;
+  background: var(--secondary-font-color);;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2em;
-  background: #171f38;
+  background: var(--secondary-color);
 }
 
 @media only screen and (max-width: 992px) {

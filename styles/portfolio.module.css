@@ -1,5 +1,5 @@
 .tab__btn__active {
-  color: #01d293 !important;
+  color: var(--primary-color) !important;
 }
 
 @media only screen and (max-width: 768px) {

@@ -13,7 +13,7 @@
 }
 
 .testimonial__client h6:last-child {
-  color: #01d293;
+  color: var(--primary-color);
 }
 
 @media only screen and (max-width: 768px) {

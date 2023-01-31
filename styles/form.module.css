@@ -1,10 +1,10 @@
 .form__group input,
 .form__group textarea {
   width: 100%;
-  border: none;
+  border: solid 2px var(--primary-color);
   outline: none;
-  background: #171f38;
-  color: #fff;
+  background: var(--background-color);
+  color: var(--primary-font-color);
   padding: 15px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -13,9 +13,9 @@
 .form__group input::placeholder,
 .form__group textarea::placeholder {
   font-size: 0.8rem;
-  color: #808dad;
+  color: var(--secondary-font-color);
 }
 
 .form button {
-  color: #01d293;
+  color: var(--primary-color);
 }
