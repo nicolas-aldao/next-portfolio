@@ -32,12 +32,15 @@
 }
 
 .portfolio__live {
-  margin-left: -100px;
-  margin-top: 30px;
-  display: none;
+  /* margin-left: -100px;
+  margin-top: 30px; */
+  /* display: none; */
 }
 
-.portfolio__item:hover .portfolio__live {
+.portfolio__item .portfolio__live {
+  position: relative;
+  left: 1rem;
+  top: -4rem;
   margin-left: 0;
   display: block;
 }

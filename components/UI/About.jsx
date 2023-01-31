@@ -64,12 +64,12 @@ const About = () => {
 
             <div className="mt-5">
               <button className="primary__btn">
-                <Link href="#portfolio">My Portfolio</Link>
+                <Link href="#portfolio">Download CV</Link>
               </button>
 
-              <button className="secondary__btn">
+              {/* <button className="secondary__btn">
                 <Link href="#">Download CV</Link>
-              </button>
+              </button> */}
             </div>
           </Col>
 

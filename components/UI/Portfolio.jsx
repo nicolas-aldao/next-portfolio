@@ -36,7 +36,7 @@ const Portfolio = () => {
         <Row>
           <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle=" My portfolio" />
-            <h4 className="mt-4">Some of my distinguished works</h4>
+            <h4 className="mt-4">Some of my works</h4>
           </Col>
 
           <Col lg="6" md="6">

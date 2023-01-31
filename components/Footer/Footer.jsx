@@ -36,7 +36,7 @@ const Footer = () => {
       <Container>
         <Row>
           {/* ========= footer top =========== */}
-          <Col lg="6" className={`${classes.footer__top}`}>
+          {/* <Col lg="6" className={`${classes.footer__top}`}>
             <div className={`${classes.nav__menu}`}>
               {NAV__LINK.map((item, index) => (
                 <Link href={item.path} key={index}>
@@ -44,7 +44,7 @@ const Footer = () => {
                 </Link>
               ))}
             </div>
-          </Col>
+          </Col> */}
 
           <Col lg="6" className={`${classes.footer__top}`}>
             <div className={`${classes.footer__creator}`}>
