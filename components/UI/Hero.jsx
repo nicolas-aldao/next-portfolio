@@ -14,8 +14,8 @@ const Hero = () => {
           {/* ========== hero content ============= */}
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
-              <SectionSubtitle subtitle="Hello" />
-              <h2 className="mt-3 mb-3">I&apos;m Muhibur Rahman</h2>
+              <SectionSubtitle subtitle="Hey!" />
+              <h2 className="mt-3 mb-3">I&apos;m Nicolás Aldao</h2>
               <h5 className="mb-4">Frontend Developer</h5>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.

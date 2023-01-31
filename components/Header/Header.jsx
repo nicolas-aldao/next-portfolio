@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from "react";
-
-import { Container } from "reactstrap";
-import classes from "./header.module.css";
 import Link from "next/link";
+import Image from "next/image";
+import { Container } from "reactstrap";
+import logo from "../../public/images/logo.png";
+import classes from "./header.module.css";
 
 const NAV__LINK = [
   {
@@ -56,14 +57,15 @@ const Header = () => {
     <header className={`${classes.header}`} ref={headerRef}>
       <Container>
         <div className={`${classes.nav__wrapper}`}>
-          {/* ======== navigation logo ======== */}
           <div className={`${classes.logo}`}>
-            <h1>
+            {/* <h1>
               <span>N</span>icolás <span>A</span>ldao
-            </h1>
+            </h1> */}
+            {/* <div className={`${classes.logoImg}`}>
+              <Image src={logo} width="50" height="50" alt="about-img" />
+            </div> */}
           </div>
 
-          {/* ========= nav menu =========== */}
           <div
             className={`${classes.navigation}`}
             ref={menuRef}
@@ -76,12 +78,12 @@ const Header = () => {
                 </Link>
               ))}
 
-              <div className={`${classes.nav__right}`}>
+              {/* <div className={`${classes.nav__right}`}>
                 <p className=" d-flex align-items-center gap-2 mb-0">
                   {" "}
                   <i className="ri-phone-line"></i> +088123456789{" "}
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 

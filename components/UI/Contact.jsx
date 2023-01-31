@@ -24,20 +24,20 @@ const Contact = () => {
                 <span>
                   <i className="ri-map-pin-line"></i>
                 </span>
-                <p>Sylhet - Bangladesh</p>
+                <p>Buenos Aires - Argentina</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
                   <i className="ri-mail-line"></i>
                 </span>
-                <p>muhib5532@gmail.com</p>
+                <p>nicolasaldao@live.com</p>
               </li>
-              <li className={`${classes.info__item}`}>
+              {/* <li className={`${classes.info__item}`}>
                 <span>
                   <i className="ri-phone-line"></i>
                 </span>
                 <p>+088123456789</p>
-              </li>
+              </li> */}
             </ul>
 
             <div className={`${classes.social__links}`}>

@@ -1,7 +1,7 @@
 .form__group input,
 .form__group textarea {
   width: 100%;
-  border: solid 2px var(--primary-color);
+  border: solid 1.5px var(--primary-color);
   outline: none;
   background: var(--background-color);
   color: var(--primary-font-color);

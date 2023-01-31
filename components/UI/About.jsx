@@ -73,7 +73,7 @@ const About = () => {
             </div>
           </Col>
 
-          <Col lg="6">
+          {/* <Col lg="6">
             <div
               className={`${classes.about__img__gallery} d-flex gap-4 justify-content-end`}
             >
@@ -105,7 +105,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>

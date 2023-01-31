@@ -89,8 +89,8 @@
   }
 
   .hero__img img {
-    width: 250px !important;
-    height: 250px !important;
+    /* width: 250px !important;
+    height: 250px !important; */
   }
 
   .hero__content {

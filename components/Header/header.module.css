@@ -19,6 +19,11 @@
   color: var(--primary-color);
 }
 
+.logoImg {
+  display: flex;
+  /* border: solid 1px red; */
+}
+
 .nav__menu {
   display: flex;
   align-items: center;
@@ -42,7 +47,7 @@
   color: var(--primary-color);
 }
 
-.nav__right p {
+/* .nav__right p {
   color: var(--primary-color);
   margin-left: 20px;
   position: relative;
@@ -60,7 +65,7 @@
   height: 14px;
   background: var(--secondary-font-color);
   color: var(--secondary-font-color);
-}
+} */
 
 .header__shrink {
   position: sticky;
@@ -75,7 +80,7 @@
 
 .mobile__menu i {
   font-size: 1.3rem;
-  color: #fff;
+  color: var(--black);
 
   cursor: pointer;
 }

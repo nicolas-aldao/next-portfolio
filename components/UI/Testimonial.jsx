@@ -21,9 +21,9 @@ const Testimonial = () => {
     <section>
       <Container>
         <Row>
-          <Col lg="6" md="6" className={`${classes.testimonial__img}`}>
+          {/* <Col lg="6" md="6" className={`${classes.testimonial__img}`}>
             <Image alt="network-img" src={network} width="400" height="400" />
-          </Col>
+          </Col> */}
 
           <Col lg="6" md="6">
             <SectionSubtitle subtitle="Testimonials" />
