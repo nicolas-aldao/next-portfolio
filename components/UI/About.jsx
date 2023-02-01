@@ -1,14 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
+import BadgeAtom from "./atoms/BadgeAtom";
+import HtmlIcon from "./HtmlIcon";
+import CssIcon from "./CssIcon";
+import JsIcon from "./JsIcon";
+import ReactIcon from "./ReactIcon";
+import NextJsIcon from "./NextJsIcon";
+import GitIcon from "./GitIcon";
 import SectionSubtitle from "./SectionSubtitle";
-import Image from "next/image";
-
-import img01 from "../../public/images/img-01.jpg";
-import img02 from "../../public/images/img-02.jpg";
-import img03 from "../../public/images/img-03.jpg";
-import img04 from "../../public/images/hero.jpg";
-
 import classes from "../../styles/about.module.css";
 
 const About = () => {
@@ -66,46 +66,48 @@ const About = () => {
               <button className="primary__btn">
                 <Link href="#portfolio">Download CV</Link>
               </button>
-
-              {/* <button className="secondary__btn">
-                <Link href="#">Download CV</Link>
-              </button> */}
             </div>
           </Col>
-
-          {/* <Col lg="6">
-            <div
-              className={`${classes.about__img__gallery} d-flex gap-4 justify-content-end`}
-            >
-              <div className=" d-flex flex-column mb-3">
-                <div
-                  className={`${classes.about__img} ${classes.about__img__box}`}
-                >
-                  <Image src={img01} alt="about-img" />
-                </div>
-
-                <div
-                  className={`${classes.about__img} ${classes.about__img__box}`}
-                >
-                  <Image src={img02} alt="about-img" />
-                </div>
-              </div>
-
-              <div className=" d-flex flex-column mb-3">
-                <div
-                  className={`${classes.about__img} ${classes.about__img__box}`}
-                >
-                  <Image src={img03} alt="about-img" />
-                </div>
-
-                <div
-                  className={`${classes.about__img} ${classes.about__img__box}`}
-                >
-                  <Image src={img04} alt="about-img" />
-                </div>
-              </div>
+          <Col lg="6" className={`${classes.about__content}`}>
+          <section className={`${classes.tecnologies_container}`}>
+            <div className={`${classes.skill_container} ${classes.red_border}`}>
+              <HtmlIcon />
+              <BadgeAtom key="Html" className={`${classes.skills_badge}`}>
+                Html
+              </BadgeAtom>
             </div>
-          </Col> */}
+            <div className={`${classes.skill_container} ${classes.red_border}`}>
+              <CssIcon />
+              <BadgeAtom key="Css" className={`${classes.skills_badge}`}>
+                Css
+              </BadgeAtom>
+            </div>
+            <div className={`${classes.skill_container} ${classes.red_border}`}>
+              <JsIcon />
+              <BadgeAtom key="Javascript" className={`${classes.skills_badge}`}>
+                Javascript
+              </BadgeAtom>
+            </div>
+            <div className={`${classes.skill_container} ${classes.red_border}`}>
+              <ReactIcon />
+              <BadgeAtom key="React" className={`${classes.skills_badge}`}>
+                React
+              </BadgeAtom>
+            </div>
+            <div className={`${classes.skill_container} ${classes.red_border}`}>
+              <NextJsIcon />
+              <BadgeAtom key="Next.js" className={`${classes.skills_badge}`}>
+                Next.js
+              </BadgeAtom>
+            </div>
+            <div className={`${classes.skill_container} ${classes.red_border}`}>
+              <GitIcon />
+              <BadgeAtom key="Git" className={`${classes.skills_badge}`}>
+                Git
+              </BadgeAtom>
+            </div>
+          </section>
+      </Col>
         </Row>
       </Container>
     </section>

@@ -18,6 +18,50 @@
   width: 200px !important;
 } */
 
+.tecnologies_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: solid 1px red; */
+  text-align: center;
+  height: auto;
+}
+.tecnologies_container p {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-font-color);
+  font-size: 1.1rem;
+  font-weight: 800;
+  /* margin-top: 0.5rem; */
+  /* border: solid 1px red; */
+  margin-top: 0.5rem;
+}
+
+.next_container {
+  /* border: solid 5px green; */
+}
+
+.red_border {
+  /* border: solid 1px red; */
+}
+
+.skill_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  /* border: solid 1px blue; */
+}
+
+.skills_badge {
+  margin-top: 1rem;
+  margin-right: 0;
+}
+
 @media only screen and (max-width: 992px) {
   /* .about__img__gallery {
     justify-content: center !important;

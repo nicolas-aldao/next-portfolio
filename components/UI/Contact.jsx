@@ -42,22 +42,19 @@ const Contact = () => {
             </ul>
 
             <div className={`${classes.social__links}`}>
-              {/* <Link href="#">
-                <i className="ri-youtube-line"></i>
-              </Link> */}
-              <Link href="#">
+              <Link href="https://github.com/nicolas-aldao">
                 <i className="ri-github-fill"></i>
               </Link>
-              <Link href="#">
+              {/* <Link href="#">
                 <i className="ri-facebook-fill"></i>
-              </Link>
-              <Link href="#">
+              </Link> */}
+              <Link href="https://www.linkedin.com/in/nicolas-aldao/">
                 <i className="ri-linkedin-fill"></i>
               </Link>
-              <Link href="#">
+              {/* <Link href="">
                 <i className="ri-instagram-fill"></i>
-              </Link>
-              <Link href="#">
+              </Link> */}
+              <Link href="https://platzi.com/p/NicolasAldao/">
                 <PlatziIcon />
               </Link>
             </div>

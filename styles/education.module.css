@@ -2,26 +2,6 @@
   color: var(--primary-color);
 }
 
-/* .about__img {
-  padding: 10px;
-  background: var(--background-color);
-  margin-bottom: 20px;
-  border-radius: 5px;
-} */
-
-/* .about__img img {
-  width: 100% !important;
-  border-radius: 5px;
-} */
-
-/* .about__img__box {
-  width: 200px !important;
-} */
-
-/*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-
 .resume_item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
@@ -48,7 +28,7 @@
   margin-bottom: 10px;
 }
 
-.resume .resume_item ul {
+.resume_item .work_details {
   padding-left: 20px;
 }
 
@@ -74,19 +54,11 @@
 
 
 @media only screen and (max-width: 992px) {
-  /* .about__img__gallery {
-    justify-content: center !important;
-    margin-top: 50px;
-  } */
-
   .about__content h3 {
     font-size: 1.3rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  /* .about__img__box {
-    width: 150px !important;
-  } */
 }
 

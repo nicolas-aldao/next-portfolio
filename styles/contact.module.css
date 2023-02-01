@@ -21,10 +21,10 @@
 
 .info__item span i {
   color: var(--primary-color);
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   padding: 5px;
   border-radius: 5px;
-  background: var(--primary-color)38;
+  background: var(--primary-color) 38;
 }
 
 .social__links {
@@ -35,6 +35,10 @@
   color: var(--secondary-font-color) !important;
   font-size: 1.3rem !important;
   cursor: pointer;
+}
+
+.social__links i {
+  font-size: 1.6rem;
 }
 
 @media only screen and (max-width: 768px) {

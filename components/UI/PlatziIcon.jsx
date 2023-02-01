@@ -4,8 +4,8 @@ const PlatziIcon = () => {
   return (
     <svg
       fill="#a5a5a5"
-      width="19px"
-      height="19px"
+      width="23px"
+      height="23px"
       viewBox="0 0 24 24"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
