@@ -23,7 +23,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  /* border: solid 1px red; */
+  /* border: solid 1px orange; */
   text-align: center;
   height: auto;
 }
@@ -73,8 +73,11 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 400px) {
   /* .about__img__box {
     width: 150px !important;
   } */
+  .tecnologies_container {
+    width: 100vw;
+  }
 }
