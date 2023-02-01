@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import portfolioData from "../data/portfolio";
 import SectionSubtitle from "./SectionSubtitle";
 import PortfolioItem from "./PortfolioItem";
+import BadgeAtom from "./atoms/BadgeAtom";
 import HtmlIcon from "./HtmlIcon";
 import CssIcon from "./CssIcon";
 import JsIcon from "./JsIcon";
@@ -73,42 +74,43 @@ const Portfolio = () => {
         </Row>
         <Row>
           <section className={`${classes.tecnologies_container}`}>
-            <div>
-              <div className={`${classes.red_border}`}>
-                <HtmlIcon />
-              </div>
-              <p>Html</p>
+            <div className={`${classes.skill_container}`}>
+              {" "}
+              <HtmlIcon />
+              <BadgeAtom key="Html" className={`${classes.skills_badge}`}>
+                Html
+              </BadgeAtom>
             </div>
-            <div>
-              <div className={`${classes.red_border}`}>
-                <CssIcon />
-              </div>
-              <p>Css</p>
+            <div className={`${classes.skill_container}`}>
+              {" "}
+              <CssIcon />
+              <BadgeAtom key="Css" className={`${classes.skills_badge}`}>
+                Css
+              </BadgeAtom>
             </div>
-            <div>
-              <div className={`${classes.red_border}`}>
-                <JsIcon />
-              </div>
-              <p>Javascript</p>
+            <div className={`${classes.skill_container}`}>
+              <JsIcon />
+              <BadgeAtom key="Javascript" className={`${classes.skills_badge}`}>
+                Javascript
+              </BadgeAtom>
             </div>
-            <div>
-              <div className={`${classes.red_border}`}>
-                <ReactIcon />
-              </div>
-              <p>React</p>
+            <div className={`${classes.skill_container}`}>
+              <ReactIcon />
+              <BadgeAtom key="React" className={`${classes.skills_badge}`}>
+                React
+              </BadgeAtom>
             </div>
-            <div>
-              <div className={`${classes.next_container}`}>
-                <div className={`${classes.red_border}`}>
-                  <NextJsIcon />
-                </div>
-              </div>
+            <div className={`${classes.skill_container}`}>
+              <NextJsIcon />
+              <BadgeAtom key="Next.js" className={`${classes.skills_badge}`}>
+                Next.js
+              </BadgeAtom>
             </div>
-            <div>
-              <div className={`${classes.red_border}`}>
-                <GitIcon />
-              </div>
-              <p>Git</p>
+            <div className={`${classes.skill_container}`}>
+              <GitIcon />
+              <BadgeAtom key="Git" className={`${classes.skills_badge}`}>
+                Git
+              </BadgeAtom>
             </div>
           </section>
         </Row>
