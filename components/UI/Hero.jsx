@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import heroImg from "../../public/images/hero.jpg";
 import classes from "../../styles/hero.module.css";
+import PlatziIcon from './PlatziIcon';
 
 const Hero = () => {
   return (

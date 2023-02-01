@@ -4,6 +4,7 @@ import Services from "../components/UI/Services";
 import About from "../components/UI/About";
 import Portfolio from "../components/UI/Portfolio";
 import Testimonial from "../components/UI/Testimonial";
+import Education from "../components/UI/Education";
 import Contact from "../components/UI/Contact";
 import Head from "next/head";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <Portfolio />
       <Testimonial />
+      <Education />
       <Contact />
     </Fragment>
   );

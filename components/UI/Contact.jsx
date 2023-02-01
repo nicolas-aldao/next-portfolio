@@ -2,8 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
-import classes from "../../styles/contact.module.css";
 import Form from "./Form";
+import PlatziIcon from "./PlatziIcon";
+import classes from "../../styles/contact.module.css";
 
 const Contact = () => {
   return (
@@ -41,20 +42,23 @@ const Contact = () => {
             </ul>
 
             <div className={`${classes.social__links}`}>
-              <Link href="#">
+              {/* <Link href="#">
                 <i className="ri-youtube-line"></i>
+              </Link> */}
+              <Link href="#">
+                <i className="ri-github-fill"></i>
               </Link>
               <Link href="#">
-                <i className="ri-github-line"></i>
+                <i className="ri-facebook-fill"></i>
               </Link>
               <Link href="#">
-                <i className="ri-facebook-line"></i>
+                <i className="ri-linkedin-fill"></i>
               </Link>
               <Link href="#">
-                <i className="ri-linkedin-line"></i>
+                <i className="ri-instagram-fill"></i>
               </Link>
               <Link href="#">
-                <i className="ri-instagram-line"></i>
+                <PlatziIcon />
               </Link>
             </div>
           </Col>

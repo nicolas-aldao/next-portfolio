@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
-import SectionSubtitle from "./SectionSubtitle";
-import classes from "../../styles/portfolio.module.css";
-import PortfolioItem from "./PortfolioItem";
-
 import portfolioData from "../data/portfolio";
+import SectionSubtitle from "./SectionSubtitle";
+import PortfolioItem from "./PortfolioItem";
+import HtmlIcon from "./HtmlIcon";
+import CssIcon from "./CssIcon";
+import JsIcon from "./JsIcon";
+import ReactIcon from "./ReactIcon";
+import NextJsIcon from "./NextJsIcon";
+import GitIcon from "./GitIcon";
+import classes from "../../styles/portfolio.module.css";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("Mobile App");
@@ -65,6 +70,47 @@ const Portfolio = () => {
               <PortfolioItem item={item} />
             </Col>
           ))}
+        </Row>
+        <Row>
+          <section className={`${classes.tecnologies_container}`}>
+            <div>
+              <div className={`${classes.red_border}`}>
+                <HtmlIcon />
+              </div>
+              <p>Html</p>
+            </div>
+            <div>
+              <div className={`${classes.red_border}`}>
+                <CssIcon />
+              </div>
+              <p>Css</p>
+            </div>
+            <div>
+              <div className={`${classes.red_border}`}>
+                <JsIcon />
+              </div>
+              <p>Javascript</p>
+            </div>
+            <div>
+              <div className={`${classes.red_border}`}>
+                <ReactIcon />
+              </div>
+              <p>React</p>
+            </div>
+            <div>
+              <div className={`${classes.next_container}`}>
+                <div className={`${classes.red_border}`}>
+                  <NextJsIcon />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className={`${classes.red_border}`}>
+                <GitIcon />
+              </div>
+              <p>Git</p>
+            </div>
+          </section>
         </Row>
       </Container>
     </section>

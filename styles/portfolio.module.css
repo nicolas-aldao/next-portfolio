@@ -2,6 +2,35 @@
   color: var(--primary-color) !important;
 }
 
+.tecnologies_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: solid 1px red; */
+  text-align: center;
+  height: auto;
+}
+.tecnologies_container p {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-font-color);
+  font-size: 1.1rem;
+  font-weight: 800;
+  /* margin-top: 0.5rem; */
+  /* border: solid 1px red; */
+  margin-top: 0.5rem;
+}
+
+.next_container {
+  /* border: solid 5px green;
+  display: flex; */
+}
+
+.red_border {
+  /* border: solid 1px red; */
+}
+
 @media only screen and (max-width: 768px) {
   .tab__btns {
     text-align: left !important;
