@@ -1,3 +1,7 @@
+.testimonial__container {
+  max-width: 90vw;
+}
+
 .testimonial__item {
   padding: 0px 20px;
 }

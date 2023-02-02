@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import Hero from "../components/UI/Hero";
 import Services from "../components/UI/Services";
 import About from "../components/UI/About";
@@ -10,7 +9,7 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <Fragment>
+    <>
       <Head>
         <title>Nicolás Aldao</title>
       </Head>
@@ -21,6 +20,6 @@ export default function Home() {
       <Testimonial />
       <Education />
       <Contact />
-    </Fragment>
+    </>
   );
 }

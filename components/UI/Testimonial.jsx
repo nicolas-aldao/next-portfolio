@@ -18,7 +18,7 @@ const Testimonial = () => {
   };
   return (
     <section>
-      <Container>
+      <Container className={`${classes.testimonial__container}`}>
         <Row>
           <Col lg="6" md="6">
             <SectionSubtitle subtitle="Testimonials" />
