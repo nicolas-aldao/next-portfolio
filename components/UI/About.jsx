@@ -15,9 +15,9 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Row>
+        <Row  className={`${classes.about__row}`}>
           <Col lg="6" className={`${classes.about__content}`}>
-            <SectionSubtitle subtitle="About me" />
+            <SectionSubtitle subtitle="About me" className={`${classes.about__subtitle}`}/>
             <h3 className="mt-4">I&apos;m here</h3>
             <h3 className="mb-4">to help your next project</h3>
             <p>
