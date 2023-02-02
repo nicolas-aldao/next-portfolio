@@ -72,13 +72,21 @@
   margin-right: 0;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 401px) and (max-width: 1200px) {
+  .tecnologies_container {
+    align-self: center;
+    border: solid 1px red;
+  }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 400px) {
   /* .about__img__gallery {
     justify-content: center !important;
     margin-top: 50px;
   } */
   .about__content {
     align-items: center;
+    /* justify-content: center; */
   }
 
   .about__row {
@@ -88,10 +96,13 @@
   .about__content h3 {
     font-size: 1.3rem;
   }
-}
 
-@media only screen and (max-width: 400px) {
+  .skill_container {
+    margin-right: 0;
+  }
+
   .tecnologies_container {
-    width: 100vw;
+    /* align-self: center; */
+    /* border: solid 1px red; */
   }
 }
