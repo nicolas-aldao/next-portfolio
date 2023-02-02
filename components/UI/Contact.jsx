@@ -33,27 +33,15 @@ const Contact = () => {
                 </span>
                 <p>nicolasaldao@live.com</p>
               </li>
-              {/* <li className={`${classes.info__item}`}>
-                <span>
-                  <i className="ri-phone-line"></i>
-                </span>
-                <p>+088123456789</p>
-              </li> */}
             </ul>
 
             <div className={`${classes.social__links}`}>
               <Link href="https://github.com/nicolas-aldao">
                 <i className="ri-github-fill"></i>
               </Link>
-              {/* <Link href="#">
-                <i className="ri-facebook-fill"></i>
-              </Link> */}
               <Link href="https://www.linkedin.com/in/nicolas-aldao/">
                 <i className="ri-linkedin-fill"></i>
               </Link>
-              {/* <Link href="">
-                <i className="ri-instagram-fill"></i>
-              </Link> */}
               <Link href="https://platzi.com/p/NicolasAldao/">
                 <PlatziIcon />
               </Link>

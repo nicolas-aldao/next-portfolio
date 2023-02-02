@@ -19,66 +19,6 @@
   border-radius: 50px 5px 5px 5px;
 }
 
-/* .hero__skills {
-  text-align: left;
-  width: 130px;
-  padding: 10px 20px;
-  position: absolute;
-  top: 50%;
-  left: 22%;
-  transform: translateY(-50%);
-  border-radius: 5px;
-  background: var(--four-color);
-  z-index: 10;
-  border: solid 1px var(--primary-color);
-}
-
-.hero__skills h6 {
-  background: inherit;
-  color: var(--primary-font-color);
-}
-
-.hero__skills span i {
-  color: var(--primary-color);
-  background: var(--four-color);
-}
-
-.hero__skills span {
-  background: var(--four-color);
-} */
-
-/* .hero__experience {
-  width: 150px;
-  position: absolute;
-  bottom: -10%;
-  right: -5%;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background: var(--four-color);
-  z-index: 10;
-  opacity: 1 !important;
-  border: solid 1px var(--primary-color);
-}
-
-.hero__experience span,
-.hero__experience h5,
-.hero__experience h6 {
-  background: inherit;
-}
-
-.hero__experience h6 {
-  margin-bottom: 5px;
-  font-weight: 400;
-  font-size: 0.8rem;
-}
-
-.hero__experience span i {
-  padding: 5px;
-  color: inherit;
-  background: inherit;
-  border-radius: 5px;
-} */
-
 @media only screen and (max-width: 992px) {
   .hero__content h2 {
     font-size: 1.5rem !important;
@@ -89,8 +29,6 @@
   }
 
   .hero__img img {
-    /* width: 250px !important;
-    height: 250px !important; */
   }
 
   .hero__content {

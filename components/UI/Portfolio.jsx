@@ -72,46 +72,6 @@ const Portfolio = () => {
             </Col>
           ))}
         </Row>
-        {/* <Row>
-          <section className={`${classes.tecnologies_container}`}>
-            <div className={`${classes.skill_container} ${classes.red_border}`}>
-              <HtmlIcon />
-              <BadgeAtom key="Html" className={`${classes.skills_badge}`}>
-                Html
-              </BadgeAtom>
-            </div>
-            <div className={`${classes.skill_container} ${classes.red_border}`}>
-              <CssIcon />
-              <BadgeAtom key="Css" className={`${classes.skills_badge}`}>
-                Css
-              </BadgeAtom>
-            </div>
-            <div className={`${classes.skill_container} ${classes.red_border}`}>
-              <JsIcon />
-              <BadgeAtom key="Javascript" className={`${classes.skills_badge}`}>
-                Javascript
-              </BadgeAtom>
-            </div>
-            <div className={`${classes.skill_container} ${classes.red_border}`}>
-              <ReactIcon />
-              <BadgeAtom key="React" className={`${classes.skills_badge}`}>
-                React
-              </BadgeAtom>
-            </div>
-            <div className={`${classes.skill_container} ${classes.red_border}`}>
-              <NextJsIcon />
-              <BadgeAtom key="Next.js" className={`${classes.skills_badge}`}>
-                Next.js
-              </BadgeAtom>
-            </div>
-            <div className={`${classes.skill_container} ${classes.red_border}`}>
-              <GitIcon />
-              <BadgeAtom key="Git" className={`${classes.skills_badge}`}>
-                Git
-              </BadgeAtom>
-            </div>
-          </section>
-        </Row> */}
       </Container>
     </section>
   );

@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
 import SectionSubtitle from "./SectionSubtitle";
-import network from "../../public/images/Connected world.png";
 import Slider from "react-slick";
 import classes from "../../styles/testimonial.module.css";
 
@@ -21,10 +20,6 @@ const Testimonial = () => {
     <section>
       <Container>
         <Row>
-          {/* <Col lg="6" md="6" className={`${classes.testimonial__img}`}>
-            <Image alt="network-img" src={network} width="400" height="400" />
-          </Col> */}
-
           <Col lg="6" md="6">
             <SectionSubtitle subtitle="Testimonials" />
             <h4 className="mt-4 mb-5">What my client says</h4>

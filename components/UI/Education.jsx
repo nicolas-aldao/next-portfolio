@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/education.module.css";
 

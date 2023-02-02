@@ -12,7 +12,6 @@ const Hero = () => {
     <section className={`${classes.hero}`}>
       <Container>
         <Row>
-          {/* ========== hero content ============= */}
           <Col lg="6" md="6">
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hey!" />
@@ -27,52 +26,12 @@ const Hero = () => {
                 <button className="primary__btn">
                   <Link href="#">Download CV</Link>
                 </button>
-
-                {/* <button className="secondary__btn">
-                  <Link href="#">Download CV</Link>
-                </button> */}
               </div>
             </div>
           </Col>
-
-          {/* ========== hero img ============= */}
           <Col lg="6" md="6">
             <div className={`${classes.hero__img} text-end`}>
               <Image alt="hero-image" src={heroImg} width="400" height="400" />
-
-              {/* <div className={`${classes.hero__skills} bg-white`}>
-                <h6 className="bg-transparent">Skills</h6>
-                <span className="bg-transparent">
-                  <i className="ri-bar-chart-line bg-transparent"></i>
-                </span>
-                <span className="bg-transparent">
-                  <i className="ri-bar-chart-line bg-transparent"></i>
-                </span>
-                <span className="bg-transparent">
-                  <i className="ri-bar-chart-line bg-transparent"></i>
-                </span>
-                <span className="bg-transparent">
-                  <i className="ri-bar-chart-line bg-transparent"></i>
-                </span>
-                <span className="bg-transparent">
-                  <i className="ri-bar-chart-line bg-transparent"></i>
-                </span>
-                <span className="bg-transparent">
-                  <i className="ri-bar-chart-line bg-transparent"></i>
-                </span>
-              </div> */}
-
-              {/* <div
-                className={`${classes.hero__experience} d-flex align-items-center gap-3 bg-white`}
-              >
-                <span className="bg-transparent">
-                  <i className="ri-lightbulb-flash-line bg-transparent"></i>
-                </span>
-                <div className="bg-transparent">
-                  <h6>Experience</h6>
-                  <h5 className="mb-0">4 Years</h5>
-                </div>
-              </div> */}
             </div>
           </Col>
         </Row>
