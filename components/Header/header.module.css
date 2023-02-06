@@ -21,7 +21,6 @@
 
 .logoImg {
   display: flex;
-  /* border: solid 1px red; */
 }
 
 .nav__menu {
@@ -47,26 +46,6 @@
   color: var(--primary-color);
 }
 
-/* .nav__right p {
-  color: var(--primary-color);
-  margin-left: 20px;
-  position: relative;
-}
-.nav__right i {
-  color: var(--secondary-font-color);
-}
-
-.nav__right p::before {
-  content: "";
-  position: absolute;
-  top: 25%;
-  left: -20px;
-  width: 1px;
-  height: 14px;
-  background: var(--secondary-font-color);
-  color: var(--secondary-font-color);
-} */
-
 .header__shrink {
   position: sticky;
   top: 0;
@@ -88,8 +67,6 @@
 .mobile__menu {
   display: none;
 }
-
-/* ========== make it responsive ========= */
 
 @media only screen and (max-width: 992px) {
   .navigation {

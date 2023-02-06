@@ -3,13 +3,6 @@ import { Container, Row, Col } from "reactstrap";
 import portfolioData from "../data/portfolio";
 import SectionSubtitle from "./SectionSubtitle";
 import PortfolioItem from "./PortfolioItem";
-import BadgeAtom from "./atoms/BadgeAtom";
-import HtmlIcon from "./HtmlIcon";
-import CssIcon from "./CssIcon";
-import JsIcon from "./JsIcon";
-import ReactIcon from "./ReactIcon";
-import NextJsIcon from "./NextJsIcon";
-import GitIcon from "./GitIcon";
 import classes from "../../styles/portfolio.module.css";
 
 const Portfolio = () => {
@@ -48,9 +41,9 @@ const Portfolio = () => {
           <Col lg="6" md="6">
             <div className={`${classes.tab__btns} text-end`}>
               <button
-                className={` ${
+                className={`${
                   filter === "Mobile App" ? active : ""
-                } secondary__btn text-white`}
+                } secondary__btn`}
                 onClick={() => setFilter("Mobile App")}
               >
                 Mobile App
@@ -58,7 +51,7 @@ const Portfolio = () => {
               <button
                 className={`${
                   filter === "Web Design" ? active : ""
-                } secondary__btn text-white`}
+                } secondary__btn`}
                 onClick={() => setFilter("Web Design")}
               >
                 Web Design
