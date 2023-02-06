@@ -41,6 +41,11 @@
   font-size: 1.6rem;
 }
 
+.social__links span {
+  position: relative;
+  top: -0.1rem;
+}
+
 @media only screen and (max-width: 768px) {
   .social__links {
     margin-bottom: 30px;

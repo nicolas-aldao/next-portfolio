@@ -43,7 +43,9 @@ const Contact = () => {
                 <i className="ri-linkedin-fill"></i>
               </Link>
               <Link href="https://platzi.com/p/NicolasAldao/">
-                <PlatziIcon />
+                <span>
+                  <PlatziIcon />
+                </span>
               </Link>
             </div>
           </Col>
