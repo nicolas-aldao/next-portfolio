@@ -8,7 +8,7 @@ import BadgeAtom from "../../components/UI/atoms/BadgeAtom";
 import portfolioData from "../../components/data/portfolio";
 import SectionSubtitle from "../../components/UI/SectionSubtitle";
 import classes from "../../styles/projectId.module.css";
-import Button from "../../components/UI/atoms/Button";
+import LinkButton from "../../components/UI/atoms/LinkButton";
 
 const Detail = () => {
   const { query } = useRouter();
@@ -45,8 +45,8 @@ const Detail = () => {
               labore est reprehenderit, exercitationem corrupti earum deleniti!
             </p>
             <Row className={`${classes.button__container}`}>
-              <Button text="Demo" url={"www.google.com"} isExternalUrl className={`${classes.buttons}`}/>
-              <Button text="Repository" url={"www.google.com"} isExternalUrl className={`${classes.buttons}`}/>
+              <LinkButton text="Demo" url="http://www.google.com" isExternalUrl className={`${classes.buttons}`}/>
+              <LinkButton text="Repository" url="http://www.google.com" isExternalUrl className={`${classes.buttons}`}/>
             </Row>
           </Col>
           <Col lg="6" md="6" className={`${classes.testimonial__container}`}>

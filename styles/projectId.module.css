@@ -50,7 +50,7 @@
   color: var(--primary-color);
 }
 
-.buttons {
+.button__container .buttons {
   margin: 10px;
 }
 
