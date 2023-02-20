@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import Link from "next/link";
 import BadgeAtom from "./atoms/BadgeAtom";
+import DownloadCVButton from "./atoms/DownloadCVButton";
 import HtmlIcon from "./HtmlIcon";
 import CssIcon from "./CssIcon";
 import JsIcon from "./JsIcon";
@@ -15,9 +15,12 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Row  className={`${classes.about__row}`}>
+        <Row className={`${classes.about__row}`}>
           <Col lg="6" className={`${classes.about__content}`}>
-            <SectionSubtitle subtitle="About me" className={`${classes.about__subtitle}`}/>
+            <SectionSubtitle
+              subtitle="About me"
+              className={`${classes.about__subtitle}`}
+            />
             <h3 className="mt-4">I&apos;m here to help your next project</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
@@ -60,12 +63,7 @@ const About = () => {
                 </h6>
               </div>
             </div>
-
-            <div className="mt-5">
-              <button className="primary__btn">
-                <Link href="#portfolio">Download CV</Link>
-              </button>
-            </div>
+            <DownloadCVButton />
           </Col>
           <Col lg="6" xs="10" className={`${classes.about__content}`}>
             <section className={`${classes.tecnologies_container}`}>

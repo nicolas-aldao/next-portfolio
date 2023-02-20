@@ -21,7 +21,7 @@ const PortfolioItem = (props) => {
 
       <div className={`${classes.portfolio__live} bg-transparent`}>
         <button className="primary__btn">
-          <Link href={liveUrl}>Demo</Link>
+          <Link href={liveUrl}>Details</Link>
         </button>
       </div>
     </div>

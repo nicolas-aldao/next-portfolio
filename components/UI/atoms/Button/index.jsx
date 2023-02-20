@@ -2,14 +2,10 @@ import React from "react";
 import Link from "next/link";
 import classes from "./styles.module.css";
 
-const Button = ({ url, text, isExternalUrl }) => {
+const Button = ({ text, className, onClick }) => {
   return (
-    <button className={`primary__btn ${classes.atom__btn}`}>
-      {isExternalUrl ? (
-        <a href="https://www.google.com">{text}</a>
-      ) : (
-        <Link href={url}>{text}</Link>
-      )}
+    <button className={`primary__btn ${classes.atom__btn} ${className}`} onClick={onClick}>
+      {text}
     </button>
   );
 };

@@ -50,6 +50,10 @@
   color: var(--primary-color);
 }
 
+.buttons {
+  margin: 10px;
+}
+
 @media only screen and (max-width: 768px) {
   .testimonial__img img {
     width: 300px !important;
@@ -65,10 +69,15 @@
 @media only screen and (max-width: 767px) {
   .button__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   .testimonial__container {
     margin: auto;
     max-width: 95vw;
+  }
+  .buttons {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
   }
 }

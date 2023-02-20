@@ -45,8 +45,8 @@ const Detail = () => {
               labore est reprehenderit, exercitationem corrupti earum deleniti!
             </p>
             <Row className={`${classes.button__container}`}>
-              <Button text="Demo" url={"www.google.com"} isExternalUrl/>
-              <Button text="Repository" url={"www.google.com"} isExternalUrl/>
+              <Button text="Demo" url={"www.google.com"} isExternalUrl className={`${classes.buttons}`}/>
+              <Button text="Repository" url={"www.google.com"} isExternalUrl className={`${classes.buttons}`}/>
             </Row>
           </Col>
           <Col lg="6" md="6" className={`${classes.testimonial__container}`}>

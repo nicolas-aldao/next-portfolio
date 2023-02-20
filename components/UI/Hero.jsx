@@ -2,10 +2,9 @@ import React from "react";
 import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
-import Link from "next/link";
+import DownloadCVButton from "./atoms/DownloadCVButton";
 import heroImg from "../../public/images/hero.jpg";
 import classes from "../../styles/hero.module.css";
-import PlatziIcon from './PlatziIcon';
 
 const Hero = () => {
   return (
@@ -23,9 +22,7 @@ const Hero = () => {
                 quos!
               </p>
               <div className="mt-5">
-                <button className="primary__btn">
-                  <Link href="#">Download CV</Link>
-                </button>
+                <DownloadCVButton/>
               </div>
             </div>
           </Col>
