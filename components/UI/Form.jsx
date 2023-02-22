@@ -9,6 +9,9 @@ const Form = () => {
   const [message, setMessage] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -21,10 +24,10 @@ const Form = () => {
 
     emailjs
       .send(
-        "service_j0ivhch",
-        "template_f90vmea",
+        SERVICE_ID,
+        TEMPLATE_ID,
         templateParams,
-        "wMoleMKF4oEvpEcOM"
+        PUBLIC_KEY
       )
       .then(
         (response) => {
