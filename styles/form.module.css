@@ -4,7 +4,7 @@
   border: solid 1.5px var(--primary-color);
   outline: none;
   background: var(--background-color);
-  color: var(--primary-font-color);
+  color: var(--secondary-font-color);
   padding: 15px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -18,4 +18,31 @@
 
 .form button {
   color: var(--primary-color);
+}
+
+.modal__container {
+  /* border: solid 5px red !important; */
+}
+
+.spinner {
+  position: relative;
+  top: 40%;
+  left: 40%;
+  z-index: 5;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border-left-color: var(--primary-color);
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
