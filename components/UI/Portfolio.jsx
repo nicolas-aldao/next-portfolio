@@ -44,7 +44,7 @@ const Portfolio = () => {
             <h4 className="mt-4">Some of my works</h4>
           </Col>
 
-          <Col lg="6" md="6">
+          <Col lg="6" md="12">
             <div className={`${classes.tab__btns} text-end`}>
               <button
                 className={`${filter === "All" ? active : ""} secondary__btn`}
@@ -72,7 +72,7 @@ const Portfolio = () => {
           </Col>
 
           {data?.map((item) => (
-            <Col lg="4" md="4" sm="6" key={item.id}>
+            <Col lg="4" md="6" sm="6" key={item.id}>
               <PortfolioItem item={item} />
             </Col>
           ))}

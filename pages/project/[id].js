@@ -36,7 +36,7 @@ const Detail = () => {
     <section id="projectId" className={`${classes.projectId}`}>
       <Container>
         <Row>
-          <Col lg="6" md="6">
+          <Col lg="6" md="6" className="mb-4">
             <SectionSubtitle subtitle="Project details" />
             <h3 className="mt-4 mb-4">{data?.title}</h3>
             <p>
