@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import Link from "next/link";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
+import Carrousel from "../../components/UI/Carrousel";
 import BadgeAtom from "../../components/UI/atoms/BadgeAtom";
 import portfolioData from "../../components/data/portfolio";
 import SectionSubtitle from "../../components/UI/SectionSubtitle";
-import classes from "../../styles/projectId.module.css";
 import LinkButton from "../../components/UI/atoms/LinkButton";
+import classes from "../../styles/projectId.module.css";
 
 const Detail = () => {
   const { query } = useRouter();
@@ -40,13 +40,21 @@ const Detail = () => {
             <SectionSubtitle subtitle="Project details" />
             <h3 className="mt-4 mb-4">{data?.title}</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              beatae ratione iusto cum. Doloremque suscipit eius provident error
-              labore est reprehenderit, exercitationem corrupti earum deleniti!
+              {data?.description}
             </p>
             <Row className={`${classes.button__container}`}>
-              <LinkButton text="Demo" url="http://www.google.com" isExternalUrl className={`${classes.buttons}`}/>
-              <LinkButton text="Repository" url="http://www.google.com" isExternalUrl className={`${classes.buttons}`}/>
+              <LinkButton
+                text="Demo"
+                url={data?.deployUrl}
+                isExternalUrl
+                className={`${classes.buttons}`}
+              />
+              <LinkButton
+                text="Repository"
+                url={data?.repoUrl}
+                isExternalUrl
+                className={`${classes.buttons}`}
+              />
             </Row>
           </Col>
           <Col lg="6" md="6" className={`${classes.testimonial__container}`}>
@@ -58,41 +66,20 @@ const Detail = () => {
                   ))}
                 </ul>
                 <Slider {...settings}>
-                  <div className={`${classes.testimonial__item}`}>
-                    <div className={`${classes.testimonial__client}`}>
-                      <Image
-                        alt="client-img"
-                        src={data?.img}
-                        width="550"
-                        height="350"
-                        className=" rounded-2"
-                      />
+                  {data?.img?.map((image) => (
+                    <div key={image} className={`${classes.testimonial__item}`}>
+                      <div className={`${classes.testimonial__client}`}>
+                        <Image
+                          alt="client-img"
+                          src={image}
+                          width="550"
+                          height="350"
+                          className="rounded-2"
+                          objectFit="cover"
+                        />
+                      </div>
                     </div>
-                  </div>
-
-                  <div className={`${classes.testimonial__item}`}>
-                    <div className={`${classes.testimonial__client}`}>
-                      <Image
-                        alt="client-img"
-                        src="/images/hero.jpg"
-                        width="550"
-                        height="350"
-                        className=" rounded-2"
-                      />
-                    </div>
-                  </div>
-
-                  <div className={`${classes.testimonial__item}`}>
-                    <div className={`${classes.testimonial__client}`}>
-                      <Image
-                        alt="client-img"
-                        src="/images/hero.jpg"
-                        width="550"
-                        height="350"
-                        className=" rounded-2"
-                      />
-                    </div>
-                  </div>
+                  ))}
                 </Slider>
               </>
             ) : null}

@@ -6,7 +6,7 @@ import PortfolioItem from "./PortfolioItem";
 import classes from "../../styles/portfolio.module.css";
 
 const Portfolio = () => {
-  const [filter, setFilter] = useState("Mobile App");
+  const [filter, setFilter] = useState("All");
   const [data, setData] = useState();
 
   useEffect(() => {
@@ -25,6 +25,12 @@ const Portfolio = () => {
 
       setData(filteredData);
     }
+
+    if (filter === "All") {
+      const filteredData = portfolioData;
+
+      setData(filteredData);
+    }
   }, [filter]);
 
   const active = `${classes.tab__btn__active}`;
@@ -40,6 +46,12 @@ const Portfolio = () => {
 
           <Col lg="6" md="6">
             <div className={`${classes.tab__btns} text-end`}>
+              <button
+                className={`${filter === "All" ? active : ""} secondary__btn`}
+                onClick={() => setFilter("All")}
+              >
+                All
+              </button>
               <button
                 className={`${
                   filter === "Mobile App" ? active : ""

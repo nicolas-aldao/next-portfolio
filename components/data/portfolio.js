@@ -1,82 +1,37 @@
 const portfolio = [
   {
-    id: "1",
-    title: "Transportation Mobile App",
-    img: "/images/portfolio-01.jpg",
-    category: "Mobile App",
-    keyword: ["Mobile", "App", "UI-UX"],
-    liveUrl: "/project/1",
-  },
-
-  {
-    id: "2",
-    title: "Workout Tracker App",
-    img: "/images/portfolio-02.jpg",
-    category: "Mobile App",
-    keyword: ["Mobile", "App", "UI-UX"],
-    liveUrl: "/project/2",
-  },
-
-  {
-    id: "3",
-    title: "Fashion Shopping App",
-    img: "/images/portfolio-03.jpg",
-    category: "Mobile App",
-    keyword: ["Mobile", "App", "UI-UX"],
-    liveUrl: "/project/3",
-  },
-
-  {
-    id: "4",
-    title: "Fashion Shopping App",
-    img: "/images/portfolio-04.jpg",
-    category: "Mobile App",
-    keyword: ["Mobile", "App", "UI-UX"],
-    liveUrl: "/project/4",
-  },
-
-  {
-    id: "5",
-    title: "Furniture Shopping App",
-    img: "/images/portfolio-05.jpg",
-    category: "Mobile App",
-    keyword: ["Mobile", "App", "UI-UX"],
-    liveUrl: "/project/5",
-  },
-
-  {
-    id: "6",
-    title: "Travel  App",
-    img: "/images/portfolio-06.jpg",
-    category: "Mobile App",
-    keyword: ["Mobile", "App", "UI-UX"],
-    liveUrl: "/project/6",
-  },
-
-  {
     id: "7",
-    title: "Portfolio Website",
-    img: "/images/portfolio-07.png",
-    category: "Web Design",
-    keyword: ["Web", "Web design", "UI-UX"],
+    title: "Avocado Store",
+    description: "This is an app where you can buy avocados.",
+    img: ["/images/portfolio-7.png"],
+    category: "Mobile App",
+    keyword: ["Web design", "React", "Next.js", "CSS Modules"],
+    repoUrl: "https://github.com/nicolas-aldao/avocado-app",
+    deployUrl: "https://avocado-app-bice.vercel.app/",
     liveUrl: "/project/7",
   },
-
   {
     id: "8",
-    title: "Restaurant Website",
-    img: "/images/portfolio-08.png",
+    title: "TODO List",
+    description:
+      "This is a TODO list app. It uses local storage to save the data, in other words if you delete the browser's cache, the data will be lost.",
+    img: ["/images/portfolio-8.png"],
     category: "Web Design",
-    keyword: ["Web", "Web design", "UI-UX"],
+    keyword: ["React", "Local Storage", "Context"],
+    repoUrl: "https://github.com/nicolas-aldao/todo-app",
+    deployUrl: "https://nicolas-aldao.github.io/todo-app",
     liveUrl: "/project/8",
   },
-
   {
     id: "9",
-    title: "Agency Website",
-    img: "/images/portfolio-09.png",
+    title: "Grid Layout Concept Art: Beatles",
+    description:
+      "This is a concept art for a grid layout. I used the Beatles as an example.",
+    img: ["/images/portfolio-9.png", "/images/portfolio-01.jpg"],
     category: "Web Design",
-    keyword: ["Web", "Web design", "UI-UX"],
+    keyword: ["Web design", "HTML", "CSS", "Grid Layout"],
+    repoUrl: "https://github.com/nicolas-aldao/grid-layout-concept-art",
+    deployUrl: "https://nicolas-aldao.github.io/grid-layout-concept-art/",
     liveUrl: "/project/9",
   },
 ];

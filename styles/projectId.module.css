@@ -81,3 +81,11 @@
     margin-bottom: 30px;
   }
 }
+
+.test div,
+.test h3,
+.test p,
+.test a span {
+  background-color: transparent;
+  border-radius: 10px;
+}

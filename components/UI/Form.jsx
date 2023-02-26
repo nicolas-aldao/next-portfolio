@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/form.module.css";
 
 const Form = () => {
@@ -45,6 +46,7 @@ const Form = () => {
   };
   return (
     <>
+      <SectionSubtitle subtitle="Message me" className='mb-4'/>
       {isLoading && <div className={`${classes.spinner}`}></div>}
       <form className={`${classes.form}`} onSubmit={submitHandler}>
         <div className={`${classes.form__group}`}>
