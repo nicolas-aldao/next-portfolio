@@ -3,7 +3,7 @@ import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
 import DownloadCVButton from "./atoms/DownloadCVButton";
-import heroImg from "../../public/images/hero.jpg";
+import heroImg from "../../public/images/me.png";
 import classes from "../../styles/hero.module.css";
 
 const Hero = () => {
@@ -28,7 +28,7 @@ const Hero = () => {
           </Col>
           <Col lg="6" md="6">
             <div className={`${classes.hero__img} text-end`}>
-              <Image alt="hero-image" src={heroImg} width="400" height="400" />
+              <Image alt="hero-image" src={heroImg} width="300" height="350" />
             </div>
           </Col>
         </Row>

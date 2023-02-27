@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
-import portfolioData from "../data/portfolio";
-import SectionSubtitle from "./SectionSubtitle";
-import PortfolioItem from "./PortfolioItem";
-import classes from "../../styles/portfolio.module.css";
+import portfolioData from "../../data/portfolio";
+import SectionSubtitle from "../SectionSubtitle";
+import PortfolioItem from "../PortfolioItem";
+import classes from "./portfolio.module.css";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("All");
@@ -45,7 +45,7 @@ const Portfolio = () => {
           </Col>
 
           <Col lg="6" md="12">
-            <div className={`${classes.tab__btns} text-end`}>
+            <div className={`${classes.tab__btns}`}>
               <button
                 className={`${filter === "All" ? active : ""} secondary__btn`}
                 onClick={() => setFilter("All")}

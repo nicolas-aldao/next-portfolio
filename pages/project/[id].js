@@ -8,7 +8,7 @@ import BadgeAtom from "../../components/UI/atoms/BadgeAtom";
 import portfolioData from "../../components/data/portfolio";
 import SectionSubtitle from "../../components/UI/SectionSubtitle";
 import LinkButton from "../../components/UI/atoms/LinkButton";
-import classes from "../../styles/projectId.module.css";
+import classes from "./projectId.module.css";
 
 const Detail = () => {
   const { query } = useRouter();
@@ -60,7 +60,7 @@ const Detail = () => {
           <Col lg="6" md="6" className={`${classes.testimonial__container}`}>
             {data ? (
               <>
-                <ul>
+                <ul className={`${classes.badgeAtomList}`}>
                   {data?.keyword?.map((word) => (
                     <BadgeAtom key={word}>{word}</BadgeAtom>
                   ))}

@@ -2,7 +2,7 @@
   padding-bottom: 60px;
 }
 
-.social__links {
+/* .social__links {
   display: flex;
   margin-top: 30px;
   align-items: center;
@@ -10,22 +10,22 @@
   color: var(--secondary-font-color) !important;
   font-size: 1.3rem !important;
   cursor: pointer;
-}
+} */
 
-.social__links i {
+/* .social__links i {
   font-size: 1.6rem;
 }
 
 .social__links span {
   position: relative;
   top: -0.1rem;
-}
+} */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .social__links {
     margin-bottom: 30px;
   }
-}
+} */
 
 .testimonial__container {
   max-width: 100vw;
@@ -82,10 +82,14 @@
   }
 }
 
-.test div,
+/* .test div,
 .test h3,
 .test p,
 .test a span {
   background-color: transparent;
   border-radius: 10px;
+} */
+
+.badgeAtomList {
+  margin-bottom: 25px;
 }

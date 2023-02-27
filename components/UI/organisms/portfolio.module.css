@@ -3,7 +3,11 @@
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+.tab__btns {
+  text-align: right;
+}
+
+@media only screen and (max-width: 992px) {
   .tab__btns {
     text-align: left !important;
     margin-top: -20px !important;
