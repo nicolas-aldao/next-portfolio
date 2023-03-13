@@ -42,8 +42,11 @@ const Portfolio = () => {
           <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle="My portfolio" />
             <h4 className="mt-4">Some of my works</h4>
+            <p>
+              Use &quot;All&quot;, &quot;Mobile App&quot; or &quot;Web
+              Design&quot; to filter what projects you want to browse
+            </p>
           </Col>
-
           <Col lg="6" md="12">
             <div className={`${classes.tab__btns}`}>
               <button

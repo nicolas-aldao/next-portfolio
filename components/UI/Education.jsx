@@ -16,7 +16,7 @@ const Education = () => {
                   subtitle="Education and Courses"
                   className="mb-4"
                 />
-                {education_work[0].education.map((educationItem) => (
+                {education_work[0].education.slice(0).reverse().map((educationItem) => (
                   <div
                     className={`${classes.resume_item}`}
                     key={educationItem.id}
@@ -46,7 +46,7 @@ const Education = () => {
                   subtitle="Professional Experience"
                   className="mb-4"
                 />
-                {education_work[0].work.map((workItem) => (
+                {education_work[0].work.slice(0).reverse().map((workItem) => (
                   <div className={`${classes.resume_item}`} key={workItem.id}>
                     <h4>{workItem.role}</h4>
                     <h5>{workItem.time}</h5>
