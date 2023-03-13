@@ -19,7 +19,7 @@
   margin-bottom: 10px;
 }
 
-.resume .resume_item h5 {
+.resume_item h5 {
   font-size: 16px;
   background: #f7f7f7;
   padding: 5px 15px;
@@ -31,6 +31,10 @@
 .resume_item .work_details {
   padding-left: 20px;
 }
+
+/* .work_details ul li {
+  color: var(--secondary-font-color);
+} */
 
 .resume .resume_item ul li {
   padding-bottom: 10px;

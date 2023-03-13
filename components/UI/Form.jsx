@@ -10,6 +10,7 @@ const Form = () => {
   const [message, setMessage] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [formStatus, setFormStatus] = useState("");
   const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
   const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
   const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
@@ -23,30 +24,27 @@ const Form = () => {
       message: message,
     };
 
-    emailjs
-      .send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        templateParams,
-        PUBLIC_KEY
-      )
-      .then(
-        (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          setName("");
-          setEmail("");
-          setMessage("");
-          setIsLoading(false);
-          setShowModal(true);
-        },
-        (err) => {
-          console.log("FAILED...", err);
-        }
-      );
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(
+      (response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        setName("");
+        setEmail("");
+        setMessage("");
+        setFormStatus("success");
+        setIsLoading(false);
+        setShowModal(true);
+      },
+      (err) => {
+        console.log("FAILED...", err);
+        setFormStatus("failed");
+        setIsLoading(false);
+        setShowModal(true);
+      }
+    );
   };
   return (
     <>
-      <SectionSubtitle subtitle="Message me" className='mb-4'/>
+      <SectionSubtitle subtitle="Message me" className="mb-4" />
       {isLoading && <div className={`${classes.spinner}`}></div>}
       <form className={`${classes.form}`} onSubmit={submitHandler}>
         <div className={`${classes.form__group}`}>
@@ -92,15 +90,20 @@ const Form = () => {
           className={`${classes.modal__container}`}
         >
           <ModalHeader>Hey!</ModalHeader>
-          <ModalBody>The form was submitted!</ModalBody>
+          <ModalBody>
+            {formStatus == "success"
+              ? "The form was submitted!"
+              : "Something went wrong"}
+          </ModalBody>
           <ModalFooter style={{ borderTop: "solid 1px white" }}>
             <Button
               style={{ backgroundColor: "#9a894f" }}
               onClick={() => {
                 setShowModal(false);
+                setFormStatus("");
               }}
             >
-              Great!
+              {formStatus == "success" ? "Great!" : "Ops..."}
             </Button>
           </ModalFooter>
         </Modal>

@@ -29,6 +29,13 @@ const Education = () => {
                     <div className={`${classes.work_details}`}>
                       <p>{educationItem.description}</p>
                     </div>
+                    <div className={`${classes.work_details}`}>
+                      <ul>
+                        {educationItem.tasks.map((taskItem) => (
+                          <li key={taskItem.length}>{taskItem}</li>
+                        ))}
+                      </ul>
+                    </div>
                   </div>
                 ))}
               </div>
@@ -47,9 +54,11 @@ const Education = () => {
                       <em>{workItem.company}</em>
                     </p>
                     <div className={`${classes.work_details}`}>
-                      {workItem.tasks.map((taskItem) => (
-                        <p key={taskItem.length}>{taskItem}</p>
-                      ))}
+                      <ul>
+                        {workItem.tasks.map((taskItem) => (
+                          <li key={taskItem.length}>{taskItem}</li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 ))}

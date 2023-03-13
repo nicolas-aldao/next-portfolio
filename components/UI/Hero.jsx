@@ -17,12 +17,16 @@ const Hero = () => {
               <h2 className="mt-3 mb-3">I&apos;m Nicolás Aldao</h2>
               <h5 className="mb-4">Frontend Developer</h5>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Impedit rem sint ipsa cumque. Atque rem vel iusto impedit omnis
-                quos!
+                Welcome to my personal website!
+                <br />
+                In this place I&apos;ll show you what I know to do and what I
+                learned so far. In my career as a developer, I was in different
+                kind of projects, but lately, I&apos;m doing focus on React
+                <br />
+                Hope you enjoy the journey ;)
               </p>
               <div className="mt-5">
-                <DownloadCVButton/>
+                <DownloadCVButton />
               </div>
             </div>
           </Col>

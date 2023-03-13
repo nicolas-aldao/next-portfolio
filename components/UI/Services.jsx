@@ -29,11 +29,9 @@ const Services = () => {
             <h3 className="mb-0 mt-4">Better Design,</h3>
             <h3 className="mb-4">Better Experience</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non amet
-              culpa nobis corporis officiis, numquam cupiditate, enim expedita
-              eveniet dolorum, aliquid nesciunt sapiente illo voluptatum!
-              Dolores fuga mollitia atque, placeat minima quibusdam accusantium!
-              Veniam, non distinctio dolorem rerum laboriosam deleniti.
+              In my academic journey I have learned the basis from computing and
+              the building of applications, I continuosly try to be updated in
+              the new tecnologies and tendences
             </p>
           </Col>
         </Row>

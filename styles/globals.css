@@ -3,10 +3,11 @@
 :root {
   --primary-color: #9a894f;
   --secondary-color: #ffffff;
+  --four-color: #c3cad868;
+  --primary-color-lighter: #e7e2d5;
   --background-color: #ffffff;
   --primary-font-color: #000000;
   --secondary-font-color: #a5a5a5;
-  --four-color: #c3cad868;
   --black: #000000;
   --white: #ffffff;
 }
@@ -44,6 +45,14 @@ h6 {
 
 h2 {
   font-size: 2.5rem !important;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+ul li {
+  color: var(--secondary-font-color);
 }
 
 section {

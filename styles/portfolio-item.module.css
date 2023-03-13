@@ -15,6 +15,27 @@
 .portfolio__img {
   margin-top: 30px;
   background: transparent;
+  border: solid var(--primary-color-lighter);
+  border-radius: 12px;
+  padding: 7px 7px 0 7px !important;
+}
+
+.portfolio__img span {
+  /* border: solid red !important; */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.portfolio__img > span > img {
+  /* border: solid orange !important; */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.portfolio__img > img {
+  /* border: solid orange !important; */
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .portfolio__img img {

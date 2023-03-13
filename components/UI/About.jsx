@@ -23,11 +23,9 @@ const About = () => {
             />
             <h3 className="mt-4">I&apos;m here to help your next project</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-              neque asperiores temporibus quo saepe odio, esse labore libero
-              obcaecati quidem explicabo blanditiis deleniti ex vitae ratione
-              ullam fugiat dicta eum sint officiis porro illum quia. Error quam
-              cum excepturi beatae.
+              I have learned the best practices in React, applying Atomic Design
+              and avoid duplicate code, making project more mantenible,
+              escalable and atractive.
             </p>
 
             <div className=" d-flex align-items-center gap-5">
@@ -43,7 +41,7 @@ const About = () => {
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
-                  Search A Lot
+                  Research
                 </h6>
               </div>
 
