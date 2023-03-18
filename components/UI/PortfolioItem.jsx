@@ -11,7 +11,7 @@ const PortfolioItem = (props) => {
       <div className="bg-transparent">
         <h6>{title}</h6>
         {keyword.map((item, index) => (
-          <BadgeAtom key={index}>{item}</BadgeAtom>
+          <BadgeAtom key={index} className={`${classes.badge}`}>{item}</BadgeAtom>
         ))}
       </div>
 

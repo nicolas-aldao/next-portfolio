@@ -5,7 +5,7 @@ const portfolio = [
     description: "This is an app where you can buy avocados.",
     img: ["/images/portfolio-7.png"],
     category: "Mobile App",
-    keyword: ["React", "Next.js", "CSS Modules"],
+    keyword: ["React", "Next.js", "CSS Modules", "React", "Next.js", "CSS Modules"],
     repoUrl: "https://github.com/nicolas-aldao/avocado-app",
     deployUrl: "https://avocado-app-bice.vercel.app/",
     liveUrl: "/project/7",
