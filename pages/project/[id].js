@@ -62,7 +62,7 @@ const Detail = () => {
               <>
                 <ul className={`${classes.badgeAtomList}`}>
                   {data?.keyword?.map((word) => (
-                    <BadgeAtom key={word}>{word}</BadgeAtom>
+                    <BadgeAtom key={word} className={`${classes.badge}`}>{word}</BadgeAtom>
                   ))}
                 </ul>
                 <Slider {...settings}>
