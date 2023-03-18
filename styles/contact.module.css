@@ -51,3 +51,10 @@
     margin-bottom: 30px;
   }
 }
+
+@media only screen and (max-width: 575px) {
+  .contact {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

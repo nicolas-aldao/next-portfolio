@@ -14,7 +14,7 @@ export default function Home() {
         <title>Nicolás Aldao</title>
       </Head>
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <About />
       <Portfolio />
       {/* <Testimonial /> */}

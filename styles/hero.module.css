@@ -82,11 +82,17 @@
   }
 }
 
-@media only screen and (max-width: 576px) {
-  .hero__skills {
+@media only screen and (max-width: 575px) {
+  /* .hero__skills {
     display: none;
   }
   .hero__experience {
     display: none !important;
+  } */
+  .marginMobile {
+    padding-left: 15px;
+    padding-left: 15px;
   }
 }
+
+

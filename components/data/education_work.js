@@ -6,7 +6,7 @@ const education_work = [
         title: "System Analist",
         time: "2016 - 2020",
         institute: "Instituto Santo Tomás de Aquino",
-        description: "TODO: complete this field",
+        description: "3 years tertiary career in an institute in Argentina",
         tasks: [
           "Be able to analize requirements, algoriths and computer systems",
           "Learn and build web pages and desktop applications",
@@ -18,11 +18,12 @@ const education_work = [
         title: "Fullstack Intensive Course",
         time: "Oct 2018 - Nov 2018",
         institute: "Baufest",
-        description: "TODO: complete this field",
+        description:
+          "15 day Fullstack Intensive Training with other 19 students, where we had different exercises to do everyday and in the end of the course we took an exam and if we passed it with a good feedback from teachers we could get a job in the company.",
         tasks: [
           "OPP, C#, MVC",
           "SQL Server, Entity Framework",
-          "HTML, CSS, Javascript",
+          "HTML, CSS, Javascript, JQuery",
           "Razor, Unit testing",
         ],
       },
@@ -58,11 +59,11 @@ const education_work = [
       },
       {
         id: "6",
-        title: "React Native Intensive Course (1 month)",
-        time: "Dic 2022",
+        title: "React Native Intensive Course",
+        time: "Dic 2022 (160hs aprox.)",
         institute: "Baufest",
         description:
-          "I took a React Intensive Training emulating a real project with Scrum ceremonies, the objective was build a digital wallet in React where we can send and receive money from other users",
+          "I took a React Intensive Training emulating a real project with Scrum ceremonies, with a PO, QA and Backend team with other 2 frontend partners, the objective was build a mvp of a digital wallet in React in a month where we can send and receive money from other users",
         tasks: ["Consuming API's", "Form validations", "Atomic Design"],
       },
       {
@@ -83,6 +84,7 @@ const education_work = [
         role: "Technical Support",
         time: "2018 - 2019",
         company: "Baufest, Argentina",
+        description: "Support project where I had to communicate everyday with the client via email, and sometimes call (in spanish), to answer to questions, doubts and resolve problems",
         tasks: [
           "Control data sellout reports",
           "Automatization tasks using Excel and Macros with VBA",
@@ -94,6 +96,7 @@ const education_work = [
         role: "BI Tools Support",
         time: "Dec 2019 - Sept 2020",
         company: "Baufest, Argentina",
+        description: "Maintenance to an internal app of an important supermarket in Argentina",
         tasks: [
           "Modify and run Powershell Scripts",
           "Modify and run SQL Scripts",
@@ -105,6 +108,7 @@ const education_work = [
         role: "SQL Server and Backend Development Support",
         time: "Oct 2020 - Dic 2021",
         company: "Baufest, Argentina",
+        description: "Give support to internal tool for argentinian agro company.",
         tasks: [
           "Fix bugs in application MVC .NET with Razor",
           "Modify and run SQL Scripts",
@@ -116,6 +120,7 @@ const education_work = [
         role: "C# Developer",
         time: "Jan 2021 - Mar 2021",
         company: "Baufest, Argentina",
+        description: "Temporaly project giving support to an internal app for an argentinian agro company",
         tasks: [
           "Fix bugs and new features development in application MVC .NET with Razor",
         ],
@@ -125,6 +130,7 @@ const education_work = [
         role: "React Native Developer",
         time: "Jun 2022 - Dic 2022",
         company: "Baufest, Argentina",
+        description: "Project english speaked, for a bank in Center America, developing a digital wallet mobile app.",
         tasks: [
           "Fix bugs and new features development in mobile application",
           "Elaborate unit tests, fix linting errors",
@@ -136,6 +142,7 @@ const education_work = [
         role: "React Developer",
         time: "Feb 2023 - Present",
         company: "Baufest, Argentina",
+        description: "Responsive web app for an important bank in Argentina.",
         tasks: [
           "Fix bugs and new features development in web application",
           "Elaborate responsive interfaces",

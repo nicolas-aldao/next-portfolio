@@ -59,7 +59,7 @@
 
 .mobile__menu i {
   font-size: 1.3rem;
-  color: var(--black);
+  color: var(--primary-font-color);
 
   cursor: pointer;
 }

@@ -21,10 +21,10 @@ const About = () => {
               subtitle="About me"
               className={`${classes.about__subtitle}`}
             />
-            <h3 className="mt-4">I&apos;m here to help your next project</h3>
-            <p>
-              I have learned the best practices in React, applying Atomic Design
-              and avoid duplicate code, making project more mantenible,
+            <h3 className={`mt-4 ${classes.marginMobile}`}>I&apos;m here to help your next project</h3>
+            <p className={`${classes.marginMobile}`}>
+              I have learned from best practices in React, applying Atomic Design
+              and avoid duplicate code, making code more mantenible,
               escalable and atractive.
             </p>
 
@@ -50,7 +50,7 @@ const About = () => {
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
-                  Creative Idea
+                  Escalable
                 </h6>
 
                 <h6 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
@@ -61,7 +61,7 @@ const About = () => {
                 </h6>
               </div>
             </div>
-            <DownloadCVButton />
+            {/* <DownloadCVButton /> */}
           </Col>
           <Col lg="6" xs="10" className={`${classes.about__content}`}>
             <section className={`${classes.tecnologies_container}`}>

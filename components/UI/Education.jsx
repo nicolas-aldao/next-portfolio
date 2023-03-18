@@ -7,7 +7,7 @@ import classes from "../../styles/education.module.css";
 const Education = () => {
   return (
     <>
-      <section id="education" className="resume">
+      <section id="education" className={`${classes.resume}`}>
         <Container>
           <Row>
             <Col lg="6">
@@ -53,6 +53,9 @@ const Education = () => {
                     <p>
                       <em>{workItem.company}</em>
                     </p>
+                    <div className={`${classes.work_details}`}>
+                      <p>{workItem.description}</p>
+                    </div>
                     <div className={`${classes.work_details}`}>
                       <ul>
                         {workItem.tasks.map((taskItem) => (

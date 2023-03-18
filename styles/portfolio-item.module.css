@@ -20,6 +20,10 @@
   padding: 7px 7px 0 7px !important;
 }
 
+.portfolio__img:hover {
+  cursor: pointer;
+}
+
 .portfolio__img span {
   /* border: solid red !important; */
   margin: 0 !important;

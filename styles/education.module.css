@@ -5,7 +5,7 @@
 .resume_item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #b8a07e;
+  border-left: 2px solid var(--primary-color);
   position: relative;
 }
 
@@ -15,7 +15,7 @@
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: var(--primary-font-color);
   margin-bottom: 10px;
 }
 
@@ -52,8 +52,8 @@
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #b8a07e;
+  background: var(--background-color);
+  border: 2px solid var(--primary-color);
 }
 
 
@@ -63,6 +63,9 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 575px) {
+  .resume {
+    padding: 16px;
+  }
 }
 

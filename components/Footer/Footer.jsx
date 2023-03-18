@@ -11,13 +11,13 @@ const Footer = () => {
     <footer>
       <Container>
         <Row>
-          <Col lg="6" className={`${classes.footer__top}`}>
+          {/* <Col lg="6" className={`${classes.footer__top}`}>
             <div className={`${classes.footer__creator}`}>
               <h6>Created by Muhib</h6>
             </div>
-          </Col>
+          </Col> */}
           <Col lg="12">
-            <div className={`${classes.footer__copyright}`}>
+            <div className={`${classes.footer__copyright} ${classes.marginMobile}`}>
               <p>
                 &copy; Copyright {year} - Developed by Muhibur Rahman. Re-designed by Nicolás Aldao. All rights
                 reserved.

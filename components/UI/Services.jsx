@@ -30,8 +30,7 @@ const Services = () => {
             <h3 className="mb-4">Better Experience</h3>
             <p>
               In my academic journey I have learned the basis from computing and
-              the building of applications, I continuosly try to be updated in
-              the new tecnologies and tendences
+              the building of applications.
             </p>
           </Col>
         </Row>

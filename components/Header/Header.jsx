@@ -14,13 +14,17 @@ const NAV__LINK = [
     path: "/#about",
     display: "About",
   },
-  {
-    path: "/#services",
-    display: "Services",
-  },
+  // {
+  //   path: "/#services",
+  //   display: "Services",
+  // },
   {
     path: "/#portfolio",
     display: "Portfolio",
+  },
+  {
+    path: "/#education",
+    display: "Experience",
   },
   {
     path: "/#contact",
@@ -30,7 +34,6 @@ const NAV__LINK = [
 
 const Header = () => {
   const headerRef = useRef(null);
-
   const menuRef = useRef(null);
 
   const headerFunc = () => {
@@ -46,7 +49,6 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", headerFunc);
-
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
 
