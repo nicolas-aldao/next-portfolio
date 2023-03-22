@@ -17,8 +17,8 @@ const Hero = () => {
               <h2 className={`mt-3 mb-3 ${classes.marginMobile}`}>
                 I&apos;m Nicolás Aldao
               </h2>
-              <p style={{display: 'inline'}}>and I&apos;m </p>
-              <h5 style={{ display: 'inline', fontWeight: 'bold'}} className={`mb-4 ${classes.marginMobile}`}>
+              <p style={{display: 'inline'}} className={`${classes.marginMobileOnlyLeft}`}>and I&apos;m </p>
+              <h5 style={{ display: 'inline', fontWeight: 'bold'}} className='mb-4'>
                 Frontend Developer
               </h5>
               <p className={`${classes.marginMobile}`}>
