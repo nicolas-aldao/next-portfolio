@@ -21,11 +21,13 @@ const About = () => {
               subtitle="About me"
               className={`${classes.about__subtitle}`}
             />
-            <h3 className={`mt-4 ${classes.marginMobile}`}>I&apos;m here to help your next project</h3>
+            <h3 className={`mt-4 ${classes.marginMobile}`}>
+              I&apos;m here to help your next project
+            </h3>
             <p className={`${classes.marginMobile}`}>
-              I have learned from best practices in React, applying Atomic Design
-              and avoid duplicate code, making code more mantenible,
-              escalable and atractive.
+              I have applied best practices in React,
+              including Atomic Design principles and avoiding duplicate code, to
+              create maintainable, scalable, and attractive code.
             </p>
 
             <div className=" d-flex align-items-center gap-5">

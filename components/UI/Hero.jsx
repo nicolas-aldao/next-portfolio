@@ -19,7 +19,7 @@ const Hero = () => {
               </h2>
               <p style={{display: 'inline'}} className={`${classes.marginMobileOnlyLeft}`}>and I&apos;m </p>
               <h5 style={{ display: 'inline', fontWeight: 'bold'}} className='mb-4'>
-                Frontend Developer
+                Frontend Developer based in Argentina
               </h5>
               <p className={`${classes.marginMobile}`}>
                 Welcome to my personal website!
@@ -27,8 +27,7 @@ const Hero = () => {
                 In this place I&apos;ll show you what I know to do and what I
                 learned so far.
                 <br />
-                In my career as a developer, I was in different kind of
-                projects, <br />
+                I have worked on a variety of projects, <br />
                 but lately, I&apos;m doing focus on React projects.
                 <br />
                 Hope you enjoy the journey ;)
