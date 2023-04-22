@@ -17,10 +17,10 @@ const Hero = () => {
               <h2 className={`mt-3 mb-3 ${classes.marginMobile}`}>
                 I&apos;m Nicolás Aldao
               </h2>
-              <p style={{display: 'inline'}} className={`${classes.marginMobileOnlyLeft}`}>and I&apos;m </p>
-              <h5 style={{ display: 'inline', fontWeight: 'bold'}} className='mb-4'>
-                Frontend Developer based in Argentina
+              <h5 style={{ display: 'inline', fontWeight: 'bold'}} className={`mb-4 ${classes.marginMobileOnlyLeft}`}>
+                Frontend Developer
               </h5>
+              <p style={{display: 'inline'}}> from Argentina 🇦🇷</p>
               <p className={`${classes.marginMobile}`}>
                 Welcome to my personal website!
                 <br />
