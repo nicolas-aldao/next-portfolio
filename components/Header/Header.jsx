@@ -14,10 +14,6 @@ const NAV__LINK = [
     path: "/#about",
     display: "About",
   },
-  // {
-  //   path: "/#services",
-  //   display: "Services",
-  // },
   {
     path: "/#portfolio",
     display: "Portfolio",

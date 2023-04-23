@@ -24,19 +24,16 @@
 }
 
 .portfolio__img span {
-  /* border: solid red !important; */
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .portfolio__img > span > img {
-  /* border: solid orange !important; */
   margin: 0 !important;
   padding: 0 !important;
 }
 
 .portfolio__img > img {
-  /* border: solid orange !important; */
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -53,9 +50,6 @@
   font-size: 0.7rem;
   margin-right: 10px;
   border-radius: 5px;
-}
-
-.portfolio__live {
 }
 
 .portfolio__item .portfolio__live {

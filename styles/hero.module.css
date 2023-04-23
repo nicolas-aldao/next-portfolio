@@ -11,11 +11,9 @@
 }
 
 .hero__img {
-  /* position: relative; */
   display: flex;
   justify-content: center;
   padding: 50px;
-  /* z-index: 9; */
 }
 
 .hero__img img {
@@ -29,9 +27,6 @@
 
   .hero__content h5 {
     font-size: 1.1rem !important;
-  }
-
-  .hero__img img {
   }
 
   .hero__content {
@@ -83,12 +78,6 @@
 }
 
 @media only screen and (max-width: 575px) {
-  /* .hero__skills {
-    display: none;
-  }
-  .hero__experience {
-    display: none !important;
-  } */
   .marginMobileOnlyLeft {
     padding-left: 15px;
   }

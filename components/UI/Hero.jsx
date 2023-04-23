@@ -32,7 +32,7 @@ const Hero = () => {
                 <br />
                 Hope you enjoy the journey ;)
               </p>
-              <div className={`mt-5 ${classes.marginMobile}`}>
+              <div className={`${classes.marginMobile}`}>
                 <DownloadCVButton />
               </div>
             </div>
