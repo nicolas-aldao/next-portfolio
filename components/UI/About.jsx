@@ -8,6 +8,9 @@ import JsIcon from "./JsIcon";
 import ReactIcon from "./ReactIcon";
 import NextJsIcon from "./NextJsIcon";
 import GitIcon from "./GitIcon";
+import JenkinsIcon from "./JenkinsIcon";
+import PostmanIcon from "./PostmanIcon";
+import SwaggerIcon from "./SwaggerIcon";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/about.module.css";
 
@@ -16,63 +19,27 @@ const About = () => {
     <section id="about">
       <Container>
         <Row className={`${classes.about__row}`}>
-          <Col lg="6" className={`${classes.about__content}`}>
-            <SectionSubtitle
-              subtitle="About me"
-              className={`${classes.about__subtitle}`}
-            />
+          <SectionSubtitle
+            subtitle="About me"
+            className={`${classes.about__subtitle}`}
+          />
+          <Col lg="6" xs="10" className={`${classes.about__content}`} style={{ padding: '15px'}}>
             <h3 className={`mt-4 ${classes.marginMobile}`}>
-              I&apos;m here to help your next project
+              Technologies I&apos;ve been working with
             </h3>
-            <p className={`${classes.marginMobile}`}>
-              I have applied best practices in React,
-              including Atomic Design principles and avoiding duplicate code, to
-              create maintainable, scalable, and attractive code.
-            </p>
+            {/* <p className={`${classes.marginMobile}`}>
+              I have applied best practices in React, including Atomic Design
+              principles and avoiding duplicate code, to create maintainable,
+              scalable, and attractive code.
+            </p> */}
 
-            <div className=" d-flex align-items-center gap-5">
-              <div>
-                <h6 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
-                  <span className={`${classes.about__icon}`}>
-                    <i className="ri-checkbox-circle-line"></i>
-                  </span>
-                  Problem Solving
-                </h6>
-
-                <h6 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
-                  <span className={`${classes.about__icon}`}>
-                    <i className="ri-checkbox-circle-line"></i>
-                  </span>
-                  Research
-                </h6>
-              </div>
-
-              <div>
-                <h6 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
-                  <span className={`${classes.about__icon}`}>
-                    <i className="ri-checkbox-circle-line"></i>
-                  </span>
-                  Escalable
-                </h6>
-
-                <h6 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
-                  <span className={`${classes.about__icon}`}>
-                    <i className="ri-checkbox-circle-line"></i>
-                  </span>
-                  High Quality
-                </h6>
-              </div>
-            </div>
-            {/* <DownloadCVButton /> */}
-          </Col>
-          <Col lg="6" xs="10" className={`${classes.about__content}`}>
             <section className={`${classes.tecnologies_container}`}>
               <div
                 className={`${classes.skill_container} ${classes.red_border}`}
               >
                 <HtmlIcon />
                 <BadgeAtom key="Html" className={`${classes.skills_badge}`}>
-                  Html
+                  HTML
                 </BadgeAtom>
               </div>
               <div
@@ -80,7 +47,7 @@ const About = () => {
               >
                 <CssIcon />
                 <BadgeAtom key="Css" className={`${classes.skills_badge}`}>
-                  Css
+                  CSS
                 </BadgeAtom>
               </div>
               <div
@@ -91,7 +58,7 @@ const About = () => {
                   key="Javascript"
                   className={`${classes.skills_badge}`}
                 >
-                  Javascript
+                  JAVASCRIPT
                 </BadgeAtom>
               </div>
               <div
@@ -99,7 +66,7 @@ const About = () => {
               >
                 <ReactIcon />
                 <BadgeAtom key="React" className={`${classes.skills_badge}`}>
-                  React
+                  REACT
                 </BadgeAtom>
               </div>
               <div
@@ -107,7 +74,7 @@ const About = () => {
               >
                 <NextJsIcon />
                 <BadgeAtom key="Next.js" className={`${classes.skills_badge}`}>
-                  Next.js
+                  NEXT.JS
                 </BadgeAtom>
               </div>
               <div
@@ -115,10 +82,51 @@ const About = () => {
               >
                 <GitIcon />
                 <BadgeAtom key="Git" className={`${classes.skills_badge}`}>
-                  Git
+                  GIT
                 </BadgeAtom>
               </div>
             </section>
+          </Col>
+          <Col lg="6" className={`${classes.about__content}`} style={{ padding: '15px'}}>
+            <h3 className={`mt-4 ${classes.marginMobile}`}>
+              I&apos;m here to help your next project
+            </h3>
+            <p className={`${classes.marginMobile}`}>
+              I have applied best practices in React, including Atomic Design
+              principles and avoiding duplicate code, to create maintainable,
+              scalable, and attractive code.
+            </p>
+
+            <h5>Other tools I&apos;ve used</h5>
+            <div className=" d-flex align-items-center gap-5">
+              <div>
+                <h5 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
+                  <span className={`${classes.about__icon}`}>
+                    <i className="ri-checkbox-circle-line"></i>
+                  </span>
+                  Postman
+                  <PostmanIcon />
+                </h5>
+
+                <h5 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
+                  <span className={`${classes.about__icon}`}>
+                    <i className="ri-checkbox-circle-line"></i>
+                  </span>
+                  Swagger
+                  <SwaggerIcon />
+                </h5>
+              </div>
+
+              <div>
+                <h5 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
+                  <span className={`${classes.about__icon}`}>
+                    <i className="ri-checkbox-circle-line"></i>
+                  </span>
+                  Jenkins
+                  <JenkinsIcon />
+                </h5>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
