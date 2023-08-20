@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import BadgeAtom from "./atoms/BadgeAtom";
-import DownloadCVButton from "./atoms/DownloadCVButton";
 import HtmlIcon from "./HtmlIcon";
 import CssIcon from "./CssIcon";
 import JsIcon from "./JsIcon";
@@ -18,20 +17,20 @@ const About = () => {
   return (
     <section id="about">
       <Container>
+        <SectionSubtitle
+          subtitle="About me"
+          className={`${classes.about__subtitle}`}
+        />
         <Row className={`${classes.about__row}`}>
-          <SectionSubtitle
-            subtitle="About me"
-            className={`${classes.about__subtitle}`}
-          />
-          <Col lg="6" xs="10" className={`${classes.about__content}`} style={{ padding: '15px'}}>
+          <Col
+            lg="6"
+            xs="10"
+            className={`${classes.about__content}`}
+            style={{ padding: "15px" }}
+          >
             <h3 className={`mt-4 ${classes.marginMobile}`}>
               Technologies I&apos;ve been working with
             </h3>
-            {/* <p className={`${classes.marginMobile}`}>
-              I have applied best practices in React, including Atomic Design
-              principles and avoiding duplicate code, to create maintainable,
-              scalable, and attractive code.
-            </p> */}
 
             <section className={`${classes.tecnologies_container}`}>
               <div
@@ -87,7 +86,11 @@ const About = () => {
               </div>
             </section>
           </Col>
-          <Col lg="6" className={`${classes.about__content}`} style={{ padding: '15px'}}>
+          <Col
+            lg="6"
+            className={`${classes.about__content}`}
+            style={{ padding: "15px" }}
+          >
             <h3 className={`mt-4 ${classes.marginMobile}`}>
               I&apos;m here to help your next project
             </h3>
@@ -98,31 +101,34 @@ const About = () => {
             </p>
 
             <h5>Other tools I&apos;ve used</h5>
-            <div className=" d-flex align-items-center gap-5">
-              <div>
-                <h5 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
+            <div className="d-flex align-items-center gap-5">
+              <div className="d-flex flex-wrap mt-3">
+                <h5
+                  className="d-flex align-items-center gap-2 fw-normal mx-5 mt-4"
+                >
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
-                  Postman
+                  <h4 style={{ width: '113px' }}>Postman</h4>
                   <PostmanIcon />
                 </h5>
 
-                <h5 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
+                <h5
+                  className="d-flex align-items-center gap-2 fw-normal mx-5 mt-4"
+                >
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
-                  Swagger
+                  <h4 style={{ width: '100px' }}>Swagger</h4>
                   <SwaggerIcon />
                 </h5>
-              </div>
-
-              <div>
-                <h5 className=" d-flex align-items-center gap-2 mt-3 fw-normal">
+                <h5
+                  className="d-flex align-items-center gap-2 fw-normal mx-5 mt-4"
+                >
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
-                  Jenkins
+                  <h4 style={{ width: '95px' }}>Jenkins</h4>
                   <JenkinsIcon />
                 </h5>
               </div>
