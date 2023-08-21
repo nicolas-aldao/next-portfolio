@@ -39,9 +39,7 @@ const Detail = () => {
           <Col lg="6" md="6" className="mb-4">
             <SectionSubtitle subtitle="Project details" />
             <h3 className="mt-4 mb-4">{data?.title}</h3>
-            <p>
-              {data?.description}
-            </p>
+            <p>{data?.description}</p>
             <Row className={`${classes.button__container}`}>
               <LinkButton
                 text="Demo"
@@ -62,7 +60,9 @@ const Detail = () => {
               <>
                 <ul className={`${classes.badgeAtomList}`}>
                   {data?.keyword?.map((word) => (
-                    <BadgeAtom key={word} className={`${classes.badge}`}>{word}</BadgeAtom>
+                    <BadgeAtom key={word} className={`${classes.badge}`}>
+                      {word}
+                    </BadgeAtom>
                   ))}
                 </ul>
                 <Slider {...settings}>

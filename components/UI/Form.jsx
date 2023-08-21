@@ -26,7 +26,6 @@ const Form = () => {
 
     emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(
       (response) => {
-        console.log("SUCCESS!", response.status, response.text);
         setName("");
         setEmail("");
         setMessage("");
@@ -35,7 +34,6 @@ const Form = () => {
         setShowModal(true);
       },
       (err) => {
-        console.log("FAILED...", err);
         setFormStatus("failed");
         setIsLoading(false);
         setShowModal(true);

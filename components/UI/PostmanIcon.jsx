@@ -5,7 +5,6 @@ const PostmanIcon = () => {
   return (
     <div
       style={{
-        // border: "solid blue",
         padding: "10px",
       }}
     >

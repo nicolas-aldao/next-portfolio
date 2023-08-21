@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import React, { useState, useRef } from "react";
+import { Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import Form from "./Form";
@@ -7,6 +7,13 @@ import PlatziIcon from "./PlatziIcon";
 import classes from "../../styles/contact.module.css";
 
 const Contact = () => {
+  const [tooltipOpen, setTooltipOpen] = useState(false);
+  const [emailCliked, setEmailClicked] = useState(false);
+  const refEmail = useRef(null);
+  const refGitHub = useRef(null);
+  const refLinkedIn = useRef(null);
+  const refPlatzi = useRef(null);
+
   return (
     <section id="contact" className={`${classes.contact}`}>
       <Container>
@@ -26,22 +33,50 @@ const Contact = () => {
                 <span>
                   <i className="ri-mail-line"></i>
                 </span>
-                <p>nicolasaldao@live.com</p>
+                <p
+                  ref={refEmail}
+                  onClick={() => {
+                    navigator.clipboard.writeText("nicolasaldao@live.com");
+                    setEmailClicked(true);
+                    setTimeout(() => {
+                      setEmailClicked(false);
+                    }, 7000);
+                  }}
+                  style={{ cursor: 'pointer' }}
+                >
+                  nicolasaldao@live.com
+                </p>
+                <UncontrolledTooltip hideArrow target={refEmail} style={{ margin: "0", backgroundColor: emailCliked ? "green" : "black" }}>
+                  {emailCliked
+                    ? "Email copied to clipboard!"
+                    : "Click to copy to clipboard"}
+                </UncontrolledTooltip>
               </li>
             </ul>
 
             <div className={`${classes.social__links}`}>
               <Link href="https://github.com/nicolas-aldao">
-                <i className="ri-github-fill"></i>
+                <i ref={refGitHub} className="ri-github-fill"></i>
               </Link>
               <Link href="https://www.linkedin.com/in/nicolas-aldao/">
-                <i className="ri-linkedin-fill"></i>
+                <i ref={refLinkedIn} className="ri-linkedin-fill"></i>
               </Link>
               <Link href="https://platzi.com/p/NicolasAldao/">
-                <span>
+                <span ref={refPlatzi}>
                   <PlatziIcon />
                 </span>
               </Link>
+            </div>
+            <div>
+              <UncontrolledTooltip target={refGitHub}>
+                GitHub Account
+              </UncontrolledTooltip>
+              <UncontrolledTooltip target={refLinkedIn}>
+                LinkedIn Profile
+              </UncontrolledTooltip>
+              <UncontrolledTooltip target={refPlatzi}>
+                Platzi Profile
+              </UncontrolledTooltip>
             </div>
           </Col>
 
