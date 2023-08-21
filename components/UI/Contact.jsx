@@ -8,9 +8,9 @@ import CopyClipboardIcon from "./CopyClipboardIcon";
 import classes from "../../styles/contact.module.css";
 
 const Contact = () => {
-  const [tooltipOpen, setTooltipOpen] = useState(false);
+  // const [tooltipOpen, setTooltipOpen] = useState(false);
   const [emailCliked, setEmailClicked] = useState(false);
-  const refEmail = useRef(null);
+  // const refEmail = useRef(null);
   const refGitHub = useRef(null);
   const refLinkedIn = useRef(null);
   const refPlatzi = useRef(null);
@@ -37,31 +37,32 @@ const Contact = () => {
                 <p>
                   nicolasaldao@live.com{" "}
                   <span
-                    ref={refEmail}
+                    // ref={refEmail}
                     onClick={() => {
                       navigator.clipboard.writeText("nicolasaldao@live.com");
                       setEmailClicked(true);
                       setTimeout(() => {
                         setEmailClicked(false);
-                      }, 7000);
+                      }, 3000);
                     }}
                     style={{ cursor: "pointer" }}
                   >
                     <CopyClipboardIcon />
                   </span>
                 </p>
-                <UncontrolledTooltip
-                  hideArrow
-                  target={refEmail}
-                  style={{
-                    margin: "0",
-                    backgroundColor: emailCliked ? "green" : "black",
-                  }}
-                >
-                  {emailCliked
-                    ? "Copied to clipboard!"
-                    : "Copy to clipboard"}
-                </UncontrolledTooltip>
+                {emailCliked ? (
+                  <UncontrolledTooltip
+                    hideArrow
+                    isOpen={emailCliked}
+                    // target={refEmail}
+                    style={{
+                      margin: "0",
+                      backgroundColor: emailCliked ? "green" : "black",
+                    }}
+                  >
+                    Copied to clipboard!
+                  </UncontrolledTooltip>
+                ) : null}
               </li>
             </ul>
 
