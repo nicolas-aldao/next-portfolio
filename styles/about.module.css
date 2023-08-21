@@ -51,6 +51,19 @@
   font-size: 1rem;
 }
 
+.about__toolContainer {
+  margin-top: 15px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  /* width: 600px; */
+  flex-wrap: wrap;
+}
+
+.about__toolItem {
+  margin: 10px;
+}
+
 @media only screen and (min-width: 1400px) {
   .skill_container {
     margin-right: 3rem;

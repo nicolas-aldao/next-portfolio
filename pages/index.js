@@ -13,7 +13,6 @@ export default function Home() {
       <Head>
         <title>Nicolás Aldao | Frontend Developer</title>
         <meta charset="utf-8" />
-        {/* <meta http-equiv="X-UA-Compatible" content="IE=edge" /> */}
         <meta name="csrf_token" content="" />
         <meta property="type" content="website" />
         <meta property="url" content={"currentUrl"} />

@@ -102,9 +102,9 @@ const About = () => {
 
             <h5>Other tools I&apos;ve used</h5>
             <div className="d-flex align-items-center gap-5">
-              <div className="d-flex flex-wrap mt-3">
+              <div className={`${classes.about__toolContainer}`}>
                 <h5
-                  className="d-flex align-items-center gap-2 fw-normal mx-5 mt-4"
+                  className={`d-flex align-items-center gap-2 ${classes.about__toolItem}`}
                 >
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
@@ -114,8 +114,8 @@ const About = () => {
                 </h5>
 
                 <h5
-                  className="d-flex align-items-center gap-2 fw-normal mx-5 mt-4"
-                >
+                  className={`d-flex align-items-center gap-2 ${classes.about__toolItem}`}
+                  >
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
@@ -123,8 +123,8 @@ const About = () => {
                   <SwaggerIcon />
                 </h5>
                 <h5
-                  className="d-flex align-items-center gap-2 fw-normal mx-5 mt-4"
-                >
+                  className={`d-flex align-items-center gap-2 ${classes.about__toolItem}`}
+                  >
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
