@@ -4,6 +4,7 @@ import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import Form from "./Form";
 import PlatziIcon from "./PlatziIcon";
+import CopyClipboardIcon from "./CopyClipboardIcon";
 import classes from "../../styles/contact.module.css";
 
 const Contact = () => {
@@ -33,23 +34,33 @@ const Contact = () => {
                 <span>
                   <i className="ri-mail-line"></i>
                 </span>
-                <p
-                  ref={refEmail}
-                  onClick={() => {
-                    navigator.clipboard.writeText("nicolasaldao@live.com");
-                    setEmailClicked(true);
-                    setTimeout(() => {
-                      setEmailClicked(false);
-                    }, 7000);
-                  }}
-                  style={{ cursor: 'pointer' }}
-                >
-                  nicolasaldao@live.com
+                <p>
+                  nicolasaldao@live.com{" "}
+                  <span
+                    ref={refEmail}
+                    onClick={() => {
+                      navigator.clipboard.writeText("nicolasaldao@live.com");
+                      setEmailClicked(true);
+                      setTimeout(() => {
+                        setEmailClicked(false);
+                      }, 7000);
+                    }}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <CopyClipboardIcon />
+                  </span>
                 </p>
-                <UncontrolledTooltip hideArrow target={refEmail} style={{ margin: "0", backgroundColor: emailCliked ? "green" : "black" }}>
+                <UncontrolledTooltip
+                  hideArrow
+                  target={refEmail}
+                  style={{
+                    margin: "0",
+                    backgroundColor: emailCliked ? "green" : "black",
+                  }}
+                >
                   {emailCliked
-                    ? "Email copied to clipboard!"
-                    : "Click to copy to clipboard"}
+                    ? "Copied to clipboard!"
+                    : "Copy to clipboard"}
                 </UncontrolledTooltip>
               </li>
             </ul>
