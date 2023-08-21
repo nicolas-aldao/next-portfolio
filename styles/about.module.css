@@ -69,9 +69,9 @@
 }
 
 .about__toolItemText {
-  position: "relative";
-  top: "2px";
-  text-align: "center";
+  position: relative;
+  top: 3px;
+  text-align: center
 }
 
 @media only screen and (min-width: 1400px) {

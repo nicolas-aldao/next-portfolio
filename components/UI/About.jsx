@@ -70,7 +70,7 @@ const About = () => {
               </div>
               <div
                 className={`${classes.skill_container} ${classes.red_border}`}
-                style={{ marginLeft: "5px", marginRight: "5px" }}
+                style={{ marginLeft: "8px", marginRight: "8px" }}
               >
                 <NextJsIcon />
                 <BadgeAtom key="Next.js" className={`${classes.skills_badge}`}>
