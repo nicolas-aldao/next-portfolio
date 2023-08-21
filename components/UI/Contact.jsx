@@ -10,7 +10,7 @@ import classes from "../../styles/contact.module.css";
 const Contact = () => {
   // const [tooltipOpen, setTooltipOpen] = useState(false);
   const [emailCliked, setEmailClicked] = useState(false);
-  // const refEmail = useRef(null);
+  const refEmail = useRef(null);
   const refGitHub = useRef(null);
   const refLinkedIn = useRef(null);
   const refPlatzi = useRef(null);
@@ -37,10 +37,10 @@ const Contact = () => {
                 <p>
                   nicolasaldao@live.com{" "}
                   <span
-                    // ref={refEmail}
+                    ref={refEmail}
                     onClick={() => {
-                      navigator.clipboard.writeText("nicolasaldao@live.com");
                       setEmailClicked(true);
+                      navigator.clipboard.writeText("nicolasaldao@live.com");
                       setTimeout(() => {
                         setEmailClicked(false);
                       }, 3000);
@@ -54,7 +54,7 @@ const Contact = () => {
                   <UncontrolledTooltip
                     hideArrow
                     isOpen={emailCliked}
-                    // target={refEmail}
+                    target={refEmail}
                     style={{
                       margin: "0",
                       backgroundColor: emailCliked ? "green" : "black",
