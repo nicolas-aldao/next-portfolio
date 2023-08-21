@@ -70,6 +70,7 @@ const About = () => {
               </div>
               <div
                 className={`${classes.skill_container} ${classes.red_border}`}
+                style={{ marginLeft: "5px", marginRight: "5px" }}
               >
                 <NextJsIcon />
                 <BadgeAtom key="Next.js" className={`${classes.skills_badge}`}>
@@ -103,34 +104,42 @@ const About = () => {
             <h5>Other tools I&apos;ve used</h5>
             <div className="d-flex align-items-center gap-5">
               <div className={`${classes.about__toolContainer}`}>
-                <h5
-                  className={`d-flex align-items-center gap-2 ${classes.about__toolItem}`}
-                >
+                <div className={`${classes.about__toolItem}`}>
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
-                  <h4 style={{ width: '113px' }}>Postman</h4>
+                  <h4
+                    style={{ width: "113px" }}
+                    className={`${classes.about__toolItemText}`}
+                  >
+                    Postman
+                  </h4>
                   <PostmanIcon />
-                </h5>
-
-                <h5
-                  className={`d-flex align-items-center gap-2 ${classes.about__toolItem}`}
-                  >
+                </div>
+                <div className={`${classes.about__toolItem}`}>
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
-                  <h4 style={{ width: '100px' }}>Swagger</h4>
+                  <h4
+                    style={{ width: "100px" }}
+                    className={`${classes.about__toolItemText}`}
+                  >
+                    Swagger
+                  </h4>
                   <SwaggerIcon />
-                </h5>
-                <h5
-                  className={`d-flex align-items-center gap-2 ${classes.about__toolItem}`}
-                  >
+                </div>
+                <div className={`${classes.about__toolItem}`}>
                   <span className={`${classes.about__icon}`}>
                     <i className="ri-checkbox-circle-line"></i>
                   </span>
-                  <h4 style={{ width: '95px' }}>Jenkins</h4>
+                  <h4
+                    style={{ width: "95px" }}
+                    className={`${classes.about__toolItemText}`}
+                  >
+                    Jenkins
+                  </h4>
                   <JenkinsIcon />
-                </h5>
+                </div>
               </div>
             </div>
           </Col>

@@ -122,7 +122,7 @@ const education_work = [
         company: "Baufest, Argentina",
         description: "Temporaly project giving support to an internal app for an argentinian agro company",
         tasks: [
-          "Fix bugs and new features development in application MVC .NET with Razor",
+          "Fix bugs and add new features development in application MVC .NET with Razor",
         ],
       },
       {
@@ -132,7 +132,7 @@ const education_work = [
         company: "Baufest, Argentina",
         description: "Project english speaked, for a bank in Center America, developing a digital wallet mobile app.",
         tasks: [
-          "Fix bugs and new features development in mobile application",
+          "Fix bugs and add new features development in mobile application",
           "Elaborate unit tests, fix linting errors",
           "Styled Components",
         ],
@@ -144,7 +144,7 @@ const education_work = [
         company: "Baufest, Argentina",
         description: "Responsive web app for an important bank in Argentina.",
         tasks: [
-          "Fix bugs and new features development in web application",
+          "Fix bugs and add new features development in web application",
           "Elaborate responsive interfaces",
         ],
       },

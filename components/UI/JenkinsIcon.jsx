@@ -8,7 +8,7 @@ const JenkinsIcon = () => {
       height="100px"
       viewBox="-80.5 0 417 417"
       version="1.1"
-      // style={{ border: 'solid red' }}
+      style={{ position: 'relative', top: '10px' }}
     >
       <g>
         <path

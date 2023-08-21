@@ -56,12 +56,22 @@
   padding: 0;
   display: flex;
   flex-direction: row;
-  /* width: 600px; */
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about__toolItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   margin: 10px;
+  width: 270px;
+}
+
+.about__toolItemText {
+  position: "relative";
+  top: "2px";
+  text-align: "center";
 }
 
 @media only screen and (min-width: 1400px) {
