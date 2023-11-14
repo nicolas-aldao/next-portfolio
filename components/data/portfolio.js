@@ -1,5 +1,18 @@
 const portfolio = [
   {
+    id: "6",
+    title: "Artgram",
+    description: `It's an app based in Instagram's style where you can browse through different art paintings.
+      Initially, I developed it with midudev's course on Platzi, and I kept working on it, giving it more features.
+      Some of the funcionalities are a login system, filter paintings depending of its art genre, give likes to your favorites, and have a section where you can see all the paintings you've liked`,
+    img: ["/images/portfolio-6.png"],
+    category: "Mobile App",
+    keyword: ["HTML", "CSS", "React", "Node", "MongooDB"],
+    repoUrl: "https://github.com/nicolas-aldao/instagram-clone",
+    deployUrl: "https://nagram.vercel.app/",
+    liveUrl: "/project/6",
+  },
+  {
     id: "7",
     title: "Avocado Store",
     description: "This is an app where you can buy avocados.",

@@ -28,7 +28,7 @@ const Contact = () => {
                 <span>
                   <i className="ri-map-pin-line"></i>
                 </span>
-                <p>Buenos Aires - Argentina</p>
+                <p>Buenos Aires, Argentina</p>
               </li>
               <li className={`${classes.info__item}`}>
                 <span>
