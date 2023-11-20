@@ -9,6 +9,7 @@ import portfolioData from "../../components/data/portfolio";
 import SectionSubtitle from "../../components/UI/SectionSubtitle";
 import LinkButton from "../../components/UI/atoms/LinkButton";
 import classes from "./projectId.module.css";
+import Link from "next/link";
 
 const Detail = () => {
   const { query } = useRouter();
@@ -69,14 +70,17 @@ const Detail = () => {
                   {data?.img?.map((image) => (
                     <div key={image} className={`${classes.testimonial__item}`}>
                       <div className={`${classes.testimonial__client}`}>
-                        <Image
-                          alt="client-img"
-                          src={image}
-                          width="550"
-                          height="350"
-                          className="rounded-2"
-                          objectFit="cover"
-                        />
+                        <Link href={data?.deployUrl}>
+                          <Image
+                            style={{ cursor: "pointer" }}
+                            alt="client-img"
+                            src={image}
+                            width="550"
+                            height="350"
+                            className="rounded-2"
+                            objectFit="cover"
+                          />
+                        </Link>
                       </div>
                     </div>
                   ))}

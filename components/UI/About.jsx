@@ -1,15 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import BadgeAtom from "./atoms/BadgeAtom";
-import HtmlIcon from "./HtmlIcon";
-import CssIcon from "./CssIcon";
-import JsIcon from "./JsIcon";
-import ReactIcon from "./ReactIcon";
-import NextJsIcon from "./NextJsIcon";
-import GitIcon from "./GitIcon";
-import JenkinsIcon from "./JenkinsIcon";
-import PostmanIcon from "./PostmanIcon";
-import SwaggerIcon from "./SwaggerIcon";
+import HtmlIcon from "./svg/HtmlIcon";
+import CssIcon from "./svg/CssIcon";
+import JsIcon from "./svg/JsIcon";
+import ReactIcon from "./svg/ReactIcon";
+import NextJsIcon from "./svg/NextJsIcon";
+import GitIcon from "./svg/GitIcon";
+import JenkinsIcon from "./svg/JenkinsIcon";
+import PostmanIcon from "./svg/PostmanIcon";
+import SwaggerIcon from "./svg/SwaggerIcon";
 import SectionSubtitle from "./SectionSubtitle";
 import classes from "../../styles/about.module.css";
 

@@ -3,7 +3,7 @@ import { Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
 import Form from "./Form";
-import PlatziIcon from "./PlatziIcon";
+import PlatziIcon from "./svg/PlatziIcon";
 import CopyClipboardIcon from "./CopyClipboardIcon";
 import classes from "../../styles/contact.module.css";
 
