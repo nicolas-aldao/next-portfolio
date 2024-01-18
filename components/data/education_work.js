@@ -84,7 +84,8 @@ const education_work = [
         role: "Technical Support",
         time: "2018 - 2019",
         company: "Baufest, Argentina",
-        description: "Support project where I had to communicate everyday with the client via email, and sometimes call (in spanish), to answer to questions, doubts and resolve problems",
+        description:
+          "Support project where I had to communicate everyday with the client via email, and sometimes call (in spanish), to answer to questions, doubts and resolve problems",
         tasks: [
           "Control data sellout reports",
           "Automatization tasks using Excel and Macros with VBA",
@@ -96,7 +97,8 @@ const education_work = [
         role: "BI Tools Support",
         time: "Dec 2019 - Sept 2020",
         company: "Baufest, Argentina",
-        description: "Maintenance to an internal app of an important supermarket in Argentina",
+        description:
+          "Maintenance to an internal app of an important supermarket in Argentina",
         tasks: [
           "Modify and run Powershell Scripts",
           "Modify and run SQL Scripts",
@@ -108,7 +110,8 @@ const education_work = [
         role: "SQL Server and Backend Development Support",
         time: "Oct 2020 - Dic 2021",
         company: "Baufest, Argentina",
-        description: "Give support to internal tool for argentinian agro company.",
+        description:
+          "Give support to internal tool for argentinian agro company.",
         tasks: [
           "Fix bugs in application MVC .NET with Razor",
           "Modify and run SQL Scripts",
@@ -120,9 +123,10 @@ const education_work = [
         role: "C# Developer",
         time: "Jan 2021 - Mar 2021",
         company: "Baufest, Argentina",
-        description: "Temporaly project giving support to an internal app for an argentinian agro company",
+        description:
+          "Temporaly project giving support to an internal app for an argentinian agro company",
         tasks: [
-          "Fix bugs and add new features development in application MVC .NET with Razor",
+          "Fix bugs and develop new features in application MVC .NET with Razor",
         ],
       },
       {
@@ -130,11 +134,13 @@ const education_work = [
         role: "React Native Developer",
         time: "Jun 2022 - Dic 2022",
         company: "Baufest, Argentina",
-        description: "Project english speaked, for a bank in Center America, developing a digital wallet mobile app.",
+        description:
+          "Project english speaked, for a bank in Jamaica, developing a digital wallet mobile app.",
         tasks: [
-          "Fix bugs and add new features development in mobile application",
-          "Elaborate unit tests, fix linting errors",
+          "Fix bugs and develop new features in mobile application",
+          "Fix linting errors",
           "Styled Components",
+          "Consume APIs",
         ],
       },
       {
@@ -144,8 +150,10 @@ const education_work = [
         company: "Baufest, Argentina",
         description: "Responsive web app for an important bank in Argentina.",
         tasks: [
-          "Fix bugs and add new features development in web application",
+          "Fix bugs and develop new features in web application",
           "Elaborate responsive interfaces",
+          "Consume APIs",
+          "Run deploys",
         ],
       },
     ],

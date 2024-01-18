@@ -48,10 +48,10 @@ export default function Home() {
       </Head>
       <Hero />
       {/* <Services /> */}
-      <About />
-      <Portfolio />
-      {/* <Testimonial /> */}
       <Education />
+      <Portfolio />
+      <About />
+      {/* <Testimonial /> */}
       <Contact />
     </>
   );
