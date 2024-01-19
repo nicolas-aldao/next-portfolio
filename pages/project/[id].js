@@ -41,6 +41,7 @@ const Detail = () => {
             <SectionSubtitle subtitle="Project details" />
             <h3 className="mt-4 mb-4">{data?.title}</h3>
             <p>{data?.description}</p>
+            <b className={`${classes.importantInfo}`}>{data?.importantInfo}</b>
             <Row className={`${classes.button__container}`}>
               <LinkButton
                 text="Demo"
