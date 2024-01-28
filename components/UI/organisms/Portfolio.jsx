@@ -40,7 +40,7 @@ const Portfolio = () => {
       <Container>
         <Row>
           <Col lg="6" md="6" className="mb-5">
-            <SectionSubtitle subtitle="My portfolio" />
+            <SectionSubtitle subtitle="Portfolio" />
             <h4 className={`mt-4 ${classes.marginMobile}`}>Some of my works</h4>
             <p className={`${classes.marginMobile}`}>
               Use &quot;All&quot;, &quot;Mobile App&quot; or &quot;Web

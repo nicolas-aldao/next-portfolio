@@ -14,7 +14,7 @@
 .portfolio__img {
   margin-top: 30px;
   background: transparent;
-  border: solid var(--primary-color-lighter);
+  border: solid var(--primary-color);
   border-radius: 12px;
   padding: 7px 7px 0 7px !important;
 }

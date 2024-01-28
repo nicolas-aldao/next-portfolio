@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
-import classes from "../../styles/services.module.css";
 import ServicesItem from "./ServicesItem";
+import classes from "../../styles/services.module.css";
 
 const Services = () => {
   return (
@@ -10,7 +10,7 @@ const Services = () => {
       <Container>
         <Row>
           <Col lg="6" md="6">
-            <div className={`${classes.services__container}`}>
+            <div className={classes.services__container}>
               <div>
                 <ServicesItem title="App Development" icon="ri-apps-line" />
 
@@ -24,7 +24,7 @@ const Services = () => {
             </div>
           </Col>
 
-          <Col lg="6" md="6" className={`${classes.service__title}`}>
+          <Col lg="6" md="6" className={classes.service__title}>
             <SectionSubtitle subtitle="What I do" />
             <h3 className="mb-0 mt-4">Better Design,</h3>
             <h3 className="mb-4">Better Experience</h3>

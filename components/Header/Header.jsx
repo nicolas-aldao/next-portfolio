@@ -98,16 +98,6 @@ const Header = () => {
                 }}
               />
             </FormGroup>
-            {/* <md-switch
-              style={{ marginLeft: "10px", marginRight: "10px" }}
-              onClick={(e) => {
-                if (!isLoading) {
-                  setIsDarkMode(!isDarkMode);
-                } else {
-                  e.preventDefault();
-                }
-              }}
-            ></md-switch> */}
             {!isDarkMode ? (
               <Image
                 className={classes.themePlaceholder}

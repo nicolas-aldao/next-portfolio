@@ -8,7 +8,6 @@ import CopyClipboardIcon from "./CopyClipboardIcon";
 import classes from "../../styles/contact.module.css";
 
 const Contact = () => {
-  // const [tooltipOpen, setTooltipOpen] = useState(false);
   const [emailCliked, setEmailClicked] = useState(false);
   const refEmail = useRef(null);
   const refGitHub = useRef(null);

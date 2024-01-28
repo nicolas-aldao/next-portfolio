@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>Nicolás Aldao | Frontend Developer</title>
-        <meta charSet="utf-8" />
+        {/* <meta charSet="utf-8" />
         <meta name="csrf_token" content="" />
         <meta property="type" content="website" />
         <meta property="url" content="https://nicolas-aldao.vercel.app" />
@@ -36,11 +36,13 @@ export default function Home() {
           property="og:image"
           content="https://64.media.tumblr.com/avatar_f332fc701bb2_128.pnj"
         />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="og:url" content="https://nicolas-aldao.vercel.app" />
         <meta
           property="og:site_name"
           content="Nicolás Aldao | Frontend Developer"
-        />
+        /> */}
       </Head>
       <Hero />
       {/* <Services /> */}

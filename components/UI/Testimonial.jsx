@@ -18,15 +18,15 @@ const Testimonial = () => {
   };
   return (
     <section>
-      <Container className={`${classes.testimonial__container}`}>
+      <Container className={classes.testimonial__container}>
         <Row>
           <Col lg="6" md="6">
             <SectionSubtitle subtitle="Testimonials" />
             <h4 className="mt-4 mb-5">What my client says</h4>
 
             <Slider {...settings}>
-              <div className={`${classes.testimonial__item}`}>
-                <div className={`${classes.testimonial__client}`}>
+              <div className={classes.testimonial__item}>
+                <div className={classes.testimonial__client}>
                   <Image
                     alt="client-img"
                     src="/images/hero.jpg"
@@ -51,8 +51,8 @@ const Testimonial = () => {
                 </p>
               </div>
 
-              <div className={`${classes.testimonial__item}`}>
-                <div className={`${classes.testimonial__client}`}>
+              <div className={classes.testimonial__item}>
+                <div className={classes.testimonial__client}>
                   <Image
                     alt="client-img"
                     src="/images/hero.jpg"
@@ -77,8 +77,8 @@ const Testimonial = () => {
                 </p>
               </div>
 
-              <div className={`${classes.testimonial__item}`}>
-                <div className={`${classes.testimonial__client}`}>
+              <div className={classes.testimonial__item}>
+                <div className={classes.testimonial__client}>
                   <Image
                     alt="client-img"
                     src="/images/hero.jpg"
