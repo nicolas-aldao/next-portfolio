@@ -1,36 +1,20 @@
-import React, { useRef, useEffect } from "react";
+import React, { useContext, useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Container } from "reactstrap";
-import logo from "../../public/images/logo.png";
+import { Container, Input, FormGroup } from "reactstrap";
+import { NAV__LINK } from "../../constants";
+import moonImg from "../../public/images/moon.png";
+import sunImg from "../../public/images/sun.png";
+import { PortfolioContext } from "../../pages/_app";
 import classes from "./header.module.css";
-
-const NAV__LINK = [
-  {
-    path: "/",
-    display: "Home",
-  },
-  {
-    path: "/#education",
-    display: "Experience",
-  },
-  {
-    path: "/#portfolio",
-    display: "Portfolio",
-  },
-  {
-    path: "/#about",
-    display: "About",
-  },
-  {
-    path: "/#contact",
-    display: "Contact",
-  },
-];
 
 const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
+  const { isDarkMode, setIsDarkMode } = useContext(PortfolioContext);
+  const [isLoading, setIsLoading] = useState(false);
+  const isDesktop =
+    typeof window !== "undefined" ? window.innerWidth >= 993 : 0;
 
   const headerFunc = () => {
     if (
@@ -44,6 +28,19 @@ const Header = () => {
   };
 
   useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, "1500");
+  }, [isDarkMode]);
+
+  useEffect(() => {
+    if (isLoading) {
+      document.body.classList.toggle("dark-mode", isDarkMode);
+    }
+  }, [isLoading]);
+
+  useEffect(() => {
     window.addEventListener("scroll", headerFunc);
     return () => window.removeEventListener("scroll", headerFunc);
   }, []);
@@ -52,35 +49,109 @@ const Header = () => {
     menuRef.current.classList.toggle(`${classes.menu__active}`);
 
   return (
-    <header className={`${classes.header}`} ref={headerRef}>
+    <header className={classes.header} ref={headerRef}>
       <Container>
-        <div className={`${classes.nav__wrapper}`}>
-          <div className={`${classes.logo}`}>
-            {/* <h1>
-              <span>N</span>icolás <span>A</span>ldao
-            </h1> */}
-            {/* <div className={`${classes.logoImg}`}>
-              <Image src={logo} width="50" height="50" alt="about-img" />
-            </div> */}
-          </div>
-
+        <div className={classes.nav__wrapper}>
           <div
-            className={`${classes.navigation}`}
-            ref={menuRef}
-            onClick={toggleMenu}
+            style={{
+              marginBottom: "0",
+              fontSize: 25,
+              display: "flex",
+              alignItems: "center",
+            }}
           >
-            <div className={`${classes.nav__menu}`}>
-              {NAV__LINK.map((item, index) => (
-                <Link href={item.path} key={index}>
-                  {item.display}
-                </Link>
-              ))}
-            </div>
+            {isDarkMode ? (
+              <Image
+                className={classes.themePlaceholder}
+                width={20}
+                height={20}
+                src={moonImg}
+              />
+            ) : (
+              <div className={classes.themePlaceholder}></div>
+            )}
+            <FormGroup
+              switch
+              style={{
+                display: "flex",
+                justifySelf: "center",
+              }}
+              className="p-3 m-0"
+            >
+              <Input
+                type="switch"
+                role="switch"
+                disabled={isLoading}
+                style={{
+                  marginLeft: "1px",
+                  marginRight: "1px",
+                  backgroundColor: "var(--primary-color)",
+                  border: "none",
+                }}
+                className="switch m-0"
+                onClick={(e) => {
+                  if (!isLoading) {
+                    setIsDarkMode(!isDarkMode);
+                  } else {
+                    e.preventDefault();
+                  }
+                }}
+              />
+            </FormGroup>
+            {/* <md-switch
+              style={{ marginLeft: "10px", marginRight: "10px" }}
+              onClick={(e) => {
+                if (!isLoading) {
+                  setIsDarkMode(!isDarkMode);
+                } else {
+                  e.preventDefault();
+                }
+              }}
+            ></md-switch> */}
+            {!isDarkMode ? (
+              <Image
+                className={classes.themePlaceholder}
+                width={25}
+                height={25}
+                src={sunImg}
+              />
+            ) : (
+              <div className={classes.themePlaceholder}></div>
+            )}
           </div>
-
-          <span className={`${classes.mobile__menu}`}>
-            <i className="ri-menu-line" onClick={toggleMenu}></i>
-          </span>
+          {isLoading && isDesktop ? (
+            <div className={classes.loadingContainer}>
+              <div className={classes.skeletonItemsContainer}>
+                {Array.from({ length: 5 }).map((_, index) => {
+                  return (
+                    <div className={classes.loadingItem} key={index}>
+                      <div className={classes.loadingBar}></div>
+                      <div className={classes.loadingBar}></div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ) : (
+            <>
+              <div
+                className={classes.navigation}
+                ref={menuRef}
+                onClick={toggleMenu}
+              >
+                <div className={classes.nav__menu}>
+                  {NAV__LINK.map((item, index) => (
+                    <Link href={item.path} key={index}>
+                      {item.display}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+              <span className={classes.mobile__menu}>
+                <i className="ri-menu-line" onClick={toggleMenu}></i>
+              </span>
+            </>
+          )}
         </div>
       </Container>
     </header>

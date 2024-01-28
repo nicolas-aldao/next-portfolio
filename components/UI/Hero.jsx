@@ -8,20 +8,24 @@ import classes from "../../styles/hero.module.css";
 
 const Hero = () => {
   return (
-    <section className={`${classes.hero}`}>
+    <section className={classes.hero}>
       <Container>
         <Row>
           <Col lg="6" md="6">
-            <div className={`${classes.hero__content}`}>
+            <div className={classes.hero__content}>
               <SectionSubtitle subtitle="Hey!" />
               <h2 className={`mt-3 mb-3 ${classes.marginMobile}`}>
                 I&apos;m Nicolás Aldao
               </h2>
-              <h5 style={{ display: 'inline', fontWeight: 'bold'}} className={`mb-4 ${classes.marginMobileOnlyLeft}`}>
+              <h5
+                style={{ display: "inline", fontWeight: "bold" }}
+                className={`mb-4 ${classes.marginMobileOnlyLeft}`}
+              >
                 Frontend Developer
               </h5>
-              <p style={{display: 'inline'}}> from Argentina 🇦🇷</p>
-              <p className={`${classes.marginMobile}`}>
+              <p style={{ display: "inline" }}> from Argentina</p>
+              <p style={{ display: "inline", fontSize: 20 }}> 🇦🇷</p>
+              <p className={classes.marginMobile}>
                 Welcome to my personal website!
                 <br />
                 In this place I&apos;ll show you what I know to do and what I
@@ -32,14 +36,14 @@ const Hero = () => {
                 <br />
                 Hope you enjoy the journey ;)
               </p>
-              <div className={`${classes.marginMobile}`}>
+              <div className={classes.marginMobile}>
                 <DownloadCVButton />
               </div>
             </div>
           </Col>
           <Col lg="6" md="6">
             <div className={`${classes.hero__img} text-end`}>
-              <Image alt="hero-image" src={heroImg} width="300" height="350" />
+              <Image alt="hero-image" src={heroImg} width="300" height="335" />
             </div>
           </Col>
         </Row>

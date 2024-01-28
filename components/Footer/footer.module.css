@@ -31,10 +31,15 @@
 .footer__copyright {
   border-top: 1px solid var(--secondary-font-color);
 }
+
 .footer__copyright p {
   font-size: 0.8rem;
   text-align: center;
   padding-top: 20px;
+}
+
+.link {
+  color: var(--primary-color);
 }
 
 /* @media only screen and (max-width: 768px) {

@@ -18,7 +18,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Quicksand", sans-serif;
-  scroll-behavior: smooth;
 }
 
 a {
@@ -29,6 +28,7 @@ a {
 * {
   box-sizing: border-box;
   background: var(--background-color);
+  transition: background-color 1s ease;
 }
 
 p {
@@ -97,7 +97,7 @@ footer {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background: var(--secondary-font-color);;
+  background: var(--secondary-font-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -125,4 +125,17 @@ footer {
     padding-top: 0;
     border: none;
   }
+}
+
+.dark-mode {
+  --primary-color: #008170;
+  --secondary-color: #e7e2d5;
+  --four-color: #e7e2d5;
+  --primary-color-lighter: #e7e2d5;
+  --background-color: #1c1c1c;
+  --primary-font-color: #777777;
+  --secondary-font-color: #a5a5a5;
+  --black: #000000;
+  --white: #ffffff;
+  --shadow: #00000033;
 }

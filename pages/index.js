@@ -1,3 +1,8 @@
+import { useState, useEffect } from "react";
+// index.js
+import "@material/web/button/filled-button.js";
+import "@material/web/button/outlined-button.js";
+import "@material/web/checkbox/checkbox.js";
 import Hero from "../components/UI/Hero";
 import Services from "../components/UI/Services";
 import About from "../components/UI/About";

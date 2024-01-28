@@ -43,7 +43,9 @@ const Form = () => {
   return (
     <>
       <SectionSubtitle subtitle="Message me" className="mb-4" />
-      <h4 className="mt-4 mb-4">Doubts, suggestions, learning and need help?</h4>
+      <h4 className="mt-4 mb-4">
+        Doubts, suggestions, learning and need help?
+      </h4>
       {isLoading && <div className={`${classes.spinner}`}></div>}
       <form className={`${classes.form}`} onSubmit={submitHandler}>
         <div className={`${classes.form__group}`}>
@@ -89,14 +91,14 @@ const Form = () => {
           className={`${classes.modal__container}`}
         >
           <ModalHeader>Hey!</ModalHeader>
-          <ModalBody>
+          <ModalBody className={classes.innerText}>
             {formStatus == "success"
               ? "The form was submitted!"
               : "Something went wrong"}
           </ModalBody>
           <ModalFooter style={{ borderTop: "solid 1px white" }}>
             <Button
-              style={{ backgroundColor: "#9a894f" }}
+              className={classes.button}
               onClick={() => {
                 setShowModal(false);
                 setFormStatus("");

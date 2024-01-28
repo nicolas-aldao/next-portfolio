@@ -152,6 +152,7 @@ const education_work = [
         tasks: [
           "Fix bugs and develop new features in web application",
           "Elaborate responsive interfaces",
+          "Code refactoring",
           "Consume APIs",
           "Run deploys",
         ],

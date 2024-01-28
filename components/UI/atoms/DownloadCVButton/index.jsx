@@ -1,9 +1,9 @@
 import React from "react";
-import Link from "next/link";
 import Button from "../Button";
 
 const DownloadCVButton = () => {
-  const url = "https://next-portfolio-nicolas-aldao.vercel.app/react-developer-jr-nicolas-aldao.pdf";
+  const url =
+    "https://next-portfolio-nicolas-aldao.vercel.app/react-developer-jr-nicolas-aldao.pdf";
   const downloadFile = (url) => {
     fetch(url)
       .then((res) => res.blob())

@@ -33,6 +33,18 @@
   animation: spin 1s ease infinite;
 }
 
+/* success modal */
+
+.button {
+  background-color: var(--primary-color);
+}
+
+.innerText {
+  color: var(--primary-color-lighter);
+}
+
+/* success modal */
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
