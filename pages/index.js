@@ -16,7 +16,7 @@ export default function Home() {
         <meta charSet="utf-8" />
         <meta name="csrf_token" content="" />
         <meta property="type" content="website" />
-        <meta property="url" content="www.google.com" />
+        <meta property="url" content="https://nicolas-aldao.vercel.app" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -36,8 +36,11 @@ export default function Home() {
           property="og:image"
           content="https://64.media.tumblr.com/avatar_f332fc701bb2_128.pnj"
         />
-        <meta property="og:url" content={"currentUrl"} />
-        <meta property="og:site_name" content="CampersTribe" />
+        <meta property="og:url" content="https://nicolas-aldao.vercel.app" />
+        <meta
+          property="og:site_name"
+          content="Nicolás Aldao | Frontend Developer"
+        />
       </Head>
       <Hero />
       {/* <Services /> */}
