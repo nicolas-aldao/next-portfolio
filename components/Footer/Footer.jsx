@@ -25,6 +25,7 @@ const Footer = () => {
                 <a
                   className={classes.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://icons8.com/icon/21106/sun"
                 >
                   {" "}
@@ -34,6 +35,7 @@ const Footer = () => {
                 <a
                   className={classes.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://icons8.com/icon/33118/moon-phase"
                 >
                   Moon Phase{" "}
@@ -42,6 +44,7 @@ const Footer = () => {
                 <a
                   className={classes.link}
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://icons8.com"
                 >
                   Icons8
