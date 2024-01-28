@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>Nicolás Aldao | Frontend Developer</title>
-        {/* <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="csrf_token" content="" />
         <meta property="type" content="website" />
         <meta property="url" content={"currentUrl"} />
@@ -45,7 +45,7 @@ export default function Home() {
         <meta content="image/*" property="og:image:type" />
         <meta property="og:url" content={"currentUrl"} />
         <meta property="og:site_name" content="CampersTribe" />
-        <meta property="og:description" content={"description"} /> */}
+        <meta property="og:description" content={"description"} />
       </Head>
       <Hero />
       {/* <Services /> */}
