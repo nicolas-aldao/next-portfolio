@@ -13,7 +13,10 @@
   --shadow: #00000033;
 }
 
-html,
+html {
+  padding: 0px !important;
+  margin: 0px !important;
+}
 body {
   padding: 0;
   margin: 0;

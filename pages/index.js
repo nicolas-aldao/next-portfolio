@@ -13,36 +13,20 @@ export default function Home() {
     <>
       <Head>
         <title>Nicolás Aldao | Frontend Developer</title>
-        {/* <meta charSet="utf-8" />
-        <meta name="csrf_token" content="" />
-        <meta property="type" content="website" />
-        <meta property="url" content="https://nicolas-aldao.vercel.app" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#ffffff" />
-        <meta name="_token" content="" />
-        <meta name="robots" content="noodp" />
-        <meta property="title" content="my title" />
-        <meta property="description" content="my description" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="my title" />
-        <meta property="og:description" content="my description" />
+        <meta name="description" content="Checkout our cool page" key="desc" />
+        <meta property="og:title" content="Social Title for Cool Page" />
+        <meta
+          property="og:description"
+          content="And a social description for our cool page"
+        />
         <meta
           property="og:image"
-          content="https://64.media.tumblr.com/avatar_f332fc701bb2_128.pnj"
+          content="https://example.com/images/cool-page.jpg"
         />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://nicolas-aldao.vercel.app" />
-        <meta
-          property="og:site_name"
-          content="Nicolás Aldao | Frontend Developer"
-        /> */}
       </Head>
       <Hero />
       {/* <Services /> */}
