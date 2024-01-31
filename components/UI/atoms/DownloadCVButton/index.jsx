@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const DownloadCVButton = () => {
   const url =
-    "https://next-portfolio-nicolas-aldao.vercel.app/react-developer-jr-nicolas-aldao.pdf";
+    "https://nicolas-aldao.vercel.app/react-developer-nicolas-aldao.pdf";
   const downloadFile = (url) => {
     fetch(url)
       .then((res) => res.blob())
