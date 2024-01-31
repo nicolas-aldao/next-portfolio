@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
-import DownloadCVButton from "./atoms/DownloadCVButton";
-import heroImg from "../../public/images/me.png";
-import classes from "../../styles/hero.module.css";
+import DownloadCVButton from "../../atoms/DownloadCVButton";
+import heroImg from "../../../../public/images/me.png";
+import classes from "./hero.module.css";
 
 const Hero = () => {
   return (

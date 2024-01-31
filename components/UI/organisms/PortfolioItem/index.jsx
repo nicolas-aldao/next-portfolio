@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import BadgeAtom from "./atoms/BadgeAtom";
-import classes from "../../styles/portfolio-item.module.css";
+import BadgeAtom from "../../atoms/BadgeAtom";
+import classes from "./portfolio-item.module.css";
 
 const PortfolioItem = (props) => {
   const { title, img, liveUrl, keyword } = props.item;

@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import { Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 import Link from "next/link";
-import SectionSubtitle from "./SectionSubtitle";
-import Form from "./Form";
-import PlatziIcon from "./svg/PlatziIcon";
-import CopyClipboardIcon from "./CopyClipboardIcon";
-import classes from "../../styles/contact.module.css";
+import SectionSubtitle from "../../atoms/SectionSubtitle/SectionSubtitle";
+import Form from "../../organisms/Form";
+import PlatziIcon from "../../svg/PlatziIcon";
+import CopyClipboardIcon from "../../svg/CopyClipboardIcon";
+import classes from "./contact.module.css";
 
 const Contact = () => {
   const [emailCliked, setEmailClicked] = useState(false);
@@ -15,21 +15,21 @@ const Contact = () => {
   const refPlatzi = useRef(null);
 
   return (
-    <section id="contact" className={`${classes.contact}`}>
+    <section id="contact" className={classes.contact}>
       <Container>
         <Row>
           <Col lg="6" md="6">
             <SectionSubtitle subtitle="Contact me" />
             <h3 className="mt-4 mb-4">Location and Links</h3>
 
-            <ul className={`${classes.contact__info__list}`}>
-              <li className={`${classes.info__item}`}>
+            <ul className={classes.contact__info__list}>
+              <li className={classes.info__item}>
                 <span>
                   <i className="ri-map-pin-line"></i>
                 </span>
                 <p>Buenos Aires, Argentina</p>
               </li>
-              <li className={`${classes.info__item}`}>
+              <li className={classes.info__item}>
                 <span>
                   <i className="ri-mail-line"></i>
                 </span>
@@ -65,7 +65,7 @@ const Contact = () => {
               </li>
             </ul>
 
-            <div className={`${classes.social__links}`}>
+            <div className={classes.social__links}>
               <Link href="https://github.com/nicolas-aldao">
                 <i ref={refGitHub} className="ri-github-fill"></i>
               </Link>

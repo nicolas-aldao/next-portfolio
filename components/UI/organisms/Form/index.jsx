@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import SectionSubtitle from "./SectionSubtitle";
-import classes from "../../styles/form.module.css";
+import SectionSubtitle from "../../atoms/SectionSubtitle/SectionSubtitle";
+import classes from "./form.module.css";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -58,7 +58,7 @@ const Form = () => {
             disabled={isLoading}
           />
         </div>
-        <div className={`${classes.form__group}`}>
+        <div className={classes.form__group}>
           <input
             type="email"
             placeholder="Email Address"
@@ -68,7 +68,7 @@ const Form = () => {
             disabled={isLoading}
           />
         </div>
-        <div className={`${classes.form__group}`}>
+        <div className={classes.form__group}>
           <textarea
             type="text"
             rows={5}
@@ -84,12 +84,8 @@ const Form = () => {
           Send
         </button>
       </form>
-      <div className={`${classes.modal__container}`}>
-        <Modal
-          isOpen={showModal}
-          centered
-          className={`${classes.modal__container}`}
-        >
+      <div className={classes.modal__container}>
+        <Modal isOpen={showModal} centered className={classes.modal__container}>
           <ModalHeader>Hey!</ModalHeader>
           <ModalBody className={classes.innerText}>
             {formStatus == "success"

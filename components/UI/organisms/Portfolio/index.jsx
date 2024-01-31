@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
-import { PORTFOLIO_DATA } from "../../../constants";
-import SectionSubtitle from "../SectionSubtitle";
+import { PORTFOLIO_DATA } from "../../../../constants";
+import SectionSubtitle from "../../atoms/SectionSubtitle/SectionSubtitle";
 import PortfolioItem from "../PortfolioItem";
 import classes from "./portfolio.module.css";
 

@@ -1,11 +1,9 @@
-// index.js
-import Hero from "../components/UI/Hero";
-import Services from "../components/UI/Services";
-import About from "../components/UI/About";
+import Hero from "../components/UI/sections/Hero";
+import About from "../components/UI/sections/About";
 import Portfolio from "../components/UI/organisms/Portfolio";
-import Testimonial from "../components/UI/Testimonial";
-import Education from "../components/UI/Education";
-import Contact from "../components/UI/Contact";
+// import Testimonial from "../components/UI/Testimonial";
+import Education from "../components/UI/sections/Education";
+import Contact from "../components/UI/sections/Contact";
 import Head from "next/head";
 
 export default function Home() {
@@ -29,7 +27,6 @@ export default function Home() {
         />
       </Head>
       <Hero />
-      {/* <Services /> */}
       <Education />
       <Portfolio />
       <About />
