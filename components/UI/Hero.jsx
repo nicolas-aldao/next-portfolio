@@ -1,5 +1,4 @@
 import React from "react";
-import SectionSubtitle from "./SectionSubtitle";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
 import DownloadCVButton from "./atoms/DownloadCVButton";
@@ -13,7 +12,6 @@ const Hero = () => {
         <Row>
           <Col lg="6" md="6">
             <div className={classes.hero__content}>
-              <SectionSubtitle subtitle="Hey!" />
               <h2 className={`mt-3 mb-3 ${classes.marginMobile}`}>
                 I&apos;m Nicolás Aldao
               </h2>
