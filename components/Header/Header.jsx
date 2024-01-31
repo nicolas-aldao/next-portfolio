@@ -86,6 +86,7 @@ const Header = () => {
                   marginLeft: "1px",
                   marginRight: "1px",
                   backgroundColor: "var(--primary-color)",
+                  cursor: "pointer",
                   border: "none",
                 }}
                 className="switch m-0"

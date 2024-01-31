@@ -1,6 +1,6 @@
 .badge {
   background: var(--four-color) !important;
-  color: var(--primary-font-color);
+  color: var(--black);
   font-size: 0.9rem;
   font-weight: 600;
   padding: 5px 10px;

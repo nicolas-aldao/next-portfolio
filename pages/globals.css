@@ -7,7 +7,7 @@
   --primary-color-lighter: #e7e2d5;
   --background-color: #ffffff;
   --primary-font-color: #5d5d5d;
-  --secondary-font-color: #a5a5a5;
+  --secondary-font-color: #8d8d8d;
   --black: #000000;
   --white: #ffffff;
   --shadow: #00000033;
@@ -134,11 +134,7 @@ footer {
   --primary-color: #008170;
   --secondary-color: #e7e2d5;
   --four-color: #e7e2d5;
-  --primary-color-lighter: #e7e2d5;
   --background-color: #1c1c1c;
-  --primary-font-color: #777777;
+  --primary-font-color: #bcbcbc;
   --secondary-font-color: #a5a5a5;
-  --black: #000000;
-  --white: #ffffff;
-  --shadow: #00000033;
 }
