@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import SectionSubtitle from "./SectionSubtitle";
-import education_work from "../data/education_work";
+import { EDUCATION_WORK } from "../../constants";
 import classes from "../../styles/education.module.css";
 
 const Education = () => {
   return (
     <>
-      <section id="education" className={`${classes.resume}`}>
+      <section id="education" className={classes.resume}>
         <Container>
           <Row>
             <Col lg="6">
@@ -16,20 +16,20 @@ const Education = () => {
                   subtitle="Professional Experience"
                   className="mb-4"
                 />
-                {education_work[0].work
+                {EDUCATION_WORK[0].work
                   .slice(0)
                   .reverse()
                   .map((workItem) => (
-                    <div className={`${classes.resume_item}`} key={workItem.id}>
+                    <div className={classes.resume_item} key={workItem.id}>
                       <h4>{workItem.role}</h4>
                       <h5>{workItem.time}</h5>
                       <p>
                         <em>{workItem.company}</em>
                       </p>
-                      <div className={`${classes.work_details}`}>
+                      <div className={classes.work_details}>
                         <p>{workItem.description}</p>
                       </div>
-                      <div className={`${classes.work_details}`}>
+                      <div className={classes.work_details}>
                         <ul>
                           {workItem.tasks.map((taskItem) => (
                             <li key={taskItem.length}>{taskItem}</li>
@@ -46,23 +46,20 @@ const Education = () => {
                   subtitle="Education and Courses"
                   className="mb-4"
                 />
-                {education_work[0].education
+                {EDUCATION_WORK[0].education
                   .slice(0)
                   .reverse()
                   .map((educationItem) => (
-                    <div
-                      className={`${classes.resume_item}`}
-                      key={educationItem.id}
-                    >
+                    <div className={classes.resume_item} key={educationItem.id}>
                       <h4>{educationItem.title}</h4>
                       <h5>{educationItem.time}</h5>
                       <p>
                         <em>{educationItem.institute}</em>
                       </p>
-                      <div className={`${classes.work_details}`}>
+                      <div className={classes.work_details}>
                         <p>{educationItem.description}</p>
                       </div>
-                      <div className={`${classes.work_details}`}>
+                      <div className={classes.work_details}>
                         <ul>
                           {educationItem.tasks.map((taskItem) => (
                             <li key={taskItem.length}>{taskItem}</li>

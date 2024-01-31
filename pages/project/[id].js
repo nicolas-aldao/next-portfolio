@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
-import { useRouter } from "next/router";
+import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
+import { PORTFOLIO_DATA } from "../../constants";
 import Carrousel from "../../components/UI/Carrousel";
 import BadgeAtom from "../../components/UI/atoms/BadgeAtom";
-import portfolioData from "../../components/data/portfolio";
 import SectionSubtitle from "../../components/UI/SectionSubtitle";
 import LinkButton from "../../components/UI/atoms/LinkButton";
 import classes from "./projectId.module.css";
-import Link from "next/link";
 
 const Detail = () => {
   const { query } = useRouter();
@@ -28,7 +28,7 @@ const Detail = () => {
   };
 
   useEffect(() => {
-    const filteredData = portfolioData.filter((item) => item.id === query.id);
+    const filteredData = PORTFOLIO_DATA.filter((item) => item.id === query.id);
 
     setData(filteredData[0]);
   }, [query.id]);

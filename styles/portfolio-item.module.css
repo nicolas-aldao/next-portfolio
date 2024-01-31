@@ -9,6 +9,7 @@
 .portfolio__item h6 {
   color: var(--primary-color);
   background: transparent;
+  font-size: 18px;
 }
 
 .portfolio__img {

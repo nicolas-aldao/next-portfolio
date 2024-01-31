@@ -7,15 +7,17 @@ import classes from "../../styles/portfolio-item.module.css";
 const PortfolioItem = (props) => {
   const { title, img, liveUrl, keyword } = props.item;
   return (
-    <div className={`${classes.portfolio__item}`}>
+    <div className={classes.portfolio__item}>
       <div className="bg-transparent">
         <h6>{title}</h6>
         {keyword.map((item, index) => (
-          <BadgeAtom key={index} className={`${classes.badge}`}>{item}</BadgeAtom>
+          <BadgeAtom key={index} className={classes.badge}>
+            {item}
+          </BadgeAtom>
         ))}
       </div>
 
-      <div className={`${classes.portfolio__img}`}>
+      <div className={classes.portfolio__img}>
         <Link href={liveUrl}>
           <Image alt="portfolio-img" src={img[0]} width="380" height="250" />
         </Link>

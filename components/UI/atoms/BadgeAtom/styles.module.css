@@ -1,8 +1,8 @@
 .badge {
-    background: var(--four-color) !important;
-    color: var(--primary-font-color);
-    font-size: 0.7rem;
-    font-weight: 400;
-    padding: 5px 10px;
-    margin-right: 10px;
-  }
+  background: var(--four-color) !important;
+  color: var(--primary-font-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  margin-right: 10px;
+}

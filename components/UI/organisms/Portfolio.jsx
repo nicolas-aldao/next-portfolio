@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
-import portfolioData from "../../data/portfolio";
+import { PORTFOLIO_DATA } from "../../../constants";
 import SectionSubtitle from "../SectionSubtitle";
 import PortfolioItem from "../PortfolioItem";
 import classes from "./portfolio.module.css";
@@ -11,7 +11,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     if (filter === "Mobile App") {
-      const filteredData = portfolioData.filter(
+      const filteredData = PORTFOLIO_DATA.filter(
         (item) => item.category === filter
       );
 
@@ -19,7 +19,7 @@ const Portfolio = () => {
     }
 
     if (filter === "Web Design") {
-      const filteredData = portfolioData.filter(
+      const filteredData = PORTFOLIO_DATA.filter(
         (item) => item.category === filter
       );
 
@@ -27,13 +27,13 @@ const Portfolio = () => {
     }
 
     if (filter === "All") {
-      const filteredData = portfolioData;
+      const filteredData = PORTFOLIO_DATA;
 
       setData(filteredData);
     }
   }, [filter]);
 
-  const active = `${classes.tab__btn__active}`;
+  const active = classes.tab__btn__active;
 
   return (
     <section id="portfolio">
@@ -42,13 +42,13 @@ const Portfolio = () => {
           <Col lg="6" md="6" className="mb-5">
             <SectionSubtitle subtitle="Portfolio" />
             <h4 className={`mt-4 ${classes.marginMobile}`}>Some of my works</h4>
-            <p className={`${classes.marginMobile}`}>
+            <p className={classes.marginMobile}>
               Use &quot;All&quot;, &quot;Mobile App&quot; or &quot;Web
               Design&quot; to filter what projects you want to browse
             </p>
           </Col>
           <Col lg="6" md="12">
-            <div className={`${classes.tab__btns}`}>
+            <div className={classes.tab__btns}>
               <button
                 className={`${filter === "All" ? active : ""} secondary__btn`}
                 onClick={() => setFilter("All")}
