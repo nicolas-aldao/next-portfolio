@@ -31,7 +31,7 @@ const Hero = () => {
                 In this place I&apos;ll show you what I know to do and what I
                 learned so far.
                 <br />
-                I've worked on a variety of projects, <br />
+                I&apos;ve worked on a variety of projects, <br />
                 but lately, I&apos;m doing focus on React projects.
                 <br />
                 Hope you enjoy the journey ;)
