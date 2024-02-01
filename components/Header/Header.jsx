@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useEffect, useState } from "react";
+import React, { useContext, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Input, FormGroup } from "reactstrap";
@@ -12,9 +12,6 @@ const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
   const { isDarkMode, setIsDarkMode } = useContext(PortfolioContext);
-  const [isLoading, setIsLoading] = useState(false);
-  const isDesktop =
-    typeof window !== "undefined" ? window.innerWidth >= 993 : 0;
 
   const headerFunc = () => {
     if (
@@ -28,17 +25,8 @@ const Header = () => {
   };
 
   useEffect(() => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, "1500");
+    document.body.classList.toggle("dark-mode", isDarkMode);
   }, [isDarkMode]);
-
-  useEffect(() => {
-    if (isLoading) {
-      document.body.classList.toggle("dark-mode", isDarkMode);
-    }
-  }, [isLoading]);
 
   useEffect(() => {
     window.addEventListener("scroll", headerFunc);
@@ -46,7 +34,7 @@ const Header = () => {
   }, []);
 
   const toggleMenu = () =>
-    menuRef.current.classList.toggle(`${classes.menu__active}`);
+    menuRef.current.classList.toggle(classes.menu__active);
 
   return (
     <header className={classes.header} ref={headerRef}>
@@ -81,7 +69,6 @@ const Header = () => {
               <Input
                 type="switch"
                 role="switch"
-                disabled={isLoading}
                 style={{
                   marginLeft: "1px",
                   marginRight: "1px",
@@ -90,13 +77,7 @@ const Header = () => {
                   border: "none",
                 }}
                 className="switch m-0"
-                onClick={(e) => {
-                  if (!isLoading) {
-                    setIsDarkMode(!isDarkMode);
-                  } else {
-                    e.preventDefault();
-                  }
-                }}
+                onClick={(e) => setIsDarkMode(!isDarkMode)}
               />
             </FormGroup>
             {!isDarkMode ? (
@@ -110,39 +91,22 @@ const Header = () => {
               <div className={classes.themePlaceholder}></div>
             )}
           </div>
-          {/* {isLoading && isDesktop ? (
-            <div className={classes.loadingContainer}>
-              <div className={classes.skeletonItemsContainer}>
-                {Array.from({ length: 5 }).map((_, index) => {
-                  return (
-                    <div className={classes.loadingItem} key={index}>
-                      <div className={classes.loadingBar}></div>
-                      <div className={classes.loadingBar}></div>
-                    </div>
-                  );
-                })}
-              </div>
+          <div
+            className={classes.navigation}
+            ref={menuRef}
+            onClick={toggleMenu}
+          >
+            <div className={classes.nav__menu}>
+              {NAV__LINK.map((item, index) => (
+                <Link href={item.path} key={index}>
+                  {item.display}
+                </Link>
+              ))}
             </div>
-          ) : ( */}
-          <>
-            <div
-              className={classes.navigation}
-              ref={menuRef}
-              onClick={toggleMenu}
-            >
-              <div className={classes.nav__menu}>
-                {NAV__LINK.map((item, index) => (
-                  <Link href={item.path} key={index}>
-                    {item.display}
-                  </Link>
-                ))}
-              </div>
-            </div>
-            <span className={classes.mobile__menu}>
-              <i className="ri-menu-line" onClick={toggleMenu}></i>
-            </span>
-          </>
-          {/* )} */}
+          </div>
+          <span className={classes.mobile__menu}>
+            <i className="ri-menu-line" onClick={toggleMenu}></i>
+          </span>
         </div>
       </Container>
     </header>

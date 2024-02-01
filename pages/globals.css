@@ -16,7 +16,7 @@
 
   /* text gradient */
   --primary-color-darker: #907b33;
-  --primary-gradient-lighter: #ffee00;
+  --primary-gradient-lighter: #f0e10e;
   .primary-gradient {
     background: #00a38e;
     background: linear-gradient(
@@ -198,4 +198,8 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  /* background-color gradiendt #2 */
+  /* --background-color-second: linear-gradient(90deg, #161a30 0%, #31304d 100%); */
+  --background-color-second: #31304d;
 }
