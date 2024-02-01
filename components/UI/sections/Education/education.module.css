@@ -14,7 +14,7 @@
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   color: var(--primary-font-color);
   margin-bottom: 10px;
 }
@@ -33,10 +33,6 @@
 .resume_item .work_details {
   padding-left: 20px;
 }
-
-/* .work_details ul li {
-  color: var(--secondary-font-color);
-} */
 
 .resume .resume_item ul li {
   padding-bottom: 10px;

@@ -12,7 +12,9 @@ const Hero = () => {
         <Row>
           <Col lg="6" md="6">
             <div className={classes.hero__content}>
-              <h2 className={`mt-3 mb-3 ${classes.marginMobile}`}>
+              <h2
+                className={`mt-3 mb-3 ${classes.marginMobile} primary-gradient`}
+              >
                 I&apos;m Nicolás Aldao
               </h2>
               <h5
@@ -29,7 +31,7 @@ const Hero = () => {
                 In this place I&apos;ll show you what I know to do and what I
                 learned so far.
                 <br />
-                I have worked on a variety of projects, <br />
+                I've worked on a variety of projects, <br />
                 but lately, I&apos;m doing focus on React projects.
                 <br />
                 Hope you enjoy the journey ;)

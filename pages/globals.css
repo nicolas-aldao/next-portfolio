@@ -11,6 +11,22 @@
   --black: #000000;
   --white: #ffffff;
   --shadow: #00000033;
+
+  --primary-color-opacity: rgb(0, 0, 0, 0.3);
+
+  /* text gradient */
+  --primary-color-darker: #907b33;
+  --primary-gradient-lighter: #ffee00;
+  .primary-gradient {
+    background: #00a38e;
+    background: linear-gradient(
+      to right,
+      var(--primary-color-darker) 0%,
+      var(--primary-gradient-lighter) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 html {
@@ -20,7 +36,32 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Onest", sans-serif;
+  background-color: var(--background-color);
+  /* backface-visibility: hidden;
+  transform: translateZ(0); */
+  /* font-family: "Quicksand", sans-serif; */
+}
+
+div,
+section,
+form,
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+a,
+ul,
+li,
+em,
+img,
+i,
+svg {
+  background: rgba(255, 255, 255, 0);
 }
 
 a {
@@ -131,10 +172,30 @@ footer {
 }
 
 .dark-mode {
-  --primary-color: #008170;
+  --primary-color: #00a38e;
   --secondary-color: #e7e2d5;
   --four-color: #e7e2d5;
-  --background-color: #1c1c1c;
-  --primary-font-color: #bcbcbc;
-  --secondary-font-color: #a5a5a5;
+  --background-color: linear-gradient(
+    90deg,
+    rgb(28, 28, 28) 0%,
+    rgb(37, 33, 74) 100%
+  );
+  --primary-font-color: #dddddd;
+  --secondary-font-color: #bcbcbc;
+
+  --primary-color-opacity: rgb(0, 163, 142, 0.25);
+
+  /* text gradient */
+  --primary-color-darker: #008472;
+  --primary-gradient-lighter: #ffffff;
+  .primary-gradient {
+    background: #00a38e;
+    background: linear-gradient(
+      to right,
+      var(--primary-color-darker) 0%,
+      var(--primary-gradient-lighter) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

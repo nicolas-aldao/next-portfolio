@@ -29,8 +29,8 @@ export const PORTFOLIO_DATA = [
       Initially, I developed it with midudev's course on Platzi, and I kept working on it, giving it more features.
       Some of the funcionalities are a login system, filter paintings depending of its art genre, give likes to your favorites, and have a section where you can see all the paintings you've liked.`,
     importantInfo: `Note: You can use the demo account.
-      user: admin
-      pass: admin`,
+      user: demo
+      pass: demo`,
     img: ["/images/portfolio-6.png"],
     category: "Mobile App",
     keyword: ["HTML", "CSS", "React", "Node", "MongooDB"],

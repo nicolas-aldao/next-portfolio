@@ -110,7 +110,7 @@ const Header = () => {
               <div className={classes.themePlaceholder}></div>
             )}
           </div>
-          {isLoading && isDesktop ? (
+          {/* {isLoading && isDesktop ? (
             <div className={classes.loadingContainer}>
               <div className={classes.skeletonItemsContainer}>
                 {Array.from({ length: 5 }).map((_, index) => {
@@ -123,26 +123,26 @@ const Header = () => {
                 })}
               </div>
             </div>
-          ) : (
-            <>
-              <div
-                className={classes.navigation}
-                ref={menuRef}
-                onClick={toggleMenu}
-              >
-                <div className={classes.nav__menu}>
-                  {NAV__LINK.map((item, index) => (
-                    <Link href={item.path} key={index}>
-                      {item.display}
-                    </Link>
-                  ))}
-                </div>
+          ) : ( */}
+          <>
+            <div
+              className={classes.navigation}
+              ref={menuRef}
+              onClick={toggleMenu}
+            >
+              <div className={classes.nav__menu}>
+                {NAV__LINK.map((item, index) => (
+                  <Link href={item.path} key={index}>
+                    {item.display}
+                  </Link>
+                ))}
               </div>
-              <span className={classes.mobile__menu}>
-                <i className="ri-menu-line" onClick={toggleMenu}></i>
-              </span>
-            </>
-          )}
+            </div>
+            <span className={classes.mobile__menu}>
+              <i className="ri-menu-line" onClick={toggleMenu}></i>
+            </span>
+          </>
+          {/* )} */}
         </div>
       </Container>
     </header>
