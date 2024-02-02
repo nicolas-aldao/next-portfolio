@@ -1,9 +1,9 @@
-import Hero from "../components/UI/sections/Hero";
-import About from "../components/UI/sections/About";
-import Portfolio from "../components/UI/organisms/Portfolio";
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About";
+import Portfolio from "../components/organisms/Portfolio";
 // import Testimonial from "../components/UI/Testimonial";
-import Education from "../components/UI/sections/Education";
-import Contact from "../components/UI/sections/Contact";
+import Education from "../components/sections/Education";
+import Contact from "../components/sections/Contact";
 import Head from "next/head";
 
 export default function Home() {

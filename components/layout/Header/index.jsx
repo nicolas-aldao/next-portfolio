@@ -2,10 +2,10 @@ import React, { useContext, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Input, FormGroup } from "reactstrap";
-import { NAV__LINK } from "../../constants";
-import moonImg from "../../public/images/moon.png";
-import sunImg from "../../public/images/sun.png";
-import { PortfolioContext } from "../../pages/_app";
+import { NAV__LINK } from "../../../constants";
+import moonImg from "../../../public/images/moon.png";
+import sunImg from "../../../public/images/sun.png";
+import { PortfolioContext } from "../../../pages/_app";
 import classes from "./header.module.css";
 
 const Header = () => {

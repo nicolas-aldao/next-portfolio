@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import SectionSubtitle from "../../atoms/SectionSubtitle/SectionSubtitle";
-import { EDUCATION_WORK } from "../../../../constants";
+import { EDUCATION_WORK } from "../../../constants";
 import classes from "./education.module.css";
 
 const Education = () => {
