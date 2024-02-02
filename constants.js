@@ -49,18 +49,6 @@ export const PORTFOLIO_DATA = [
     deployUrl: "https://avocado-app-bice.vercel.app/",
     liveUrl: "/project/7",
   },
-  // {
-  //   id: "8",
-  //   title: "TODO List",
-  //   description:
-  //     "This is a TODO list app. It uses local storage to save the data, in other words if you delete the browser's cache, the data will be lost.",
-  //   img: ["/images/portfolio-8.png"],
-  //   category: "Web Design",
-  //   keyword: ["React", "Local Storage", "React Context"],
-  //   repoUrl: "https://github.com/nicolas-aldao/todo-app",
-  //   deployUrl: "https://nicolas-aldao.github.io/todo-app",
-  //   liveUrl: "/project/8",
-  // },
   {
     id: "9",
     title: "Grid Layout Concept Art: Beatles",
