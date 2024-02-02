@@ -3,8 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import classes from "./footer.module.css";
 
 const Footer = () => {
-  const date = new Date();
-  const year = date.getFullYear();
+  const year = new Date().getFullYear();
 
   return (
     <footer>

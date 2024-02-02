@@ -46,9 +46,9 @@ const Form = () => {
       <h4 className="mt-4 mb-4">
         Doubts, suggestions, learning and need help?
       </h4>
-      {isLoading && <div className={`${classes.spinner}`}></div>}
-      <form className={`${classes.form}`} onSubmit={submitHandler}>
-        <div className={`${classes.form__group}`}>
+      {isLoading && <div className={classes.spinner}></div>}
+      <form className={classes.form} onSubmit={submitHandler}>
+        <div className={classes.form__group}>
           <input
             type="text"
             placeholder="Your Name"

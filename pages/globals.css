@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --primary-color: #9a894f;
@@ -17,6 +17,14 @@
   /* text gradient */
   --primary-color-darker: #907b33;
   --primary-gradient-lighter: #f0e10e;
+
+  .primary-gradient-color {
+    border-color: linear-gradient(
+      to right,
+      var(--primary-color-darker) 0%,
+      var(--primary-gradient-lighter) 100%
+    );
+  }
   .primary-gradient {
     background: #00a38e;
     background: linear-gradient(
@@ -38,9 +46,6 @@ body {
   margin: 0;
   font-family: "Onest", sans-serif;
   background-color: var(--background-color);
-  /* backface-visibility: hidden;
-  transform: translateZ(0); */
-  /* font-family: "Quicksand", sans-serif; */
 }
 
 div,
@@ -199,7 +204,5 @@ footer {
     -webkit-text-fill-color: transparent;
   }
 
-  /* background-color gradiendt #2 */
-  /* --background-color-second: linear-gradient(90deg, #161a30 0%, #31304d 100%); */
   --background-color-second: #31304d;
 }
