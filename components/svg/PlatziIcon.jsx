@@ -3,7 +3,7 @@ import React from "react";
 const PlatziIcon = () => {
   return (
     <svg
-      fill="#a5a5a5"
+      fill="var(--secondary-font-color)"
       width="21px"
       height="21px"
       viewBox="0 0 24 24"

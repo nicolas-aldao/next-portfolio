@@ -33,40 +33,32 @@ const About = () => {
             </h3>
 
             <section className={classes.tecnologies_container}>
-              <div
-                className={`${classes.skill_container} ${classes.red_border}`}
-              >
+              <div className={classes.skill_container}>
                 <HtmlIcon />
                 <BadgeAtom key="Html" className={classes.skills_badge}>
                   HTML
                 </BadgeAtom>
               </div>
-              <div
-                className={`${classes.skill_container} ${classes.red_border}`}
-              >
+              <div className={classes.skill_container}>
                 <CssIcon />
                 <BadgeAtom key="Css" className={classes.skills_badge}>
                   CSS
                 </BadgeAtom>
               </div>
-              <div
-                className={`${classes.skill_container} ${classes.red_border}`}
-              >
+              <div className={classes.skill_container}>
                 <JsIcon />
                 <BadgeAtom key="Javascript" className={classes.skills_badge}>
                   JAVASCRIPT
                 </BadgeAtom>
               </div>
-              <div
-                className={`${classes.skill_container} ${classes.red_border}`}
-              >
+              <div className={classes.skill_container}>
                 <ReactIcon />
                 <BadgeAtom key="React" className={classes.skills_badge}>
                   REACT
                 </BadgeAtom>
               </div>
               <div
-                className={`${classes.skill_container} ${classes.red_border}`}
+                className={classes.skill_container}
                 style={{ marginLeft: "8px", marginRight: "8px" }}
               >
                 <NextJsIcon />
@@ -74,9 +66,7 @@ const About = () => {
                   NEXT.JS
                 </BadgeAtom>
               </div>
-              <div
-                className={`${classes.skill_container} ${classes.red_border}`}
-              >
+              <div className={classes.skill_container}>
                 <GitIcon />
                 <BadgeAtom key="Git" className={classes.skills_badge}>
                   GIT
