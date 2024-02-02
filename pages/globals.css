@@ -44,7 +44,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Onest", sans-serif;
+  font-family: Onest, sans-serif !important;
   background-color: var(--background-color);
 }
 
