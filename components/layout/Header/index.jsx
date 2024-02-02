@@ -1,6 +1,5 @@
 import React, { useContext, useRef, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Container, Input, FormGroup } from "reactstrap";
 import { NAV__LINK } from "../../../constants";
 import moonImg from "../../../public/images/moon.png";
@@ -12,6 +11,8 @@ const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
   const { isDarkMode, setIsDarkMode } = useContext(PortfolioContext);
+
+  console.log("img ", JSON.stringify(sunImg));
 
   const headerFunc = () => {
     if (
@@ -48,16 +49,6 @@ const Header = () => {
               alignItems: "center",
             }}
           >
-            {isDarkMode ? (
-              <Image
-                className={classes.themePlaceholder}
-                width={20}
-                height={20}
-                src={moonImg}
-              />
-            ) : (
-              <div className={classes.themePlaceholder}></div>
-            )}
             <FormGroup
               switch
               style={{
@@ -75,21 +66,16 @@ const Header = () => {
                   backgroundColor: "var(--primary-color)",
                   cursor: "pointer",
                   border: "none",
+                  height: `${isDarkMode ? "25px" : "28px"}`,
+                  backgroundImage: `url(${
+                    isDarkMode ? moonImg.blurDataURL : sunImg.blurDataURL
+                  })`,
+                  boxShadow: "none",
                 }}
                 className="switch m-0"
                 onClick={(e) => setIsDarkMode(!isDarkMode)}
               />
             </FormGroup>
-            {!isDarkMode ? (
-              <Image
-                className={classes.themePlaceholder}
-                width={25}
-                height={25}
-                src={sunImg}
-              />
-            ) : (
-              <div className={classes.themePlaceholder}></div>
-            )}
           </div>
           <div
             className={classes.navigation}

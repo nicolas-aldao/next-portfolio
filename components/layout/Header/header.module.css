@@ -114,69 +114,6 @@
   }
 }
 
-.themePlaceholder {
-  display: inline-block;
-  position: relative;
-  margin: auto;
-  height: 20px;
-  width: 20px;
-}
-
-/* loading styles */
-
-.loadingContainer {
-  background-color: rgba(255, 255, 255, 0);
-  padding: 20px;
-  padding-right: 50px;
-  padding-left: 60px;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.skeletonItemsContainer {
-  display: flex;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.loadingItem {
-  background: #dfd6d6;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  width: 80px;
-  height: 40px;
-  border-radius: 10px;
-
-  /* animation */
-  background: #eee;
-  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
-  border-radius: 5px;
-  background-size: 200% 100%;
-  animation: 1.5s shine linear infinite;
-}
-
-.loadingBar {
-  background: #aca5a5;
-  display: flex;
-  border-radius: 10px;
-  width: 60px;
-  height: 6px;
-  margin: 3px;
-
-  /* animation */
-  background: #cec4c4;
-  background: linear-gradient(110deg, #ddd2d2 8%, #d5c8c8 18%, #cec4c4 33%);
-  border-radius: 5px;
-  background-size: 200% 100%;
-  animation: 1.5s shine linear infinite;
-}
-
 @keyframes shine {
   to {
     background-position-x: -200%;
