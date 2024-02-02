@@ -1,5 +1,5 @@
 import { createContext, useState } from "react";
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/Layout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "remixicon/fonts/remixicon.css";
 import "slick-carousel/slick/slick.css";
