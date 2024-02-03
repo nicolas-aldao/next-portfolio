@@ -66,7 +66,7 @@ const Header = () => {
                   backgroundColor: "var(--primary-color)",
                   cursor: "pointer",
                   border: "none",
-                  height: `${isDarkMode ? "25px" : "28px"}`,
+                  // height: `${isDarkMode ? "25px" : "28px"}`,
                   backgroundImage: `url(${
                     isDarkMode ? moonImg.blurDataURL : sunImg.blurDataURL
                   })`,
