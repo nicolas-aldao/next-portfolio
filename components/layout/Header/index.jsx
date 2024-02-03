@@ -11,8 +11,7 @@ const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
   const { isDarkMode, setIsDarkMode } = useContext(PortfolioContext);
-
-  console.log("img ", JSON.stringify(sunImg));
+  console.log("path ", window?.location.href);
 
   const headerFunc = () => {
     if (
@@ -67,7 +66,7 @@ const Header = () => {
                   cursor: "pointer",
                   border: "none",
                   // height: `${isDarkMode ? "25px" : "28px"}`,
-                  backgroundImage: `url(${
+                  backgroundImage: `url(${window?.location.href}${
                     isDarkMode ? moonImg.blurDataURL : sunImg.blurDataURL
                   })`,
                   boxShadow: "none",
