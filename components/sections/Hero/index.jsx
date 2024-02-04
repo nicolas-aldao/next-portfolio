@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
+import GradientBorderAnimated from "../../atoms/GradientBorderAnimated";
 import DownloadCVButton from "../../atoms/DownloadCVButton";
 import heroImg from "../../../public/images/me.png";
 import classes from "./hero.module.css";
@@ -37,12 +38,9 @@ const Hero = () => {
                 Hope you enjoy the journey ;)
               </p>
               <div className={classes.marginMobile}>
-                <DownloadCVButton />
-              </div>
-              <div className={classes.testContainer}>
-                <div className={classes.gradient_border}>
-                  <button>Click me</button>
-                </div>
+                <GradientBorderAnimated>
+                  <DownloadCVButton />
+                </GradientBorderAnimated>
               </div>
             </div>
           </Col>

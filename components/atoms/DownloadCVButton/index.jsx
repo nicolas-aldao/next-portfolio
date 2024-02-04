@@ -20,7 +20,7 @@ const DownloadCVButton = () => {
       });
   };
   return (
-    <div className="mt-5">
+    <div>
       <Button
         className={classes.btn_container}
         text="Download CV"
