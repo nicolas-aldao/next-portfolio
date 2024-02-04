@@ -1,3 +1,5 @@
+export const ULR_PORTFOLIO = "https://nicolas-aldao.vercel.app";
+
 export const NAV__LINK = [
   {
     path: "/",
@@ -71,7 +73,7 @@ export const EDUCATION_WORK = [
         title: "System Analist",
         time: "2016 - 2020",
         institute: "Instituto Santo Tomás de Aquino",
-        description: "3 years tertiary career in an institute in Argentina",
+        description: "3 years tertiary career in an institute from Argentina",
         tasks: [
           "Be able to analize requirements, algoriths and computer systems",
           "Learn and build web pages and desktop applications",
@@ -128,7 +130,7 @@ export const EDUCATION_WORK = [
         time: "Dic 2022 (160hs aprox.)",
         institute: "Baufest",
         description:
-          "I took a React Intensive Training emulating a real project with Scrum ceremonies, with a PO, QA and Backend team with other 2 frontend partners, the objective was build a mvp of a digital wallet in React in a month where we can send and receive money from other users",
+          "React Intensive Training emulating a real project with Scrum ceremonies, with a PO, QA and Backend team with other 2 frontend partners, the objective was build a mvp of a digital wallet in React in a month where we can send and receive money from other users",
         tasks: ["Consuming API's", "Form validations", "Atomic Design"],
       },
       {
@@ -150,7 +152,7 @@ export const EDUCATION_WORK = [
         time: "2018 - 2019",
         company: "Baufest, Argentina",
         description:
-          "Support project where I had to communicate everyday with the client via email, and sometimes call (in spanish), to answer to questions, doubts and resolve problems",
+          "Support project where I had to communicate everyday with the client via email and calls",
         tasks: [
           "Control data sellout reports",
           "Automatization tasks using Excel and Macros with VBA",
@@ -200,9 +202,9 @@ export const EDUCATION_WORK = [
         time: "Jun 2022 - Dic 2022",
         company: "Baufest, Argentina",
         description:
-          "Project english speaked, for a bank in Jamaica, developing a digital wallet mobile app.",
+          "Project english speaked, for a bank in Jamaica, digital wallet mobile app.",
         tasks: [
-          "Fix bugs and develop new features in mobile application",
+          "Fix bugs and develop new features",
           "Fix linting errors",
           "Styled Components",
           "Consume APIs",
@@ -215,8 +217,7 @@ export const EDUCATION_WORK = [
         company: "Baufest, Argentina",
         description: "Responsive web app for an important bank in Argentina.",
         tasks: [
-          "Fix bugs and develop new features in web application",
-          "Elaborate responsive interfaces",
+          "Fix bugs and develop new features",
           "Code refactoring",
           "Consume APIs",
           "Run deploys",

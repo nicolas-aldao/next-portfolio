@@ -1,10 +1,10 @@
 import React from "react";
+import { ULR_PORTFOLIO } from "../../../constants";
 import Button from "../Button";
 import classes from "./styles.module.css";
 
 const DownloadCVButton = () => {
-  const url =
-    "https://nicolas-aldao.vercel.app/react-developer-nicolas-aldao.pdf";
+  const url = `${ULR_PORTFOLIO}/react-developer-nicolas-aldao.pdf`;
   const downloadFile = (url) => {
     fetch(url)
       .then((res) => res.blob())

@@ -30,10 +30,6 @@
   }
 }
 
-html {
-  /* padding: 0px !important;
-  margin: 0px !important; */
-}
 body {
   padding: 0;
   margin: 0;
@@ -176,7 +172,7 @@ footer {
   --background-color: linear-gradient(
     90deg,
     rgb(28, 28, 28) 0%,
-    rgb(37, 33, 74) 100%
+    rgb(25, 20, 60) 100%
   );
   --primary-font-color: #dddddd;
   --secondary-font-color: #bcbcbc;
@@ -188,16 +184,6 @@ footer {
   --primary-color-darker: #008472;
   --primary-gradient-lighter: #ffffff;
 
-  /* .primary-gradient {
-    background: linear-gradient(
-      to right,
-      var(--primary-color-darker) 0%,
-      var(--primary-gradient-lighter) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  } */
-
   /* portofolio item color rectangle (only dark mode) */
-  --background-color-second: #31304d;
+  --background-color-second: rgb(30, 30, 50);
 }
