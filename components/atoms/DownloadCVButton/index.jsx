@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Button";
+import classes from "./styles.module.css";
 
 const DownloadCVButton = () => {
   const url =
@@ -21,6 +22,7 @@ const DownloadCVButton = () => {
   return (
     <div className="mt-5">
       <Button
+        className={classes.btn_container}
         text="Download CV"
         onClick={() => {
           downloadFile(url);

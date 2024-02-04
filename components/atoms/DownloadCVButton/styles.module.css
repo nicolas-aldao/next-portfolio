@@ -1,0 +1,11 @@
+.btn_container {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(
+        60deg,
+        var(--primary-color-darker),
+        var(--primary-color-lighter)
+      )
+      border-box !important;
+  border: 5px solid transparent !important;
+  border-radius: 25px;
+}

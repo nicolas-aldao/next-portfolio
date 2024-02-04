@@ -29,7 +29,7 @@
   /* glow effect */
   /* -webkit-box-shadow: 10px 10px 10px 10px var(--primary-color-opacity); */
   /* -moz-box-shadow: 0px 0px 0px 0px var(--primary-color-opacity); */
-  box-shadow: 10px 10px 100px 10px var(--primary-color-opacity);
+  /* box-shadow: 10px 10px 100px 10px var(--primary-color-opacity); */
 }
 
 @media only screen and (max-width: 992px) {
