@@ -39,6 +39,11 @@ const Hero = () => {
               <div className={classes.marginMobile}>
                 <DownloadCVButton />
               </div>
+              <div className={classes.testContainer}>
+                <div className={classes.gradient_border}>
+                  <button>Click me</button>
+                </div>
+              </div>
             </div>
           </Col>
           <Col lg="6" md="6">
