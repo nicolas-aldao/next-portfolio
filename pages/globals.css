@@ -169,11 +169,7 @@ footer {
   --primary-color: #00a38e;
   --secondary-color: #e7e2d5;
   --four-color: #e7e2d5;
-  --background-color: linear-gradient(
-    90deg,
-    rgb(28, 28, 28) 0%,
-    rgb(25, 20, 60) 100%
-  );
+  --background-color: linear-gradient(90deg, #1c1c1c 0%, #171b32 100%);
   --primary-font-color: #dddddd;
   --secondary-font-color: #bcbcbc;
   --black-white-toggle: #ffffff; /* this changes depending of the dark or light mode */
