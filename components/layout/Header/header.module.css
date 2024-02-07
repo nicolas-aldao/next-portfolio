@@ -87,7 +87,11 @@
     width: 300px;
     height: 100%;
     flex-direction: column;
-    justify-content: center;
+    /* mobile styles */
+    justify-content: flex-start;
+    padding: 20px 60px 0 60px;
+    max-width: fit-content;
+    background: var(--background-color) !important;
   }
 
   .nav__right {
