@@ -31,6 +31,9 @@ class MyDocument extends Document {
             property="og:image:secure_url"
             content="https://nicolas-aldao.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsuperhero.76ecbf13.png&w=640&q=75"
           />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content="400" />
+          <meta property="og:image:height" content="300" />
         </Head>
         <body>
           <Main />
