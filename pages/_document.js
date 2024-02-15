@@ -14,11 +14,11 @@ class MyDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <meta
+          {/* <meta
             name="description"
             content="Checkout our cool page"
             key="desc"
-          />
+          /> */}
           <meta
             property="og:title"
             content="Nicolás Aldao | Frontend Developer"
@@ -29,7 +29,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://nicolas-aldao.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.8399bdb8.png&w=640&q=75"
+            content="https://nicolas-aldao.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsuperhero.76ecbf13.png&w=640&q=75"
           />
         </Head>
         <body>

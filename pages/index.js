@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Nicolás Aldao | Frontend Developer</title>
+        {/* <title>Nicolás Aldao | Frontend Developer</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -24,7 +24,7 @@ export default function Home() {
         <meta
           property="og:image"
           content="https://example.com/images/cool-page.jpg"
-        />
+        /> */}
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" /> */}
         {/* <link
