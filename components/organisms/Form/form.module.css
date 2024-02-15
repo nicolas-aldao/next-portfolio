@@ -35,13 +35,19 @@
 }
 
 /* success modal */
+/* .modal__container {
+  border-radius: 20px !important;
+} */
+.modal__container div {
+  background: var(--background-color) !important;
+}
 
 .button {
   background-color: var(--primary-color);
 }
 
 .innerText {
-  color: var(--primary-color-lighter);
+  color: var(--primary-font-color);
 }
 
 /* success modal */

@@ -84,27 +84,27 @@ const Form = () => {
           Send
         </button>
       </form>
-      <div className={classes.modal__container}>
-        <Modal isOpen={showModal} centered className={classes.modal__container}>
-          <ModalHeader>Hey!</ModalHeader>
-          <ModalBody className={classes.innerText}>
-            {formStatus == "success"
-              ? "The form was submitted!"
-              : "Something went wrong"}
-          </ModalBody>
-          <ModalFooter style={{ borderTop: "solid 1px white" }}>
-            <Button
-              className={classes.button}
-              onClick={() => {
-                setShowModal(false);
-                setFormStatus("");
-              }}
-            >
-              {formStatus == "success" ? "Great!" : "Ops..."}
-            </Button>
-          </ModalFooter>
-        </Modal>
-      </div>
+      {/* <div className={classes.modal__container}> */}
+      <Modal isOpen={showModal} centered className={classes.modal__container}>
+        <ModalHeader>Hey!</ModalHeader>
+        <ModalBody className={classes.innerText}>
+          {formStatus == "success"
+            ? "The form was submitted!"
+            : "Something went wrong"}
+        </ModalBody>
+        <ModalFooter style={{ borderTop: "solid 1px white" }}>
+          <Button
+            className={classes.button}
+            onClick={() => {
+              setShowModal(false);
+              setFormStatus("");
+            }}
+          >
+            {formStatus == "success" ? "Great!" : "Ops..."}
+          </Button>
+        </ModalFooter>
+      </Modal>
+      {/* </div> */}
     </>
   );
 };

@@ -37,6 +37,14 @@
   margin: 10px;
 }
 
+.main_button {
+  background-color: var(--primary-color) !important;
+  border: solid var(--white) 3px !important;
+}
+.main_button a {
+  color: var(--white) !important;
+}
+
 @media only screen and (max-width: 768px) {
   .testimonial__img img {
     width: 300px !important;
