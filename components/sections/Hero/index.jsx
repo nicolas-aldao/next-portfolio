@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
 import GradientBorderAnimated from "../../atoms/GradientBorderAnimated";
 import DownloadCVButton from "../../atoms/DownloadCVButton";
-import heroImg from "../../../public/images/superhero.png";
+import heroImg from "../../../public/images/me.png";
 import classes from "./hero.module.css";
 
 const Hero = () => {
