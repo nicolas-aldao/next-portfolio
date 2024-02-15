@@ -19,14 +19,17 @@ class MyDocument extends Document {
             content="Checkout our cool page"
             key="desc"
           />
-          <meta property="og:title" content="Social Title for Cool Page" />
+          <meta
+            property="og:title"
+            content="Nicolás Aldao | Frontend Developer"
+          />
           <meta
             property="og:description"
-            content="And a social description for our cool page"
+            content="Hey! I'm Nicolás from Argentina. Check out my web page to know more about me."
           />
           <meta
             property="og:image"
-            content="https://example.com/images/cool-page.jpg"
+            content="https://nicolas-aldao.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.8399bdb8.png&w=640&q=75"
           />
           {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
