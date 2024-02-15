@@ -25,7 +25,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:description"
-            content="Hey! I'm Nicolás from Argentina. Check out my web page to know more about me."
+            content="From Argentina. Check out my web page to know more about me!"
           />
           <meta
             property="og:image"
