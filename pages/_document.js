@@ -31,12 +31,6 @@ class MyDocument extends Document {
             property="og:image"
             content="https://nicolas-aldao.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fme.8399bdb8.png&w=640&q=75"
           />
-          {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet"
-          /> */}
         </Head>
         <body>
           <Main />
