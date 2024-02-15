@@ -28,7 +28,7 @@ class MyDocument extends Document {
             content="Check out my web page to know more about me!"
           />
           <meta
-            property="og:image"
+            property="og:image:secure_url"
             content="https://nicolas-aldao.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsuperhero.76ecbf13.png&w=640&q=75"
           />
         </Head>
