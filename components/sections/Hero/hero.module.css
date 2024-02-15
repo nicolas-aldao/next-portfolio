@@ -8,6 +8,7 @@
 
 .hero__content {
   padding-top: 50px;
+  animation: fade-left 2s ease 0s 1 normal forwards;
 }
 
 .hero__img {
@@ -28,6 +29,7 @@
 
   /* glow effect */
   /* box-shadow: 10px 10px 100px 10px var(--primary-color-opacity); */
+  animation: fade-right 2s ease 0s 1 normal forwards;
 }
 
 @media only screen and (max-width: 992px) {
@@ -94,5 +96,29 @@
   .marginMobile {
     padding-left: 15px;
     padding-right: 20px;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

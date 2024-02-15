@@ -1,3 +1,11 @@
+.work {
+  animation: fade-left 2s ease 0s 1 normal forwards;
+}
+
+.education {
+  animation: fade-right 2s ease 0s 1 normal forwards;
+}
+
 .about__icon i {
   color: var(--primary-color);
 }
@@ -63,5 +71,29 @@
 @media only screen and (max-width: 575px) {
   .resume {
     padding: 16px;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

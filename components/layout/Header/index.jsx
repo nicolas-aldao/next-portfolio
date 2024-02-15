@@ -8,35 +8,38 @@ import { PortfolioContext } from "../../../pages/_app";
 import classes from "./header.module.css";
 
 const Header = () => {
-  const headerRef = useRef(null);
+  // const headerRef = useRef(null);
   const menuRef = useRef(null);
   const { isDarkMode, setIsDarkMode } = useContext(PortfolioContext);
 
-  const headerFunc = () => {
-    if (
-      document.body.scrollTop > 80 ||
-      document.documentElement.scrollTop > 80
-    ) {
-      headerRef.current.classList.add(`${classes.header__shrink}`);
-    } else {
-      headerRef.current.classList.remove(`${classes.header__shrink}`);
-    }
-  };
+  // const headerFunc = () => {
+  //   if (
+  //     document.body.scrollTop > 80 ||
+  //     document.documentElement.scrollTop > 80
+  //   ) {
+  //     headerRef.current.classList.add(`${classes.header__shrink}`);
+  //   } else {
+  //     headerRef.current.classList.remove(`${classes.header__shrink}`);
+  //   }
+  // };
 
   useEffect(() => {
     document.body.classList.toggle("dark-mode", isDarkMode);
   }, [isDarkMode]);
 
-  useEffect(() => {
-    window.addEventListener("scroll", headerFunc);
-    return () => window.removeEventListener("scroll", headerFunc);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", headerFunc);
+  //   return () => window.removeEventListener("scroll", headerFunc);
+  // }, []);
 
   const toggleMenu = () =>
     menuRef.current.classList.toggle(classes.menu__active);
 
   return (
-    <header className={classes.header} ref={headerRef}>
+    <header
+      className={classes.header}
+      // ref={headerRef}
+    >
       <Container>
         <div className={classes.nav__wrapper}>
           <div

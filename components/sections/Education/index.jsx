@@ -9,7 +9,7 @@ const Education = () => {
     <section id="education" className={classes.resume}>
       <Container>
         <Row>
-          <Col lg="6">
+          <Col lg="6" className={classes.work}>
             <div data-aos="fade-up" data-aos-delay="100">
               <SectionSubtitle
                 subtitle="Professional Experience"
@@ -39,7 +39,7 @@ const Education = () => {
                 ))}
             </div>
           </Col>
-          <Col lg="6">
+          <Col lg="6" className={classes.education}>
             <div data-aos="fade-up">
               <SectionSubtitle
                 subtitle="Education and Courses"
