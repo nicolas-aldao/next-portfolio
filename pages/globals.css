@@ -95,7 +95,7 @@ ul li {
 }
 
 section {
-  padding-top: 150px;
+  padding-top: 90px;
 }
 
 footer {
@@ -158,7 +158,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
   section {
-    padding-top: 110px;
+    padding-top: 60px;
   }
 
   footer {
