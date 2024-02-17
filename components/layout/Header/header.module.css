@@ -46,7 +46,7 @@
   color: var(--primary-color);
 }
 
-/* .header__shrink {
+.header__shrink {
   position: sticky;
   top: 0;
   left: 0;
@@ -55,7 +55,7 @@
   line-height: 80px;
   box-shadow: 5px 5px 15px -5px var(--primary-color) !important;
   z-index: 9999;
-} */
+}
 
 .mobile__menu i {
   font-size: 1.3rem;

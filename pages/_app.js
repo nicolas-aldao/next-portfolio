@@ -9,10 +9,10 @@ import "./globals.css";
 export const PortfolioContext = createContext([]);
 
 function MyApp({ Component, pageProps }) {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isLightMode, setIsLightMode] = useState(false);
 
   return (
-    <PortfolioContext.Provider value={{ isDarkMode, setIsDarkMode }}>
+    <PortfolioContext.Provider value={{ isLightMode, setIsLightMode }}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

@@ -1,23 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --primary-color: #9a894f;
+  --primary-color: #00a38e;
   --secondary-color: #ffffff;
-  --four-color: #c3cad868;
+  --four-color: #ffffff;
   --primary-color-lighter: #e7e2d5;
-  --background-color: #ffffff;
-  --primary-font-color: #5d5d5d;
-  --secondary-font-color: #616161;
-  --black: #000000;
-  --white: #ffffff;
-  --shadow: #00000033;
-  --black-white-toggle: #000000; /* this changes depending of the dark or light mode */
-
-  --primary-color-opacity: rgb(0, 0, 0, 0.3); /* transparent shadow */
+  --background-color: linear-gradient(90deg, #141414 0%, #171b32 100%);
+  --primary-font-color: #dddddd;
+  --secondary-font-color: #d3d3d3;
+  --black-white-toggle: #ffffff; /* this changes depending of the dark or light mode */
+  --primary-color-opacity: rgb(0, 163, 142, 0.25);
 
   /* text gradient */
-  --primary-color-darker: #907b33;
-  --primary-gradient-lighter: #f0e10e;
+  --primary-color-darker: #008472;
+  --primary-gradient-lighter: #ffffff;
+
+  /* portofolio item color rectangle */
+  --background-color-second: rgb(30, 30, 50);
 
   .primary-gradient {
     background: linear-gradient(
@@ -28,6 +27,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+}
+
+html {
+  background-color: #161929;
 }
 
 body {
@@ -167,21 +170,23 @@ footer {
   }
 }
 
-.dark-mode {
-  --primary-color: #00a38e;
+.light-mode {
+  --primary-color: #9a894f;
   --secondary-color: #ffffff;
-  --four-color: #ffffff;
-  --background-color: linear-gradient(90deg, #141414 0%, #171b32 100%);
-  --primary-font-color: #dddddd;
-  --secondary-font-color: #d3d3d3;
-  --black-white-toggle: #ffffff; /* this changes depending of the dark or light mode */
+  --four-color: #c3cad868;
+  --background-color: #ffffff;
+  --primary-font-color: #5d5d5d;
+  --secondary-font-color: #616161;
+  --black: #000000;
+  --white: #ffffff;
+  --shadow: #00000033;
+  --black-white-toggle: #000000; /* this changes depending of the dark or light mode */
+  --primary-color-opacity: rgb(0, 0, 0, 0.3); /* transparent shadow */
 
-  --primary-color-opacity: rgb(0, 163, 142, 0.25);
+  /* portofolio item color rectangle */
+  --background-color-second: #ffffff;
 
   /* text gradient */
-  --primary-color-darker: #008472;
-  --primary-gradient-lighter: #ffffff;
-
-  /* portofolio item color rectangle (only dark mode) */
-  --background-color-second: rgb(30, 30, 50);
+  --primary-color-darker: #907b33;
+  --primary-gradient-lighter: #f0e10e;
 }

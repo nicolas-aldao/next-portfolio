@@ -1,48 +1,46 @@
-import React, { useContext, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import Link from "next/link";
-import { Container, Input, FormGroup } from "reactstrap";
+import { Container } from "reactstrap";
 import { NAV__LINK } from "../../../constants";
-import moonImg from "../../../public/images/moon.png";
-import sunImg from "../../../public/images/sun.png";
-import { PortfolioContext } from "../../../pages/_app";
+// import moonImg from "../../../public/images/moon.png";
+// import sunImg from "../../../public/images/sun.png";
+// import { PortfolioContext } from "../../../pages/_app";
+// import { LightDarkModeSwitch } from "../../organisms/LightDarkModeSwitch";
 import classes from "./header.module.css";
 
 const Header = () => {
-  // const headerRef = useRef(null);
+  const headerRef = useRef(null);
   const menuRef = useRef(null);
-  const { isDarkMode, setIsDarkMode } = useContext(PortfolioContext);
+  // const { isLightMode, setIsLightMode } = useContext(PortfolioContext);
 
-  // const headerFunc = () => {
-  //   if (
-  //     document.body.scrollTop > 80 ||
-  //     document.documentElement.scrollTop > 80
-  //   ) {
-  //     headerRef.current.classList.add(`${classes.header__shrink}`);
-  //   } else {
-  //     headerRef.current.classList.remove(`${classes.header__shrink}`);
-  //   }
-  // };
-
-  useEffect(() => {
-    document.body.classList.toggle("dark-mode", isDarkMode);
-  }, [isDarkMode]);
+  const headerFunc = () => {
+    if (
+      document.body.scrollTop > 80 ||
+      document.documentElement.scrollTop > 80
+    ) {
+      headerRef.current.classList.add(classes.header__shrink);
+    } else {
+      headerRef.current.classList.remove(classes.header__shrink);
+    }
+  };
 
   // useEffect(() => {
-  //   window.addEventListener("scroll", headerFunc);
-  //   return () => window.removeEventListener("scroll", headerFunc);
-  // }, []);
+  //   document.body.classList.toggle("light-mode", isLightMode);
+  // }, [isLightMode]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", headerFunc);
+    return () => window.removeEventListener("scroll", headerFunc);
+  }, []);
 
   const toggleMenu = () =>
     menuRef.current.classList.toggle(classes.menu__active);
 
   return (
-    <header
-      className={classes.header}
-      // ref={headerRef}
-    >
+    <header className={classes.header} ref={headerRef}>
       <Container>
         <div className={classes.nav__wrapper}>
-          <div
+          {/* <div
             style={{
               marginBottom: "0",
               fontSize: 25,
@@ -68,15 +66,16 @@ const Header = () => {
                   cursor: "pointer",
                   border: "none",
                   backgroundImage: `url(${
-                    isDarkMode ? moonImg.blurDataURL : sunImg.blurDataURL
+                    isLightMode ? sunImg.blurDataURL : moonImg.blurDataURL
                   })`,
                   boxShadow: "none",
                 }}
                 className="switch m-0"
-                onClick={(e) => setIsDarkMode(!isDarkMode)}
+                onClick={(e) => setIsLightMode(!isLightMode)}
               />
             </FormGroup>
-          </div>
+          </div> */}
+          {/* <LightDarkModeSwitch /> */}
           <div
             className={classes.navigation}
             ref={menuRef}
