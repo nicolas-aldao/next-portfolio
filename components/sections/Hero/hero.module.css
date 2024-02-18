@@ -24,15 +24,15 @@
   /* border: solid orange 3px; */
   padding: 20px;
   width: fit-content;
+  animation: fade-right 2s ease 0s 1 normal forwards;
 }
 
-.hero__img span {
+/* .hero__img span {
   display: flex !important;
-}
+} */
 
 .hero__img img {
   border-radius: 20px;
-  animation: fade-right 2s ease 0s 1 normal forwards;
 }
 
 @media only screen and (max-width: 992px) {
