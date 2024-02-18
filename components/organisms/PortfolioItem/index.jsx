@@ -6,15 +6,21 @@ import classes from "./portfolio-item.module.css";
 
 const PortfolioItem = (props) => {
   const { title, img, liveUrl, keyword } = props.item;
+  const maxItemsToShow = 3;
+  const displayedBadges = keyword.slice(0, maxItemsToShow);
+
   return (
     <div className={classes.portfolio__item}>
       <div className="bg-transparent">
         <h6>{title}</h6>
-        {keyword.map((item, index) => (
+        {displayedBadges.map((item, index) => (
           <BadgeAtom key={index} className={classes.badge}>
             {item}
           </BadgeAtom>
         ))}
+        {keyword.length > maxItemsToShow && (
+          <BadgeAtom className={classes.badge}>...</BadgeAtom>
+        )}
       </div>
 
       <div className={classes.portfolio__img}>

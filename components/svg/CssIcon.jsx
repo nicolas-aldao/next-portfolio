@@ -5,8 +5,8 @@ const CssIcon = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 452 520"
-      width="90px"
-      height="90px"
+      width="70px"
+      height="70px"
     >
       <path fill="#0c73b8" d="M41 460L0 0h451l-41 460-185 52" />
       <path fill="#30a9dc" d="M226 472l149-41 35-394H226" />

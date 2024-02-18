@@ -4,8 +4,8 @@ const NextJsIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="190px"
-      height="90px"
+      width="170px"
+      height="70px"
       viewBox="0 0 512 103.22"
     >
       <path

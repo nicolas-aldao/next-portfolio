@@ -1,7 +1,13 @@
+.about__row {
+  justify-content: center;
+}
+
 .about__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 550px;
+  padding: 30px !important;
 }
 
 .about__subtitle {
@@ -71,7 +77,7 @@
 .about__toolItemText {
   position: relative;
   top: 3px;
-  text-align: center
+  text-align: center;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -121,10 +127,6 @@
 @media only screen and (min-width: 250px) and (max-width: 400px) {
   .about__content {
     align-items: center;
-  }
-
-  .about__row {
-    justify-content: center;
   }
 
   .about__content h3 {

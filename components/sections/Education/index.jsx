@@ -8,7 +8,7 @@ const Education = () => {
   return (
     <section id="education" className={classes.resume}>
       <Container>
-        <Row>
+        <Row className={classes.row}>
           <Col lg="6" className={classes.work}>
             <div data-aos="fade-up" data-aos-delay="100">
               <SectionSubtitle

@@ -17,10 +17,6 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <SectionSubtitle
-          subtitle="About me"
-          className={classes.about__subtitle}
-        />
         <Row className={classes.about__row}>
           <Col
             lg="6"
@@ -28,6 +24,10 @@ const About = () => {
             className={classes.about__content}
             style={{ padding: "15px" }}
           >
+            <SectionSubtitle
+              subtitle="About me"
+              className={classes.about__subtitle}
+            />
             <h3 className={`mt-4 ${classes.marginMobile}`}>
               Technologies I&apos;ve been working with
             </h3>

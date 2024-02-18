@@ -38,8 +38,8 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <Container>
-        <Row>
-          <Col lg="6" md="6" className="mb-5">
+        <Row className={classes.row}>
+          <Col lg="6" md="6" className={`mb-5 ${classes.col}`}>
             <SectionSubtitle subtitle="Portfolio" />
             <h4 className={`mt-4 ${classes.marginMobile}`}>Some of my works</h4>
             <p className={classes.marginMobile}>
@@ -47,7 +47,7 @@ const Portfolio = () => {
               Design&quot; to filter what projects you want to browse
             </p>
           </Col>
-          <Col lg="6" md="12">
+          <Col lg="6" md="12" className={classes.col}>
             <div className={classes.tab__btns}>
               <button
                 className={`${filter === "All" ? active : ""} secondary__btn`}
@@ -73,9 +73,11 @@ const Portfolio = () => {
               </button>
             </div>
           </Col>
+        </Row>
 
+        <Row className={`${classes.row} ${classes.rowItems}`}>
           {data?.map((item) => (
-            <Col lg="4" md="6" sm="6" key={item.id}>
+            <Col key={item.id} className={classes.item}>
               <PortfolioItem item={item} />
             </Col>
           ))}
