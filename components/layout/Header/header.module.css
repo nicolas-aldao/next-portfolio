@@ -6,8 +6,8 @@
 
 .nav__wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .logo h1 {

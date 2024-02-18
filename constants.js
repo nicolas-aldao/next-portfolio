@@ -86,7 +86,7 @@ export const EDUCATION_WORK = [
         time: "Oct 2018 - Nov 2018",
         institute: "Baufest",
         description:
-          "15 day Fullstack Intensive Training with other 19 students, where we had different exercises to do everyday and in the end of the course we took an exam and if we passed it with a good feedback from teachers we could get a job in the company.",
+          "15 day Fullstack Intensive Training with other 19 students, in the end, we took an exam and if we passed it we could get a job in the company.",
         tasks: [
           "OPP, C#, MVC",
           "SQL Server, Entity Framework",
@@ -130,7 +130,7 @@ export const EDUCATION_WORK = [
         time: "Dic 2022 (160hs aprox.)",
         institute: "Baufest",
         description:
-          "React Intensive Training emulating a real project with Scrum ceremonies, with a PO, QA and Backend team with other 2 frontend partners, the objective was build a mvp of a digital wallet in React in a month where we can send and receive money from other users",
+          "React Intensive Training emulating a real project, building a digital wallet MVP in React to send and receive money",
         tasks: ["Consuming API's", "Form validations", "Atomic Design"],
       },
       {
@@ -152,7 +152,7 @@ export const EDUCATION_WORK = [
         time: "2018 - 2019",
         company: "Baufest, Argentina",
         description:
-          "Support project where I had to communicate everyday with the client via email and calls",
+          "Support project, helping to the client via email and calls",
         tasks: [
           "Control data sellout reports",
           "Automatization tasks using Excel and Macros with VBA",

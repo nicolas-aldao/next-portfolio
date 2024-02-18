@@ -16,7 +16,7 @@ const Footer = () => {
               <p>
                 &copy; Copyright {year} - Developed by Muhibur Rahman. Modified
                 by Nicolás Aldao. All rights reserved.{" "}
-                <a
+                {/* <a
                   className={classes.link}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -41,7 +41,7 @@ const Footer = () => {
                   href="https://icons8.com"
                 >
                   Icons8
-                </a>
+                </a> */}
               </p>
             </div>
           </Col>
