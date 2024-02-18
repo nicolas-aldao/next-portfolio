@@ -1,6 +1,7 @@
 .gradientBorder {
   border-radius: 30px;
-  position: absolute;
+  /* position: absolute; */
+  width: fit-content;
   background: linear-gradient(
     60deg,
     #f79533,

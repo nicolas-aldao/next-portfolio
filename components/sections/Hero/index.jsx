@@ -36,16 +36,16 @@ const Hero = () => {
               <br />
               Hope you enjoy the journey ;)
             </p>
-            <div className={classes.marginMobile}>
-              <GradientBorderAnimated>
-                <DownloadCVButton />
-              </GradientBorderAnimated>
-            </div>
+            {/* <div className={classes.marginMobile}> */}
+            <GradientBorderAnimated>
+              <DownloadCVButton />
+            </GradientBorderAnimated>
+            {/* </div> */}
             {/* </div> */}
           </Col>
           <Col lg="6" md="6" className={`${classes.hero__img} text-end`}>
             {/* <div className={`${classes.hero__img} text-end`}> */}
-            <Image alt="hero-image" src={heroImg} width="220" height="250" />
+            <Image alt="hero-image" src={heroImg} width="170" height="200" />
             {/* </div> */}
           </Col>
         </Row>

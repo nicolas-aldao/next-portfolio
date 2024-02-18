@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        {/* <title>Nicolás Aldao | Frontend Developer</title>
-        <meta
+        <title>Nicolás Aldao | Frontend Developer</title>
+        {/* <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
