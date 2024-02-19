@@ -26,7 +26,7 @@ const About = () => {
 
             <section className={classes.tecnologies_container}>
               {technologies.map((tech, index) => (
-                <div className={classes.skill_container}>
+                <div className={classes.skill_container} key={index}>
                   {tech.icon}
                   <BadgeAtom key={index} className={classes.skills_badge}>
                     {tech.text}
@@ -53,7 +53,7 @@ const About = () => {
             <div className="d-flex align-items-center gap-5">
               <div className={classes.about__toolContainer}>
                 {tools.map((tool, index) => (
-                  <div className={classes.about__toolItem}>
+                  <div className={classes.about__toolItem} key={index}>
                     <span className={classes.about__icon}>
                       <i className="ri-checkbox-circle-line"></i>
                     </span>
