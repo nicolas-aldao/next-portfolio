@@ -1,3 +1,13 @@
+import HtmlIcon from "./components/svg/HtmlIcon";
+import CssIcon from "./components/svg/CssIcon";
+import JsIcon from "./components/svg/JsIcon";
+import ReactIcon from "./components/svg/ReactIcon";
+import NextJsIcon from "./components/svg/NextJsIcon";
+import GitIcon from "./components/svg/GitIcon";
+import JenkinsIcon from "./components/svg/JenkinsIcon";
+import PostmanIcon from "./components/svg/PostmanIcon";
+import SwaggerIcon from "./components/svg/SwaggerIcon";
+
 export const ULR_PORTFOLIO = "https://nicolas-aldao.vercel.app";
 
 export const NAV__LINK = [
@@ -225,4 +235,19 @@ export const EDUCATION_WORK = [
       },
     ],
   },
+];
+
+export const technologies = [
+  { icon: <HtmlIcon />, text: "HTML" },
+  { icon: <CssIcon />, text: "CSS" },
+  { icon: <JsIcon />, text: "JAVASCRIPT" },
+  { icon: <ReactIcon />, text: "REACT" },
+  { icon: <NextJsIcon />, text: "NEXT.JS" },
+  { icon: <GitIcon />, text: "GIT" },
+];
+
+export const tools = [
+  { icon: <PostmanIcon />, text: "Postman" },
+  { icon: <SwaggerIcon />, text: "Swagger" },
+  { icon: <JenkinsIcon />, text: "Jenkins" },
 ];
