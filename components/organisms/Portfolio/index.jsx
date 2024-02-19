@@ -76,11 +76,13 @@ const Portfolio = () => {
         </Row>
 
         <Row className={`${classes.row} ${classes.rowItems}`}>
-          {data?.map((item) => (
-            <Col key={item.id} className={classes.item}>
-              <PortfolioItem item={item} />
-            </Col>
-          ))}
+          <div className={classes.itemsContainers}>
+            {data?.map((item) => (
+              <Col key={item.id} className={classes.item}>
+                <PortfolioItem item={item} />
+              </Col>
+            ))}
+          </div>
         </Row>
       </Container>
     </section>

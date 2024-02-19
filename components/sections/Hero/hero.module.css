@@ -3,9 +3,6 @@
   justify-content: center;
 }
 
-.hero {
-  padding-top: 60px !important;
-}
 .hero__content {
   padding: 30px;
   width: fit-content;

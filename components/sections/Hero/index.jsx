@@ -8,7 +8,7 @@ import classes from "./hero.module.css";
 
 const Hero = () => {
   return (
-    <section className={classes.hero}>
+    <section>
       <Container>
         <Row className={classes.row}>
           <Col lg="6" md="6" className={classes.hero__content}>
@@ -41,7 +41,7 @@ const Hero = () => {
             </GradientBorderAnimated>
           </Col>
           <Col lg="6" md="6" className={`${classes.hero__img} text-end`}>
-            <Image alt="hero-image" src={heroImg} width="170" height="200" />
+            <Image alt="hero-image" src={heroImg} width="170" height="190" />
           </Col>
         </Row>
       </Container>

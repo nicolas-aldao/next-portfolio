@@ -3,12 +3,20 @@
   justify-content: center;
 }
 
+.itemsContainers {
+  /* border: solid red 3px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+}
+
 .rowItems {
   /* border: solid orange 3px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* max-width: 1000px; */
+  max-width: initial;
 }
 
 .col {
@@ -19,6 +27,7 @@
 .item {
   /* border: solid violet 3px; */
   display: flex;
+  margin: 10px;
   min-width: 385px;
   max-width: 400px;
 }
