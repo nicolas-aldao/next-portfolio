@@ -10,6 +10,7 @@
   --secondary-font-color: #d3d3d3;
   --black-white-toggle: #ffffff; /* this changes depending of the dark or light mode */
   --primary-color-opacity: rgb(0, 163, 142, 0.25);
+  --dark-gray: #6f6f6f;
 
   /* text gradient */
   --primary-color-darker: #008472;
@@ -182,6 +183,7 @@ footer {
   --shadow: #00000033;
   --black-white-toggle: #000000; /* this changes depending of the dark or light mode */
   --primary-color-opacity: rgb(0, 0, 0, 0.3); /* transparent shadow */
+  --dark-gray: #6f6f6f;
 
   /* portofolio item color rectangle */
   --background-color-second: #ffffff;

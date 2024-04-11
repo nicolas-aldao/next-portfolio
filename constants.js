@@ -43,6 +43,8 @@ export const PORTFOLIO_DATA = [
     importantInfo: `Note: You can use the demo account.
       user: demo
       pass: demo`,
+    shortDescription:
+      "It's an app based in Instagram's style where you can browse through different art paintings.",
     img: ["/images/portfolio-6.png"],
     category: "Mobile App",
     keyword: ["HTML", "CSS", "React", "Node", "MongooDB"],
@@ -54,6 +56,7 @@ export const PORTFOLIO_DATA = [
     id: "7",
     title: "Avocado Store",
     description: "This is an app where you can buy avocados.",
+    shortDescription: "This is an app where you can buy avocados.",
     img: ["/images/portfolio-7.png"],
     category: "Mobile App",
     keyword: ["React", "Next.js", "CSS Modules"],
@@ -65,6 +68,8 @@ export const PORTFOLIO_DATA = [
     id: "9",
     title: "Grid Layout Concept Art: Beatles",
     description:
+      "This is a concept art for a grid layout. I used to The Beatles as an example.",
+    shortDescription:
       "This is a concept art for a grid layout. I used to The Beatles as an example.",
     img: ["/images/portfolio-9.png"],
     category: "Web Design",
@@ -243,11 +248,11 @@ export const technologies = [
   { icon: <JsIcon />, text: "JAVASCRIPT" },
   { icon: <ReactIcon />, text: "REACT" },
   { icon: <NextJsIcon />, text: "NEXT.JS" },
-  { icon: <GitIcon />, text: "GIT" },
 ];
 
 export const tools = [
-  { icon: <PostmanIcon />, text: "Postman" },
-  { icon: <SwaggerIcon />, text: "Swagger" },
-  { icon: <JenkinsIcon />, text: "Jenkins" },
+  { icon: <GitIcon />, text: "GIT" },
+  { icon: <PostmanIcon />, text: "POSTMAN" },
+  { icon: <SwaggerIcon />, text: "SWAGGER" },
+  { icon: <JenkinsIcon />, text: "JENKINS" },
 ];

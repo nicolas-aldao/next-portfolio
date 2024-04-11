@@ -1,11 +1,67 @@
+.container {
+  margin: 20px;
+  border: solid var(--dark-gray) 2px;
+  border-radius: 35px;
+  width: 350px;
+}
+
+.test {
+  width: 350px;
+}
+
+.content > p,
+.content > div {
+  margin-bottom: 0;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.container:hover .content p,
+.container:hover .content button,
+.container:hover .content .badge {
+  display: flex;
+}
+
+.test {
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  position: relative;
+}
+
+.container:hover .test {
+  filter: blur(4px);
+  opacity: 0.2;
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  padding: 20px;
+  height: 250px;
+  width: 350px;
+}
+
+.content p:nth-child(3) {
+  margin: 10px 0;
+}
+
+.content p,
+.content button,
+.content .badge {
+  display: none;
+}
+
 .portfolio__item {
   background: var(--background-color-second);
   padding: 0px 20px 20px 20px;
   padding-top: 30px;
   width: fit-content;
   border-radius: 10px;
-  /* margin-bottom: 30px; */
-  /* border: solid red 1px; */
 }
 
 .portfolio__item h6 {
@@ -47,6 +103,15 @@
   object-fit: cover;
 }
 
+.portfolio__img:hover p {
+  display: flex;
+  position: relative;
+  top: 60px;
+  left: 20px;
+  z-index: 5;
+  color: black;
+}
+
 .portfolio__keyword {
   padding: 5px 10px;
   color: var(--primary-font-color);
@@ -66,6 +131,19 @@
 
 .badge {
   margin-top: 10px;
+  width: fit-content;
+}
+
+.details_button {
+  border-radius: 15px;
+  border-color: var(--dark-gray);
+  color: var(--primary-font-color);
+  padding: 5px 15px;
+  background: var(--primary-color);
+}
+
+.details_button:hover a {
+  color: var(--primary-font-color);
 }
 
 @media only screen and (max-width: 576px) {

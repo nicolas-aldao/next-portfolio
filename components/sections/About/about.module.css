@@ -30,14 +30,14 @@
   justify-content: space-evenly;
   text-align: center;
   height: auto;
-  padding-top: 75px;
 }
+
 .tecnologies_container p {
   display: flex;
   justify-content: center;
   color: var(--primary-font-color);
-  font-size: 1.1rem;
-  font-weight: 800;
+  font-size: 1.1rem !important;
+  font-weight: 700;
   margin-top: 0.5rem;
 }
 
@@ -53,11 +53,11 @@
   margin-bottom: 1rem;
 }
 
-.skills_badge {
+/* .skills_badge {
   margin-top: 1rem;
   margin-right: 0;
   font-size: 1rem;
-}
+} */
 
 .about__toolContainer {
   margin-top: 15px;

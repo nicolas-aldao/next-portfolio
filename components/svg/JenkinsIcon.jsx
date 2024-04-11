@@ -4,11 +4,11 @@ import React from "react";
 const JenkinsIcon = () => {
   return (
     <svg
-      width="100px"
-      height="100px"
+      width="85px"
+      height="85px"
       viewBox="-80.5 0 417 417"
       version="1.1"
-      style={{ position: 'relative', top: '10px' }}
+      style={{ position: "relative", top: "10px" }}
     >
       <g>
         <path

@@ -3,7 +3,7 @@ import React from "react";
 
 const SwaggerIcon = () => {
   return (
-    <svg width="90px" height="90px" viewBox="0 0 32 32" version="1.1">
+    <svg width="85px" height="85px" viewBox="0 0 32 32" version="1.1">
       <path
         d="M30,16a14,14,0,1,1-4.1-9.9A13.956,13.956,0,0,1,30,16Z"
         fill="#FFFFFF"
