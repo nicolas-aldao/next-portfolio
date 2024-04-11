@@ -15,7 +15,7 @@ const PortfolioItem = (props) => {
           style={{
             backgroundImage: `url(${img[0]})`,
           }}
-          className={classes.test}
+          className={classes.img}
         ></div>
         <div className={classes.content}>
           <p>{title}</p>

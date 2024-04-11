@@ -5,7 +5,7 @@
   width: 350px;
 }
 
-.test {
+.img {
   width: 350px;
 }
 
@@ -24,7 +24,7 @@
   display: flex;
 }
 
-.test {
+.img {
   height: 250px;
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
   position: relative;
 }
 
-.container:hover .test {
+.container:hover .img {
   filter: blur(4px);
   opacity: 0.2;
   cursor: pointer;
@@ -149,5 +149,18 @@
 @media only screen and (max-width: 576px) {
   .portfolio__img img {
     width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container .img {
+    filter: blur(4px);
+    opacity: 0.3;
+  }
+
+  .content p,
+  .content button,
+  .content .badge {
+    display: flex;
   }
 }
