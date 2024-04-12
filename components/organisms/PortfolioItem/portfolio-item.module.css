@@ -142,6 +142,11 @@
   background: var(--primary-color);
 }
 
+.details_button a {
+  color: var(--primary-font-color);
+  text-decoration: unset;
+}
+
 .details_button:hover a {
   color: var(--primary-font-color);
 }
