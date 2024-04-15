@@ -38,6 +38,7 @@
 
 .social__links {
   display: flex;
+  justify-content: center;
   margin-top: 20px;
   margin-left: 5px;
   align-items: center;
