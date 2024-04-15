@@ -9,16 +9,16 @@ const About = () => {
     <section id="about">
       <Container>
         <Row className={classes.about__row}>
-          <SectionSubtitle
-            subtitle="About me"
-            className={classes.about__subtitle}
-          />
           <Col
             lg="6"
             xs="10"
             className={classes.about__content}
             style={{ padding: "15px" }}
           >
+            <SectionSubtitle
+              subtitle="About me"
+              className={classes.about__subtitle}
+            />
             <h3 className={`mt-4 ${classes.marginMobile}`}>Technologies</h3>
             <div className={classes.tecnologies_container}>
               {technologies.map((tech, index) => (
@@ -29,6 +29,8 @@ const About = () => {
               ))}
             </div>
           </Col>
+        </Row>
+        <Row className={classes.about__row}>
           <Col
             lg="6"
             xs="10"

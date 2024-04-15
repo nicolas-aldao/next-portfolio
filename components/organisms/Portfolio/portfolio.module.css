@@ -27,6 +27,7 @@
 .item {
   /* border: solid violet 3px; */
   display: flex;
+  justify-content: center;
   margin: 10px;
   min-width: 385px;
   max-width: 400px;
