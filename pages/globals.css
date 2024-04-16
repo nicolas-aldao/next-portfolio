@@ -8,6 +8,9 @@
   --background-color: linear-gradient(90deg, #141414 0%, #171b32 100%);
   --primary-font-color: #dddddd;
   --secondary-font-color: #d3d3d3;
+  --black: #000000;
+  --white: #ffffff;
+  --shadow: #00000033;
   --black-white-toggle: #ffffff; /* this changes depending of the dark or light mode */
   --primary-color-opacity: rgb(0, 163, 142, 0.25);
   --dark-gray: #6f6f6f;
@@ -178,9 +181,6 @@ footer {
   --background-color: #ffffff;
   --primary-font-color: #5d5d5d;
   --secondary-font-color: #616161;
-  --black: #000000;
-  --white: #ffffff;
-  --shadow: #00000033;
   --black-white-toggle: #000000; /* this changes depending of the dark or light mode */
   --primary-color-opacity: rgb(0, 0, 0, 0.3); /* transparent shadow */
   --dark-gray: #6f6f6f;
