@@ -32,7 +32,7 @@ const Hero = () => {
               learned so far.
               <br />
               I&apos;ve worked on a variety of projects, <br />
-              but lately, I&apos;m doing focus on React projects.
+              but lately, I&apos;m focusing on React projects.
               <br />
               Hope you enjoy the journey ;)
             </p>
