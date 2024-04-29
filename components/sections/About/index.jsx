@@ -20,7 +20,7 @@ const About = () => {
               className={classes.about__subtitle}
             />
             <h3 className={`mt-4 ${classes.marginMobile}`}>
-              Main technologies I've worked with
+              Main technologies I&apos;ve worked with
             </h3>
             <div className={classes.tecnologies_container}>
               {technologies.map((tech, index) => (
@@ -40,7 +40,7 @@ const About = () => {
             style={{ padding: "15px" }}
           >
             <h3 className={`mt-4 ${classes.marginMobile}`}>
-              Some tools I've used
+              Some tools I&apos;ve used
             </h3>
             <div className={classes.tecnologies_container}>
               {tools.map((tech, index) => (
