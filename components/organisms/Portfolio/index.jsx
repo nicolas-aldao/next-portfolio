@@ -41,7 +41,9 @@ const Portfolio = () => {
         <Row className={classes.row}>
           <Col lg="6" md="6" className={`mb-5 ${classes.col}`}>
             <SectionSubtitle subtitle="Portfolio" />
-            <h4 className={`mt-4 ${classes.marginMobile}`}>Some of my works</h4>
+            <h4 className={`mt-4 ${classes.marginMobile}`}>
+              Some of my personal projects
+            </h4>
             <p className={classes.marginMobile}>
               Use &quot;All&quot;, &quot;Mobile App&quot; or &quot;Web
               Design&quot; to filter what projects you want to browse

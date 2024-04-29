@@ -23,18 +23,17 @@ const Hero = () => {
             >
               Frontend Developer
             </h5>
-            <p style={{ display: "inline" }}> from Argentina</p>
+            <p style={{ display: "inline" }}>
+              {" "}
+              with 5 years of experience in IT from Argentina
+            </p>
             <p style={{ display: "inline", fontSize: 20 }}> 🇦🇷</p>
             <p className={classes.marginMobile}>
-              Welcome to my personal website!
-              <br />
               In this place I&apos;ll show you what I know to do and what I
               learned so far.
               <br />
               I&apos;ve worked on a variety of projects, <br />
               but lately, I&apos;m focusing on React projects.
-              <br />
-              Hope you enjoy the journey ;)
             </p>
             <GradientBorderAnimated>
               <DownloadCVButton />

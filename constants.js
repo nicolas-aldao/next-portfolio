@@ -35,6 +35,19 @@ export const NAV__LINK = [
 
 export const PORTFOLIO_DATA = [
   {
+    id: "5",
+    title: "Digital Wallet",
+    description: `A digital wallet where you can send and receive money from other users. You can see your money movements too!`,
+    shortDescription:
+      "A digital wallet where you can send and receive money from other users.",
+    img: ["/images/portfolio-5.png"],
+    category: "Mobile App",
+    keyword: ["React", "Node", "MongooDB", "NextUI"],
+    repoUrl: "https://github.com/nicolas-aldao/digital-wallet",
+    deployUrl: "https://digital-wallet-one.vercel.app/",
+    liveUrl: "/project/5",
+  },
+  {
     id: "6",
     title: "Artgram",
     description: `It's an app based in Instagram's style where you can browse through different art paintings.
@@ -52,18 +65,18 @@ export const PORTFOLIO_DATA = [
     deployUrl: "https://nagram.vercel.app/",
     liveUrl: "/project/6",
   },
-  {
-    id: "7",
-    title: "Avocado Store",
-    description: "This is an app where you can buy avocados.",
-    shortDescription: "This is an app where you can buy avocados.",
-    img: ["/images/portfolio-7.png"],
-    category: "Mobile App",
-    keyword: ["React", "Next.js", "CSS Modules"],
-    repoUrl: "https://github.com/nicolas-aldao/avocado-app",
-    deployUrl: "https://avocado-app-bice.vercel.app/",
-    liveUrl: "/project/7",
-  },
+  // {
+  //   id: "7",
+  //   title: "Avocado Store",
+  //   description: "This is an app where you can buy avocados.",
+  //   shortDescription: "This is an app where you can buy avocados.",
+  //   img: ["/images/portfolio-7.png"],
+  //   category: "Mobile App",
+  //   keyword: ["React", "Next.js", "CSS Modules"],
+  //   repoUrl: "https://github.com/nicolas-aldao/avocado-app",
+  //   deployUrl: "https://avocado-app-bice.vercel.app/",
+  //   liveUrl: "/project/7",
+  // },
   {
     id: "9",
     title: "Grid Layout Concept Art: Beatles",
@@ -159,6 +172,28 @@ export const EDUCATION_WORK = [
           "Json Web Token",
         ],
       },
+      {
+        id: "8",
+        title: "SOLID and Clean Code Principles Course",
+        time: "Apr 2024 (6.5hs)",
+        institute: "Udemy",
+        tasks: [
+          "Tech Debt",
+          "Code Smells",
+          "SOLID Principles",
+          "Good practices",
+        ],
+      },
+      {
+        id: "9",
+        title: "React Testing Library with Jest / Vitest Course",
+        time: "Apr 2024 (7.5hs)",
+        institute: "Udemy",
+        tasks: [
+          "Test-Driven Development",
+          "Test behavior instead of implementation",
+        ],
+      },
     ],
     work: [
       {
@@ -212,7 +247,7 @@ export const EDUCATION_WORK = [
         ],
       },
       {
-        id: "24",
+        id: "25",
         role: "React Native Developer",
         time: "Jun 2022 - Dic 2022",
         company: "Baufest, Argentina",
@@ -226,7 +261,7 @@ export const EDUCATION_WORK = [
         ],
       },
       {
-        id: "24",
+        id: "26",
         role: "React Developer",
         time: "Feb 2023 - Present",
         company: "Baufest, Argentina",
