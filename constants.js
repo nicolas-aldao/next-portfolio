@@ -98,10 +98,10 @@ export const EDUCATION_WORK = [
     education: [
       {
         id: "1",
-        title: "System Analist",
+        title: "System Analist Career",
         time: "2016 - 2020",
         institute: "Instituto Santo Tomás de Aquino",
-        description: "3 years tertiary career in an institute from Argentina",
+        description: "3-year tertiary career at an institute in Argentina",
         tasks: [
           "Be able to analize requirements, algoriths and computer systems",
           "Learn and build web pages and desktop applications",
@@ -205,7 +205,7 @@ export const EDUCATION_WORK = [
           "Support project, helping to the client via email and calls",
         tasks: [
           "Control data sellout reports",
-          "Automatization tasks using Excel and Macros with VBA",
+          "Automated tasks using Excel and VBA macros",
           "Collaborated with clients via email to resolve daily business problems",
         ],
       },
@@ -267,10 +267,11 @@ export const EDUCATION_WORK = [
         company: "Baufest, Argentina",
         description: "Responsive web app for an important bank in Argentina.",
         tasks: [
+          "Styled Components",
           "Fix bugs and develop new features",
           "Code refactoring",
           "Consume APIs",
-          "Run deploys",
+          "Deploys with Jenkins",
         ],
       },
     ],
