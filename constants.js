@@ -50,14 +50,14 @@ export const PORTFOLIO_DATA = [
   {
     id: "6",
     title: "Artgram",
-    description: `It's an app based in Instagram's style where you can browse through different art paintings.
+    description: `Based in Instagram's style, you can browse through different art paintings.
       Initially, I developed it with midudev's course on Platzi, and I kept working on it, giving it more features.
       Some of the funcionalities are a login system, filter paintings depending of its art genre, give likes to your favorites, and have a section where you can see all the paintings you've liked.`,
     importantInfo: `Note: You can use the demo account.
       user: demo
       pass: demo`,
     shortDescription:
-      "It's an app based in Instagram's style where you can browse through different art paintings.",
+      "Based in Instagram's style, you can browse through different art paintings.",
     img: ["/images/portfolio-6.png"],
     category: "Mobile App",
     keyword: ["HTML", "CSS", "React", "Node", "MongooDB"],
