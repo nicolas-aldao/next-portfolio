@@ -112,8 +112,8 @@ footer {
 
 .primary__btn {
   background: var(--secondary-color) !important;
-  padding: 7px 25px !important;
-  border: 3px solid var(--primary-color) !important;
+  padding: 10px 28px !important;
+  border: none;
   border-radius: 10px;
   box-shadow: 0 5px 10px var(--shadow);
   font-size: 18px;

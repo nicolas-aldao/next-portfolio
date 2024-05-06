@@ -65,18 +65,6 @@ export const PORTFOLIO_DATA = [
     deployUrl: "https://nagram.vercel.app/",
     liveUrl: "/project/6",
   },
-  // {
-  //   id: "7",
-  //   title: "Avocado Store",
-  //   description: "This is an app where you can buy avocados.",
-  //   shortDescription: "This is an app where you can buy avocados.",
-  //   img: ["/images/portfolio-7.png"],
-  //   category: "Mobile App",
-  //   keyword: ["React", "Next.js", "CSS Modules"],
-  //   repoUrl: "https://github.com/nicolas-aldao/avocado-app",
-  //   deployUrl: "https://avocado-app-bice.vercel.app/",
-  //   liveUrl: "/project/7",
-  // },
   {
     id: "9",
     title: "Grid Layout Concept Art: Beatles",

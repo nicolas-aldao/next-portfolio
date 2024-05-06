@@ -15,7 +15,7 @@ const Footer = () => {
             >
               <p>
                 &copy; Copyright {year} - Developed by Muhibur Rahman. Modified
-                by Nicolás Aldao. All rights reserved.{" "}
+                by Nicolás Aldao.{" "}
                 {/* <a
                   className={classes.link}
                   target="_blank"

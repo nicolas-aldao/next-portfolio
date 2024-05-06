@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 import { PORTFOLIO_DATA } from "../../constants";
-// import Carrousel from "../../components/UI/organisms/Carrousel";
 import BadgeAtom from "../../components/atoms/BadgeAtom";
 import SectionSubtitle from "../../components/atoms/SectionSubtitle/SectionSubtitle";
 import LinkButton from "../../components/atoms/LinkButton";
@@ -13,7 +12,6 @@ import classes from "./projectId.module.css";
 
 const Detail = () => {
   const { query } = useRouter();
-  const [filter, setFilter] = useState("Mobile App");
   const [data, setData] = useState();
 
   const settings = {
