@@ -4,7 +4,7 @@ import Button from "../Button";
 import classes from "./styles.module.css";
 
 const DownloadCVButton = () => {
-  const url = `${ULR_PORTFOLIO}/react-developer-nicolas-aldao.pdf`;
+  const url = `${ULR_PORTFOLIO}/Frontend Developer Nicolas Aldao.pdf`;
   const downloadFile = (url) => {
     fetch(url)
       .then((res) => res.blob())
