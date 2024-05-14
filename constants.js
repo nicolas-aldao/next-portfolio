@@ -37,9 +37,9 @@ export const PORTFOLIO_DATA = [
   {
     id: "5",
     title: "Digital Wallet",
-    description: `A digital wallet where you can send and receive money from other users. You can see your money movements too!`,
+    description: `With this app you can send and receive money from other users. You can see your money movements too!`,
     shortDescription:
-      "A digital wallet where you can send and receive money from other users.",
+      "With this app you can send and receive money from other users.",
     img: ["/images/portfolio-5.png"],
     category: "Mobile App",
     keyword: ["React", "Node", "MongooDB", "NextUI"],
