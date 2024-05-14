@@ -14,10 +14,10 @@ export const LightDarkModeSwitch = () => {
   return (
     <div
       style={{
-        marginBottom: "0",
+        margin: "0 15px",
         fontSize: 25,
         display: "flex",
-        alignItems: "center",
+        alignSelf: "center",
       }}
     >
       <FormGroup
@@ -37,9 +37,8 @@ export const LightDarkModeSwitch = () => {
             backgroundColor: "var(--primary-color)",
             cursor: "pointer",
             border: "none",
-            backgroundImage: `url(${
-              isLightMode ? sunImg.blurDataURL : moonImg.blurDataURL
-            })`,
+            backgroundImage: `url(${isLightMode ? sunImg.blurDataURL : moonImg.blurDataURL
+              })`,
             boxShadow: "none",
           }}
           className="switch m-0"
