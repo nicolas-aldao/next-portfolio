@@ -30,7 +30,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://nicolas-aldao.vercel.app/images/superhero.png"
+            content="https://nicolas-aldao.vercel.app/images/me.png"
           />
           {/* <meta property="og:image:type" content="image/png" />
           <meta property="og:image:width" content="400" />
