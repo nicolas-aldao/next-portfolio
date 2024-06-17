@@ -53,9 +53,7 @@ export const PORTFOLIO_DATA = [
     description: `Based in Instagram's style, you can browse through different art paintings.
       Initially, I developed it with midudev's course on Platzi, and I kept working on it, giving it more features.
       Some of the funcionalities are a login system, filter paintings depending of its art genre, give likes to your favorites, and have a section where you can see all the paintings you've liked.`,
-    importantInfo: `Note: You can use the demo account.
-      user: demo
-      pass: demo`,
+    importantInfo: "Note: You can use the demo account.",
     shortDescription:
       "Based in Instagram's style, you can browse through different art paintings.",
     img: ["/images/portfolio-6.png"],
@@ -251,7 +249,7 @@ export const EDUCATION_WORK = [
       {
         id: "26",
         role: "React Developer",
-        time: "Feb 2023 - Present",
+        time: "Feb 2023 - Apr 2024",
         company: "Baufest, Argentina",
         description: "Responsive web app for an important bank in Argentina.",
         tasks: [
